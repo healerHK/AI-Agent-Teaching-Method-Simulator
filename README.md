@@ -44,7 +44,7 @@ Analysis scope includes:
 - Variance and robustness across stochastic runs
 - Subgroup analysis by student profile (e.g., low/high prior knowledge, motivation levels)
 
-Recommended statistical methods and considerations:
+Statistical methods and considerations:
 - Use Cohen's d or other effect-size measures for educational impact
 - Bootstrap or permutation tests for non-parametric CI estimates
 - Linear mixed-effects models or hierarchical models for repeated measures and nested data (students within runs)
@@ -121,7 +121,7 @@ Reproducibility best practices:
 
 ---
 
-## Scripts to Add (recommended)
+## Scripts (Example)
 
 - src/simulation/run_simulation.py
   - Driver that:
@@ -141,7 +141,7 @@ Reproducibility best practices:
   - Central experiment parameter definitions:
     - default seeds, method hyperparameters, student profile templates, run counts, output paths
 
-- analysis/ (optional but recommended)
+- analysis/ (Optional we can do later)
   - Jupyter notebooks for exploratory analysis and statistical tests:
     - analysis/01_aggregate_and_describe.ipynb
     - analysis/02_visualizations.ipynb
@@ -172,15 +172,15 @@ python src/simulation/evaluate_metrics.py --input-dir data/results/ --output dat
 
 ---
 
-## Example Files to Seed Repository (suggested)
+## Example Files to Seed Repository
 
 - docs/04_simulation_workflow.md — include the PNG diagram and narrative workflow
-- src/agents/student_agent.py — minimal StudentAgent skeleton (see earlier examples)
+- src/agents/student_agent.py — minimal StudentAgent skeleton
 - src/teaching_methods/flipped_classroom.py — skeleton implementation
 - src/simulation/run_simulation.py — experimental driver (skeleton)
 - src/simulation/evaluate_metrics.py — aggregator (skeleton)
 - src/utils/config.py — default parameters and seed list
-- data/results/experiment_01.json — example run output (see sample above)
+- data/results/experiment_01.json — example run output 
 
 ---
 
@@ -188,8 +188,3 @@ python src/simulation/evaluate_metrics.py --input-dir data/results/ --output dat
 
 This analysis-first organization helps ensure the repository not only contains simulation code but also the necessary components for rigorous evaluation, reproducibility, and academic presentation.
 
-Would you like me to:
-- scaffold the recommended files (README, config, run_simulation.py, evaluate_metrics.py) and add them to the repo, or
-- just produce the file contents here for you to paste into your project?
-
-I can create minimal starter implementations for the scripts and a sample analysis notebook if you'd like. 
