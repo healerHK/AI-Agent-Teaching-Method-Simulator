@@ -53,6 +53,54 @@ Statistical methods and considerations:
 
 ---
 
+## Repository Structure
+
+```
+teaching-method-simulator/
+│
+├── README.md                          # Project overview and instructions
+│
+├── docs/                              # Documentation files
+│   ├── 01_introduction.md             # Project introduction and background
+│   ├── 02_literature_review.md        # References and prior work
+│   ├── 03_proposed_framework.md       # Technical and conceptual framework
+│   ├── 04_simulation_workflow.md      # Simulation workflow and logic
+│   ├── 05_metrics_evaluation.md       # Metrics definition and evaluation strategies
+│   ├── 06_limitations_future_work.md  # Limitations and future directions
+│   └── diagram_simulation_workflow.png
+│
+├── src/                               # Source code and modules
+│   ├── agents/                        # Generative agent implementations
+│   │   ├── student_agent.py
+│   │   ├── teacher_agent.py
+│   │   └── memory_module.py
+│   ├── teaching_methods/              # Teaching strategies
+│   │   ├── flipped_classroom.py
+│   │   ├── direct_instruction.py
+│   │   ├── inquiry_based.py
+│   │   ├── problem_based.py
+│   │   ├── project_based.py
+│   │   └── collaborative.py
+│   ├── simulation/                    # Simulation mechanics and metrics evaluation
+│   │   ├── environment.py
+│   │   ├── run_simulation.py
+│   │   └── evaluate_metrics.py
+│   └── utils/                         # Helper utilities and configuration
+│       ├── logging.py
+│       ├── data_structures.py
+│       └── config.py
+│
+├── data/                              # Datasets and experimental results
+│   ├── learning_materials/
+│   │   ├── physics_intro.txt
+│   │   └── sample_videos/
+│   └── results/
+│       └── experiment_01.json
+│
+└── LICENSE                            # MIT License
+```
+---
+
 ## Metrics (examples)
 
 Each experiment run should output these (or a superset) in per-run JSONs:
