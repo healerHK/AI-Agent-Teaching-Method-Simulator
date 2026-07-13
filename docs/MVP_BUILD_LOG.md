@@ -70,3 +70,52 @@ backend/.pytest_cache/
 backend/data/til_research.db
 __pycache__/
 ```
+
+## 2026-07-13 — Phase 2 Interactive Pixel Classroom Demo
+
+### Completed
+
+- Added FastAPI app at `backend/app/main.py`.
+- Added deterministic classroom session controller at `backend/app/session_controller.py`.
+- Added optional OpenAI-backed student response client with fallback mode at `backend/app/openai_client.py`.
+- Added runtime session models at `backend/app/session_models.py`.
+- Added student simulation prompt at `backend/prompts/students/v1.txt`.
+- Added React/Vite frontend under `frontend/`.
+- Built pixel classroom UI with:
+  - teacher character;
+  - five student characters;
+  - learning objective board;
+  - dialogue bubble;
+  - teacher input panel;
+  - transcript panel;
+  - session metadata panel.
+
+### Verification
+
+Backend tests:
+
+```text
+15 passed in 0.89s
+```
+
+Backend health endpoint:
+
+```text
+GET /api/health
+{"status":"ok","phase":"phase_2_interactive_demo"}
+```
+
+Frontend build:
+
+```text
+npm run build
+✓ built in 140ms
+```
+
+Browser verification:
+
+- Opened `http://127.0.0.1:5173`.
+- Started a live pixel classroom session.
+- Sent a teacher message.
+- Verified transcript contained teacher turn plus Alex and Mia student replies.
+- Verified UI showed fallback source when no OpenAI key is required.

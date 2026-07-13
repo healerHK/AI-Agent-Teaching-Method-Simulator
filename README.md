@@ -29,4 +29,27 @@ docs/          # benchmark, rubric, reproducibility, validity docs
 
 ## Current status
 
-Phase 1 in progress.
+Phase 1 complete. Phase 2 complete with a working FastAPI + React/Vite pixel classroom demo.
+
+## Run Phase 2 demo
+
+Backend:
+
+```bash
+cd D:/Code/til-classroom-sim/backend
+uv run uvicorn app.main:app --host 127.0.0.1 --port 8000
+```
+
+Frontend:
+
+```bash
+cd D:/Code/til-classroom-sim/frontend
+npm install
+npm run dev -- --host 127.0.0.1 --port 5173
+```
+
+Open:
+
+```text
+http://127.0.0.1:5173
+```
