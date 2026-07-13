@@ -1,0 +1,16 @@
+[project]
+name = "pixelclass-til-backend"
+version = "0.1.0"
+description = "Research backend for PixelClass TIL golden benchmark and evaluation pipeline"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.7",
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100

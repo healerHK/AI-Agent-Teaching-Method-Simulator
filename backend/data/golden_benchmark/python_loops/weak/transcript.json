@@ -1,0 +1,64 @@
+{
+  "transcript_id": "python_loops_weak_001",
+  "scenario_id": "python_loops_001",
+  "variant": "weak",
+  "domain": "computer_science",
+  "education_level": "introductory_undergraduate_or_senior_secondary",
+  "learning_objective": "Students will explain that a for-loop repeats a block once for each item in a sequence and can trace the loop variable across iterations.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Today we are doing for-loops. A for-loop repeats code. Let's look at for number in [1, 2, 3]: print(number)."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "student",
+      "speaker_name": "Mia",
+      "message": "Does it only print once because there is only one print line?"
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Not exactly, but don't worry about that yet. Loops are just useful when you don't want to type lots of code."
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Sam",
+      "message": "I am still not sure what number is after the first line."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "It is pretty simple. Python handles it automatically. Just remember loops repeat things."
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Alex",
+      "message": "So the answer is 1, 2, 3?"
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Yes, correct. Let's move on to while-loops."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Lina",
+      "message": "Could we trace it one step at a time?"
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "We do not have time for tracing now. The main point is that loops repeat."
+    }
+  ]
+}

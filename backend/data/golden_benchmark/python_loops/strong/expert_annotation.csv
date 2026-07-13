@@ -1,0 +1,6 @@
+transcript_id,reviewer_id,criterion,human_score,issue_id,evidence_turn_ids,accepted_ground_truth,comment,timestamp
+python_loops_strong_001,researcher_phase1,pck_conceptual_accuracy,5,,turn_003;turn_004,true,"Misconception is directly addressed with accurate explanation.",2026-07-13T00:00:00Z
+python_loops_strong_001,researcher_phase1,scaffolding,5,,turn_004;turn_005;turn_009,true,"Teacher uses trace-based scaffolding.",2026-07-13T00:00:00Z
+python_loops_strong_001,researcher_phase1,formative_assessment,4,,turn_005;turn_007;turn_008,true,"Teacher checks understanding through student responses.",2026-07-13T00:00:00Z
+python_loops_strong_001,researcher_phase1,cognitive_questioning,4,,turn_002;turn_005,true,"Questions require prediction and tracing.",2026-07-13T00:00:00Z
+python_loops_strong_001,researcher_phase1,missed_pedagogical_opportunity,5,,,true,"No major missed opportunity identified in this short transcript.",2026-07-13T00:00:00Z
