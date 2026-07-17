@@ -40,3 +40,45 @@ export interface TeacherTurnResponse {
   session_state: SessionState;
   response_source: 'openai' | 'fallback';
 }
+
+export interface EvidenceLinkView {
+  turn_id: string;
+  evidence_quote: string;
+}
+
+export interface FeedbackItemView {
+  feedback_item_id: string;
+  criterion: string;
+  claim: string;
+  score?: number | null;
+  suggested_action?: string | null;
+  confidence?: number | null;
+  verification_status?: string | null;
+  evidence: EvidenceLinkView[];
+}
+
+export interface BlindedEvaluationView {
+  display_label: 'Evaluation A' | 'Evaluation B';
+  evaluation_id: string;
+  feedback_items: FeedbackItemView[];
+}
+
+export interface VerificationRunResponse {
+  evaluation_id: string;
+  verifier_version: string;
+  overall_status: string;
+  items: Array<{ criterion: string; claim: string; status: string; problems: string[] }>;
+}
+
+export interface Phase3DemoResponse {
+  transcript_id: string;
+  baseline_evaluation_id: string;
+  til_evaluation_id: string;
+  baseline_verification: VerificationRunResponse;
+  til_verification: VerificationRunResponse;
+  blinded_review: {
+    transcript_id: string;
+    reviewer_id: string;
+    blinded_evaluations: BlindedEvaluationView[];
+  };
+}

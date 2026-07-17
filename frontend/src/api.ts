@@ -1,4 +1,4 @@
-import type { StartSessionResponse, TeacherTurnResponse } from './types';
+import type { FeedbackItemView, Phase3DemoResponse, StartSessionResponse, TeacherTurnResponse } from './types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://127.0.0.1:8000';
 
@@ -28,5 +28,41 @@ export function sendTeacherTurn(sessionId: string, teacherMessage: string): Prom
   return request<TeacherTurnResponse>(`/api/sessions/${sessionId}/turn`, {
     method: 'POST',
     body: JSON.stringify({ teacher_message: teacherMessage }),
+  });
+}
+
+export function runPhase3Demo(): Promise<Phase3DemoResponse> {
+  return request<Phase3DemoResponse>('/api/phase3/demo', {
+    method: 'POST',
+    body: JSON.stringify({ transcript_id: 'python_loops_weak_001', reviewer_id: 'researcher_phase3_ui' }),
+  });
+}
+
+export function saveQuickAnnotation(params: {
+  reviewerId: string;
+  label: string;
+  evaluationId: string;
+  item: FeedbackItemView;
+  accept: boolean;
+}) {
+  return request<{ annotation_id: string; saved: boolean }>('/api/annotations', {
+    method: 'POST',
+    body: JSON.stringify({
+      reviewer_id: params.reviewerId,
+      evaluation_id: params.evaluationId,
+      feedback_item_id: params.item.feedback_item_id,
+      blinded_label: params.label,
+      criterion: params.item.criterion,
+      ai_score: params.item.score,
+      human_score: params.item.score,
+      accept: params.accept,
+      fabricated_evidence: params.item.verification_status !== 'verified',
+      unsupported_inference: false,
+      pedagogical_disagreement: false,
+      missed_issue: false,
+      usefulness: params.accept ? 4 : 2,
+      review_time_seconds: 10,
+      comment: params.accept ? 'Quick UI accept annotation.' : 'Quick UI reject annotation.',
+    }),
   });
 }

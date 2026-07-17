@@ -119,3 +119,53 @@ Browser verification:
 - Sent a teacher message.
 - Verified transcript contained teacher turn plus Alex and Mia student replies.
 - Verified UI showed fallback source when no OpenAI key is required.
+
+## 2026-07-17 — Phase 3 Evaluation Pipeline + Phase 4 MVP Batch Experiments
+
+### Completed
+
+- Added provider-agnostic evaluator client supporting `fallback`, `openai`, `anthropic`, `gemini`, and `openai_compatible`.
+- Added local `.env` loader with committed `.env.example` only.
+- Added baseline and TIL evaluator prompts.
+- Added golden benchmark loader.
+- Added evaluation runner and raw output storage.
+- Added deterministic evidence verifier.
+- Added blinded A/B review service.
+- Added human annotation service and endpoint.
+- Added frontend blinded review UI.
+- Added Phase 4 batch runner, metrics service, export service, CSV outputs, SVG charts, and reproducibility manifest.
+
+### Verification
+
+Backend tests:
+
+```text
+21 passed in 0.96s
+```
+
+Frontend build:
+
+```text
+npm run build
+✓ built in 121ms
+```
+
+Phase 4 smoke export:
+
+```text
+D:/Mythesis(Honours)/thesis-project/results/exp_20260717_075258_d0d6
+```
+
+Browser verification:
+
+- Opened `http://127.0.0.1:5173`.
+- Clicked `Evaluate Golden Benchmark`.
+- Verified Blinded Evaluation A/B UI rendered.
+- Verified baseline showed missing evidence and TIL showed verified evidence.
+- Saved one annotation through the UI and verified count changed to `1`.
+
+Provider smoke test:
+
+- Local `.env` configured for Gemini 2.5 Flash.
+- Provider call returned sanitized HTTP 403.
+- Pipeline fell back safely and still produced verified TIL evidence.

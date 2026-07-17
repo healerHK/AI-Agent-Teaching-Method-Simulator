@@ -1,17 +1,18 @@
 interface ModeSelectProps {
   onStartDemo: () => void;
+  onStartReview: () => void;
   loading: boolean;
 }
 
-export function ModeSelect({ onStartDemo, loading }: ModeSelectProps) {
+export function ModeSelect({ onStartDemo, onStartReview, loading }: ModeSelectProps) {
   return (
     <section className="mode-select pixel-panel">
       <div className="mode-copy">
-        <p className="eyebrow">PixelClass TIL · Phase 2 MVP</p>
-        <h1>2D Pixel Classroom Simulation</h1>
+        <p className="eyebrow">PixelClass TIL · Phase 3/4 MVP</p>
+        <h1>2D Pixel Classroom + Evaluation Pipeline</h1>
         <p>
-          Human teacher input, virtual student characters, transcript capture, and a research
-          path toward golden-benchmark evaluation.
+          Human teacher input, virtual student characters, golden benchmark evaluation,
+          evidence verification, and blinded A/B review.
         </p>
       </div>
 
@@ -19,17 +20,17 @@ export function ModeSelect({ onStartDemo, loading }: ModeSelectProps) {
         <button className="mode-card primary" onClick={onStartDemo} disabled={loading}>
           <span className="mode-icon">▣</span>
           <strong>Run Live Pixel Classroom Demo</strong>
-          <small>Teacher + OpenAI/fallback student simulation</small>
+          <small>Teacher + provider/fallback student simulation</small>
         </button>
-        <button className="mode-card disabled" disabled>
+        <button className="mode-card" onClick={onStartReview} disabled={loading}>
           <span className="mode-icon">◇</span>
           <strong>Evaluate Golden Benchmark</strong>
-          <small>Phase 3/4 pipeline placeholder</small>
+          <small>Baseline vs TIL + verifier + blinded review</small>
         </button>
         <button className="mode-card disabled" disabled>
           <span className="mode-icon">▤</span>
           <strong>View Previous Runs</strong>
-          <small>CSV/charts/results placeholder</small>
+          <small>Phase 4 CSV/charts/results are exported locally</small>
         </button>
       </div>
     </section>

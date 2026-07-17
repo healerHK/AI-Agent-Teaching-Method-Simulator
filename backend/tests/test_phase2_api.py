@@ -9,7 +9,7 @@ def test_health_endpoint_reports_phase2():
     response = client.get("/api/health")
 
     assert response.status_code == 200
-    assert response.json()["phase"] == "phase_2_interactive_demo"
+    assert response.json()["phase"] == "phase_3_evaluation_pipeline"
 
 
 def test_interactive_demo_session_turn_flow():
