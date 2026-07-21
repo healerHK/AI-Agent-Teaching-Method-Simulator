@@ -66,6 +66,7 @@ class EvaluatorRunner:
                     condition=condition,
                     provider_config=provider_config,
                 )
+                model_name = provider_config.model_label
             except Exception as exc:  # keep pipeline runnable across provider config experiments
                 error_message = _provider_error_summary(exc)
                 output = self._generate_output(transcript=transcript, condition=condition)

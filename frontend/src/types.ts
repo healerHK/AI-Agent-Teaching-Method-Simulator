@@ -34,6 +34,22 @@ export interface StartSessionResponse {
   personas: StudentPersona[];
 }
 
+export interface EvaluatorConditionStatus {
+  condition: string;
+  provider: string;
+  model: string;
+  model_label: string;
+  api_key_configured: boolean;
+  base_url_configured: boolean;
+  temperature: number;
+}
+
+export interface EvaluatorStatusResponse {
+  conditions: EvaluatorConditionStatus[];
+  secrets_redacted: boolean;
+  fallback_policy: string;
+}
+
 export interface TeacherTurnResponse {
   teacher_turn: ClassroomTurn;
   student_turns: ClassroomTurn[];

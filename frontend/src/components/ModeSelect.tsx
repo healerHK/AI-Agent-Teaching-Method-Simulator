@@ -1,10 +1,13 @@
+import type { EvaluatorStatusResponse } from '../types';
+
 interface ModeSelectProps {
   onStartDemo: () => void;
   onStartReview: () => void;
   loading: boolean;
+  evaluatorStatus: EvaluatorStatusResponse | null;
 }
 
-export function ModeSelect({ onStartDemo, onStartReview, loading }: ModeSelectProps) {
+export function ModeSelect({ onStartDemo, onStartReview, loading, evaluatorStatus }: ModeSelectProps) {
   return (
     <section className="mode-select pixel-panel">
       <div className="mode-copy">
@@ -14,6 +17,24 @@ export function ModeSelect({ onStartDemo, onStartReview, loading }: ModeSelectPr
           Human teacher input, virtual student characters, golden benchmark evaluation,
           evidence verification, and blinded A/B review.
         </p>
+        <div className="provider-status-card">
+          <span className="label">Tonight testing status</span>
+          {evaluatorStatus ? (
+            <>
+              <div className="provider-status-list">
+                {evaluatorStatus.conditions.map((condition) => (
+                  <span key={condition.condition} className="provider-pill">
+                    {condition.condition.toUpperCase()} · {condition.provider}:{condition.model}
+                    {condition.api_key_configured ? ' · key configured' : ' · fallback only'}
+                  </span>
+                ))}
+              </div>
+              <small>{evaluatorStatus.fallback_policy}</small>
+            </>
+          ) : (
+            <small>Provider status loading; deterministic fallback remains available.</small>
+          )}
+        </div>
       </div>
 
       <div className="mode-grid">

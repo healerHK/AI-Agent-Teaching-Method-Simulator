@@ -1,4 +1,4 @@
-import type { FeedbackItemView, Phase3DemoResponse, StartSessionResponse, TeacherTurnResponse } from './types';
+import type { EvaluatorStatusResponse, FeedbackItemView, Phase3DemoResponse, StartSessionResponse, TeacherTurnResponse } from './types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://127.0.0.1:8000';
 
@@ -22,6 +22,10 @@ export function startSession(): Promise<StartSessionResponse> {
     method: 'POST',
     body: JSON.stringify({ scenario_id: 'python_loops_001', max_teacher_turns: 12 }),
   });
+}
+
+export function getEvaluatorStatus(): Promise<EvaluatorStatusResponse> {
+  return request<EvaluatorStatusResponse>('/api/evaluator/status');
 }
 
 export function sendTeacherTurn(sessionId: string, teacherMessage: string): Promise<TeacherTurnResponse> {

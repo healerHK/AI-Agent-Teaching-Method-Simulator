@@ -57,6 +57,14 @@ button, textarea { font: inherit; }
 .mode-copy h1 { margin: 10px 0 12px; font-size: clamp(36px, 6vw, 76px); line-height: .9; letter-spacing: -0.06em; }
 .mode-copy p { max-width: 52ch; font-size: 18px; line-height: 1.55; }
 .mode-grid { display: grid; gap: 16px; }
+.provider-status-card {
+  margin-top: 18px; padding: 14px; border: 3px solid #18212f; background: #eaf1ff; box-shadow: 4px 4px 0 #18212f;
+}
+.provider-status-list { display: grid; gap: 8px; margin: 10px 0; }
+.provider-pill {
+  display: block; padding: 8px 10px; border: 2px solid #18212f; background: #fff; font-size: 12px; font-weight: 900; overflow-wrap: anywhere;
+}
+.provider-status-card small { display: block; color: #5d6472; line-height: 1.4; }
 .mode-card {
   width: 100%; min-height: 130px; padding: 18px; text-align: left;
   border: 4px solid #18212f; background: #fbd35d; box-shadow: 5px 5px 0 #18212f; cursor: pointer;

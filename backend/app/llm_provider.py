@@ -138,6 +138,70 @@ def _default_base_url(provider: str) -> str | None:
     return None
 
 
+def evaluator_provider_status(condition: str) -> dict[str, Any]:
+    """Return safe provider metadata for UI/testing diagnostics.
+
+    This intentionally reports only booleans/labels, never raw API keys or request URLs
+    containing keys.
+    """
+
+    config = evaluator_provider_config(condition)
+    return {
+        "condition": condition,
+        "provider": config.provider,
+        "model": config.model,
+        "model_label": config.model_label,
+        "api_key_configured": bool(config.api_key),
+        "base_url_configured": bool(config.base_url),
+        "temperature": config.temperature,
+    }
+
+
+def _normalize_gemini_model_name(model: str) -> str:
+    """Gemini REST URLs expect model name without a leading `models/`."""
+
+    return model.removeprefix("models/").strip()
+
+
+def _gemini_model_candidates(requested_model: str) -> list[str]:
+    """Return requested Gemini model plus compatible Flash fallbacks.
+
+    Some Google projects can list a model but fail actual generation for new users.
+    Keep the requested model first, then try conservative Flash aliases if the failure
+    is specifically model-availability related.
+    """
+
+    configured_fallbacks = [
+        value.strip()
+        for value in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-flash-latest").split(",")
+        if value.strip()
+    ]
+    candidates: list[str] = []
+    for model in [requested_model, *configured_fallbacks]:
+        normalized = _normalize_gemini_model_name(model)
+        if normalized and normalized not in candidates:
+            candidates.append(normalized)
+    return candidates
+
+
+def _is_gemini_model_availability_error(exc: httpx.HTTPStatusError) -> bool:
+    """Return True only for errors where trying the next Gemini model is useful."""
+
+    response = exc.response
+    status_code = response.status_code if response is not None else None
+    if status_code not in {400, 404}:
+        return False
+    try:
+        payload = response.json()
+        error = payload.get("error", {}) if isinstance(payload, dict) else {}
+        status = str(error.get("status", "")).upper()
+        message = str(error.get("message", "")).lower()
+    except Exception:
+        status = ""
+        message = ""
+    return status in {"NOT_FOUND", "INVALID_ARGUMENT"} and "model" in message
+
+
 class LLMProviderClient:
     def __init__(self, config: LLMProviderConfig) -> None:
         self.config = config
@@ -213,15 +277,27 @@ class LLMProviderClient:
                 "responseMimeType": "application/json",
             },
         }
-        with httpx.Client(timeout=self.config.timeout_seconds) as client:
-            response = client.post(
-                f"{base_url}/models/{self.config.model}:generateContent?key={self.config.api_key}",
-                json=payload,
-            )
-            response.raise_for_status()
-        data = response.json()
-        parts = data["candidates"][0]["content"].get("parts", [])
-        return "\n".join(part.get("text", "") for part in parts)
+        last_model_error: httpx.HTTPStatusError | None = None
+        for model in _gemini_model_candidates(self.config.model):
+            with httpx.Client(timeout=self.config.timeout_seconds) as client:
+                response = client.post(
+                    f"{base_url}/models/{model}:generateContent?key={self.config.api_key}",
+                    json=payload,
+                )
+                try:
+                    response.raise_for_status()
+                except httpx.HTTPStatusError as exc:
+                    if _is_gemini_model_availability_error(exc):
+                        last_model_error = exc
+                        continue
+                    raise
+            self.config.model = model
+            data = response.json()
+            parts = data["candidates"][0]["content"].get("parts", [])
+            return "\n".join(part.get("text", "") for part in parts)
+        if last_model_error is not None:
+            raise last_model_error
+        raise RuntimeError("No Gemini model candidates configured")
 
 
 def _extract_json(text: str) -> dict[str, Any]:

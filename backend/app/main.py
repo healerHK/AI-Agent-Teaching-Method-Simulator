@@ -18,6 +18,7 @@ from app.evaluator_models import (
 )
 from app.evaluator_runner import EvaluatorRunner
 from app.evidence_verifier import EvidenceVerifier
+from app.llm_provider import evaluator_provider_status
 from app.session_controller import ClassroomSessionController, PERSONAS, SessionNotFound
 from app.session_models import (
     StartSessionRequest,
@@ -46,6 +47,25 @@ annotation_service = AnnotationService()
 @app.get("/api/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "phase": "phase_3_evaluation_pipeline"}
+
+
+@app.get("/api/evaluator/status")
+def evaluator_status() -> dict[str, object]:
+    """Safe evaluator provider diagnostics for testing.
+
+    No raw API keys are returned. A configured Gemini key can still fail at runtime
+    if the Google project lacks model/API permission; live smoke tests handle that
+    with deterministic fallback.
+    """
+
+    return {
+        "conditions": [
+            evaluator_provider_status("baseline"),
+            evaluator_provider_status("til"),
+        ],
+        "secrets_redacted": True,
+        "fallback_policy": "provider failures fall back to deterministic evaluator output",
+    }
 
 
 @app.get("/api/personas")

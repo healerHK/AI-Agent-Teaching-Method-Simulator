@@ -45,8 +45,11 @@ EVALUATOR_TEMPERATURE=0.2
 EVALUATOR_PROVIDER=gemini
 EVALUATOR_MODEL=gemini-2.5-flash
 EVALUATOR_API_KEY=your_gemini_key
+GEMINI_FALLBACK_MODELS=gemini-flash-latest
 EVALUATOR_TEMPERATURE=0.2
 ```
+
+If the requested Gemini model is unavailable for the Google project, the client normalizes `models/...` names and tries `GEMINI_FALLBACK_MODELS`. If Google returns `403 PERMISSION_DENIED`, the API key/project lacks generation permission; the evaluation pipeline records a redacted provider error and falls back to deterministic output.
 
 ## OpenAI-compatible provider
 
@@ -79,6 +82,7 @@ TIL_EVALUATOR_API_KEY=your_anthropic_key
 ```bash
 cd D:/Code/til-classroom-sim/backend
 uv run pytest -q
+uv run python -m scripts.testing_pack --live-provider-smoke
 uv run python -m scripts.run_benchmark --conditions baseline,til --repetitions 1 --transcript-id python_loops_weak_001
 ```
 

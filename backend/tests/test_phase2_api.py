@@ -12,6 +12,21 @@ def test_health_endpoint_reports_phase2():
     assert response.json()["phase"] == "phase_3_evaluation_pipeline"
 
 
+def test_evaluator_status_endpoint_redacts_secrets(monkeypatch):
+    monkeypatch.setenv("EVALUATOR_PROVIDER", "gemini")
+    monkeypatch.setenv("EVALUATOR_MODEL", "gemini-2.5-flash")
+    monkeypatch.setenv("EVALUATOR_API_KEY", "fake-secret-key")
+    client = TestClient(app)
+
+    response = client.get("/api/evaluator/status")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["secrets_redacted"] is True
+    assert data["conditions"][0]["api_key_configured"] is True
+    assert "fake-secret-key" not in str(data)
+
+
 def test_interactive_demo_session_turn_flow():
     client = TestClient(app)
 

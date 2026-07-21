@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { runPhase3Demo, saveQuickAnnotation, sendTeacherTurn, startSession } from './api';
+import { useEffect, useState } from 'react';
+import { getEvaluatorStatus, runPhase3Demo, saveQuickAnnotation, sendTeacherTurn, startSession } from './api';
 import { BlindedReviewPanel } from './components/BlindedReviewPanel';
 import { ModeSelect } from './components/ModeSelect';
 import { PixelClassroom } from './components/PixelClassroom';
-import type { FeedbackItemView, Phase3DemoResponse, SessionState, StudentPersona } from './types';
+import type { EvaluatorStatusResponse, FeedbackItemView, Phase3DemoResponse, SessionState, StudentPersona } from './types';
 
 function App() {
   const [session, setSession] = useState<SessionState | null>(null);
@@ -14,6 +14,13 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [responseSource, setResponseSource] = useState<string | undefined>();
   const [savedAnnotations, setSavedAnnotations] = useState<string[]>([]);
+  const [evaluatorStatus, setEvaluatorStatus] = useState<EvaluatorStatusResponse | null>(null);
+
+  useEffect(() => {
+    getEvaluatorStatus()
+      .then(setEvaluatorStatus)
+      .catch(() => setEvaluatorStatus(null));
+  }, []);
 
   async function handleStartDemo() {
     setLoading(true);
@@ -101,7 +108,7 @@ function App() {
       {loading && <div className="loading-banner pixel-panel">Working...</div>}
 
       {!session && !phase3Demo ? (
-        <ModeSelect onStartDemo={handleStartDemo} onStartReview={handleStartReview} loading={loading} />
+        <ModeSelect onStartDemo={handleStartDemo} onStartReview={handleStartReview} loading={loading} evaluatorStatus={evaluatorStatus} />
       ) : phase3Demo ? (
         <BlindedReviewPanel
           demo={phase3Demo}
