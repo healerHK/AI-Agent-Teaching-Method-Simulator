@@ -26,8 +26,19 @@ from app.session_models import (
     TeacherTurnRequest,
     TeacherTurnResponse,
 )
+from app.v2_models import (
+    LiveSessionStartRequest,
+    LiveSessionStartResponse,
+    LiveTeacherTurnRequest,
+    LiveTeacherTurnResponse,
+    ReviewMetricsSummary,
+    ScenarioListResponse,
+    TranscriptBenchmarkRunRequest,
+    TranscriptBenchmarkRunResponse,
+)
+from app.v2_service import PixelClassV2Service
 
-app = FastAPI(title="PixelClass TIL API", version="0.4.0")
+app = FastAPI(title="PixelClass TIL API", version="0.5.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
@@ -42,11 +53,67 @@ evaluator_runner = EvaluatorRunner(benchmark_loader)
 evidence_verifier = EvidenceVerifier(benchmark_loader)
 blinded_review_service = BlindedReviewService(evaluator_runner)
 annotation_service = AnnotationService()
+v2_service = PixelClassV2Service(
+    controller=controller,
+    loader=benchmark_loader,
+    evaluator_runner=evaluator_runner,
+    evidence_verifier=evidence_verifier,
+    blinded_review_service=blinded_review_service,
+)
 
 
 @app.get("/api/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "phase": "phase_3_evaluation_pipeline"}
+
+
+@app.get("/api/v2/scenarios", response_model=ScenarioListResponse)
+def v2_scenarios() -> ScenarioListResponse:
+    return v2_service.list_scenarios()
+
+
+@app.post("/api/v2/live/sessions", response_model=LiveSessionStartResponse)
+def v2_start_live_session(request: LiveSessionStartRequest) -> LiveSessionStartResponse:
+    try:
+        return v2_service.start_live_session(
+            scenario_id=request.scenario_id,
+            max_teacher_turns=request.max_teacher_turns,
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+
+
+@app.post("/api/v2/live/sessions/{session_id}/turn", response_model=LiveTeacherTurnResponse)
+def v2_live_teacher_turn(session_id: str, request: LiveTeacherTurnRequest) -> LiveTeacherTurnResponse:
+    try:
+        return v2_service.live_teacher_turn(
+            session_id=session_id,
+            teacher_message=request.teacher_message,
+        )
+    except SessionNotFound:
+        raise HTTPException(status_code=404, detail="Session not found")
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+
+
+@app.post("/api/v2/transcript-benchmark/run", response_model=TranscriptBenchmarkRunResponse)
+def v2_run_transcript_benchmark(
+    request: TranscriptBenchmarkRunRequest,
+) -> TranscriptBenchmarkRunResponse:
+    try:
+        return v2_service.run_transcript_benchmark(
+            transcript_id=request.transcript_id,
+            reviewer_id=request.reviewer_id,
+        )
+    except (FileNotFoundError, KeyError) as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+
+
+@app.get("/api/v2/expert-review/summary/{reviewer_id}", response_model=ReviewMetricsSummary)
+def v2_expert_review_summary(reviewer_id: str) -> ReviewMetricsSummary:
+    return v2_service.review_metrics_summary(reviewer_id=reviewer_id)
 
 
 @app.get("/api/evaluator/status")

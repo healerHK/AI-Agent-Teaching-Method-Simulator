@@ -1,24 +1,25 @@
 import type { EvaluatorStatusResponse } from '../types';
 
 interface ModeSelectProps {
-  onStartDemo: () => void;
-  onStartReview: () => void;
+  onShowScenario: () => void;
+  onStartLive: () => void;
+  onRunBenchmark: () => void;
   loading: boolean;
   evaluatorStatus: EvaluatorStatusResponse | null;
 }
 
-export function ModeSelect({ onStartDemo, onStartReview, loading, evaluatorStatus }: ModeSelectProps) {
+export function ModeSelect({ onShowScenario, onStartLive, onRunBenchmark, loading, evaluatorStatus }: ModeSelectProps) {
   return (
     <section className="mode-select pixel-panel">
       <div className="mode-copy">
-        <p className="eyebrow">PixelClass TIL · Phase 3/4 MVP</p>
-        <h1>2D Pixel Classroom + Evaluation Pipeline</h1>
+        <p className="eyebrow">PixelClass TIL · v2 Honours MVP</p>
+        <h1>Teacher-in-the-Loop Evaluation Benchmark</h1>
         <p>
-          Human teacher input, virtual student characters, golden benchmark evaluation,
-          evidence verification, and blinded A/B review.
+          Live micro-lesson simulation is the testbed. Fixed transcript benchmark,
+          evidence verification, and blinded expert review are the research contribution.
         </p>
         <div className="provider-status-card">
-          <span className="label">Tonight testing status</span>
+          <span className="label">Evaluator runtime status</span>
           {evaluatorStatus ? (
             <>
               <div className="provider-status-list">
@@ -38,20 +39,20 @@ export function ModeSelect({ onStartDemo, onStartReview, loading, evaluatorStatu
       </div>
 
       <div className="mode-grid">
-        <button className="mode-card primary" onClick={onStartDemo} disabled={loading}>
-          <span className="mode-icon">▣</span>
-          <strong>Run Live Pixel Classroom Demo</strong>
-          <small>Teacher + provider/fallback student simulation</small>
-        </button>
-        <button className="mode-card" onClick={onStartReview} disabled={loading}>
-          <span className="mode-icon">◇</span>
-          <strong>Evaluate Golden Benchmark</strong>
-          <small>Baseline vs TIL + verifier + blinded review</small>
-        </button>
-        <button className="mode-card disabled" disabled>
+        <button className="mode-card primary" onClick={onShowScenario} disabled={loading}>
           <span className="mode-icon">▤</span>
-          <strong>View Previous Runs</strong>
-          <small>Phase 4 CSV/charts/results are exported locally</small>
+          <strong>Scenario Builder / Thesis Blueprint</strong>
+          <small>15-30 min lesson phases, student behaviour layer, claim guardrails</small>
+        </button>
+        <button className="mode-card" onClick={onStartLive} disabled={loading}>
+          <span className="mode-icon">▣</span>
+          <strong>Live Mode: Micro-lesson Simulation</strong>
+          <small>Teacher input + literature-informed virtual student behaviour</small>
+        </button>
+        <button className="mode-card accent" onClick={onRunBenchmark} disabled={loading}>
+          <span className="mode-icon">◇</span>
+          <strong>Transcript Benchmark Mode</strong>
+          <small>Fixed transcript → baseline vs TIL → verifier → blinded review</small>
         </button>
       </div>
     </section>

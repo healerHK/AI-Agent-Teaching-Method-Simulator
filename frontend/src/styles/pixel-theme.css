@@ -74,6 +74,8 @@ button, textarea { font: inherit; }
 .mode-card strong, .mode-card small { display: block; }
 .mode-card strong { margin: 8px 0; font-size: 20px; }
 .mode-card.disabled { cursor: not-allowed; opacity: .58; background: #dbe4f0; }
+.mode-card.primary { background: #fbd35d; }
+.mode-card.accent { background: #c4f7d7; }
 .mode-icon { font-size: 26px; }
 
 .classroom-shell { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 18px; max-width: 1260px; margin: 0 auto; }
@@ -159,8 +161,49 @@ button, textarea { font: inherit; }
 .evidence-list code { background: #eaf1ff; border: 2px solid #18212f; padding: 1px 4px; }
 .suggestion { padding: 8px; border-left: 5px solid #5a7cff; background: #eaf1ff; }
 
+.blueprint-shell, .benchmark-shell { max-width: 1260px; margin: 0 auto; display: grid; gap: 18px; }
+.benchmark-shell .review-shell { max-width: none; }
+.blueprint-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.blueprint-card { padding: 18px; }
+.blueprint-card.wide { grid-column: span 2; }
+.blueprint-card p, .blueprint-card li { line-height: 1.45; }
+.blueprint-card ul { padding-left: 20px; }
+.phase-timeline { padding: 18px; }
+.phase-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.phase-card, .mechanism-card {
+  padding: 14px; border: 3px solid #18212f; background: #fff; box-shadow: 4px 4px 0 #18212f;
+}
+.phase-card h3 { margin: 10px 0 8px; }
+.phase-card p, .phase-card li, .mechanism-card p { font-size: 14px; line-height: 1.42; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag {
+  display: inline-block; padding: 4px 7px; border: 2px solid #18212f; background: #eaf1ff; font-size: 12px; font-weight: 900;
+}
+.mechanism-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.mechanism-card strong { display: block; text-transform: capitalize; }
+.mechanism-card small { display: block; color: #5d6472; line-height: 1.35; }
+.action-strip { max-width: 1260px; margin: 0 auto; padding: 16px; display: flex; justify-content: flex-end; gap: 12px; }
+.verification-strip.four { grid-template-columns: repeat(4, 1fr); }
+.pipeline-list { margin: 12px 0; padding-left: 24px; }
+.pipeline-list li { margin: 7px 0; font-weight: 800; }
+.metric-line { display: flex; justify-content: space-between; gap: 14px; padding: 8px 0; border-bottom: 2px dashed rgba(24,33,47,.25); }
+.metric-line strong { color: #f25f4c; }
+.mini-transcript { max-height: 320px; overflow: auto; display: grid; gap: 8px; }
+.mini-transcript p { margin: 0; padding: 8px; border: 2px solid #18212f; background: #fff; }
+.live-protocol {
+  max-width: 1260px; margin: 0 auto 18px; padding: 18px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 320px auto; align-items: center; gap: 16px;
+}
+.live-protocol h1 { margin: 6px 0; font-size: clamp(26px, 4vw, 48px); line-height: 1; }
+.phase-chip { padding: 12px; border: 3px solid #18212f; background: #c4f7d7; box-shadow: 4px 4px 0 #18212f; }
+.phase-chip strong, .phase-chip small { display: block; }
+.phase-chip small { margin-top: 6px; color: #5d6472; line-height: 1.35; }
+.note-strip { max-width: 1260px; margin: 0 auto 18px; display: grid; gap: 8px; }
+.note-strip span { padding: 10px 12px; border: 3px solid #18212f; background: #eaf1ff; box-shadow: 3px 3px 0 #18212f; font-weight: 800; }
+
 @media (max-width: 980px) {
-  .mode-select, .classroom-shell, .teacher-row, .blind-grid, .verification-strip { grid-template-columns: 1fr; }
+  .mode-select, .classroom-shell, .teacher-row, .blind-grid, .verification-strip, .verification-strip.four, .blueprint-grid, .phase-list, .mechanism-list, .live-protocol { grid-template-columns: 1fr; }
+  .blueprint-card.wide { grid-column: span 1; }
   .student-grid { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
   .classroom-stage { min-height: auto; }
   .review-header { align-items: flex-start; flex-direction: column; }

@@ -15,6 +15,19 @@ DEFAULT_LEARNING_OBJECTIVE = (
     "Students explain that a for-loop repeats a block once for each item in a sequence "
     "and can trace the loop variable across iterations."
 )
+SCENARIO_METADATA = {
+    DEFAULT_SCENARIO_ID: {
+        "lesson_title": DEFAULT_LESSON_TITLE,
+        "learning_objective": DEFAULT_LEARNING_OBJECTIVE,
+    },
+    "python_loops_full_lesson_001": {
+        "lesson_title": "Python loops micro-lesson: prediction, tracing, misconception response, and closure",
+        "learning_objective": (
+            "Students explain that a Python for-loop executes its body once for each item in a sequence "
+            "and can trace how the loop variable changes across iterations."
+        ),
+    },
+}
 
 PERSONAS = [
     StudentPersona(
@@ -68,17 +81,20 @@ class SessionNotFound(KeyError):
 class ClassroomSessionController:
     def __init__(self, response_client: StudentResponseClient | None = None) -> None:
         self.response_client = response_client or StudentResponseClient()
+        self._session_max_turns: dict[str, int] = {}
         init_db()
 
     def start_session(self, scenario_id: str = DEFAULT_SCENARIO_ID, max_teacher_turns: int = 12) -> SessionState:
         session_id = f"sess_{uuid4().hex[:12]}"
+        metadata = _scenario_metadata(scenario_id)
         state = SessionState(
             session_id=session_id,
             scenario_id=scenario_id,
-            lesson_title=DEFAULT_LESSON_TITLE,
-            learning_objective=DEFAULT_LEARNING_OBJECTIVE,
+            lesson_title=metadata["lesson_title"],
+            learning_objective=metadata["learning_objective"],
             max_teacher_turns=max_teacher_turns,
         )
+        self._session_max_turns[session_id] = max_teacher_turns
         with connect() as conn:
             conn.execute(
                 """
@@ -113,12 +129,14 @@ class ClassroomSessionController:
             for row in rows
         ]
         teacher_turns = len([turn for turn in turns if turn.speaker_role == "teacher"])
+        metadata = _scenario_metadata(session["scenario_id"])
         return SessionState(
             session_id=session_id,
             scenario_id=session["scenario_id"],
-            lesson_title=DEFAULT_LESSON_TITLE,
-            learning_objective=DEFAULT_LEARNING_OBJECTIVE,
+            lesson_title=metadata["lesson_title"],
+            learning_objective=metadata["learning_objective"],
             current_teacher_turn=teacher_turns,
+            max_teacher_turns=self._session_max_turns.get(session_id, 12),
             turns=turns,
             status="completed" if session["completed_at"] else "active",
         )
@@ -208,6 +226,16 @@ class ClassroomSessionController:
         if teacher_turn_number % 3 == 0:
             return ["disengaged_student"]
         return ["high_achiever"]
+
+
+def _scenario_metadata(scenario_id: str) -> dict[str, str]:
+    return SCENARIO_METADATA.get(
+        scenario_id,
+        {
+            "lesson_title": DEFAULT_LESSON_TITLE,
+            "learning_objective": DEFAULT_LEARNING_OBJECTIVE,
+        },
+    )
 
 
 def _now() -> str:

@@ -1,4 +1,14 @@
-import type { EvaluatorStatusResponse, FeedbackItemView, Phase3DemoResponse, StartSessionResponse, TeacherTurnResponse } from './types';
+import type {
+  EvaluatorStatusResponse,
+  FeedbackItemView,
+  LiveSessionStartResponse,
+  LiveTeacherTurnResponse,
+  Phase3DemoResponse,
+  ScenarioListResponse,
+  StartSessionResponse,
+  TeacherTurnResponse,
+  TranscriptBenchmarkRunResponse,
+} from './types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://127.0.0.1:8000';
 
@@ -42,6 +52,40 @@ export function runPhase3Demo(): Promise<Phase3DemoResponse> {
   });
 }
 
+export function getV2Scenarios(): Promise<ScenarioListResponse> {
+  return request<ScenarioListResponse>('/api/v2/scenarios');
+}
+
+export function startV2LiveSession(params?: { scenarioId?: string; maxTeacherTurns?: number }): Promise<LiveSessionStartResponse> {
+  return request<LiveSessionStartResponse>('/api/v2/live/sessions', {
+    method: 'POST',
+    body: JSON.stringify({
+      scenario_id: params?.scenarioId ?? 'python_loops_full_lesson_001',
+      max_teacher_turns: params?.maxTeacherTurns ?? 8,
+    }),
+  });
+}
+
+export function sendV2LiveTeacherTurn(sessionId: string, teacherMessage: string): Promise<LiveTeacherTurnResponse> {
+  return request<LiveTeacherTurnResponse>(`/api/v2/live/sessions/${sessionId}/turn`, {
+    method: 'POST',
+    body: JSON.stringify({ teacher_message: teacherMessage }),
+  });
+}
+
+export function runV2TranscriptBenchmark(params?: {
+  transcriptId?: string;
+  reviewerId?: string;
+}): Promise<TranscriptBenchmarkRunResponse> {
+  return request<TranscriptBenchmarkRunResponse>('/api/v2/transcript-benchmark/run', {
+    method: 'POST',
+    body: JSON.stringify({
+      transcript_id: params?.transcriptId ?? 'python_loops_weak_001',
+      reviewer_id: params?.reviewerId ?? 'expert_reviewer_mvp_ui',
+    }),
+  });
+}
+
 export function saveQuickAnnotation(params: {
   reviewerId: string;
   label: string;
@@ -61,8 +105,8 @@ export function saveQuickAnnotation(params: {
       human_score: params.item.score,
       accept: params.accept,
       fabricated_evidence: params.item.verification_status !== 'verified',
-      unsupported_inference: false,
-      pedagogical_disagreement: false,
+      unsupported_inference: params.item.verification_status !== 'verified',
+      pedagogical_disagreement: !params.accept,
       missed_issue: false,
       usefulness: params.accept ? 4 : 2,
       review_time_seconds: 10,

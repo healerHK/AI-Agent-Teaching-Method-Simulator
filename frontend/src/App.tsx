@@ -1,14 +1,36 @@
 import { useEffect, useState } from 'react';
-import { getEvaluatorStatus, runPhase3Demo, saveQuickAnnotation, sendTeacherTurn, startSession } from './api';
-import { BlindedReviewPanel } from './components/BlindedReviewPanel';
+import {
+  getEvaluatorStatus,
+  getV2Scenarios,
+  runV2TranscriptBenchmark,
+  saveQuickAnnotation,
+  sendV2LiveTeacherTurn,
+  startV2LiveSession,
+} from './api';
+import { BenchmarkModePanel } from './components/BenchmarkModePanel';
 import { ModeSelect } from './components/ModeSelect';
 import { PixelClassroom } from './components/PixelClassroom';
-import type { EvaluatorStatusResponse, FeedbackItemView, Phase3DemoResponse, SessionState, StudentPersona } from './types';
+import { ScenarioBlueprintPanel } from './components/ScenarioBlueprintPanel';
+import type {
+  EvaluatorStatusResponse,
+  FeedbackItemView,
+  LessonPhase,
+  ScenarioListResponse,
+  SessionState,
+  StudentPersona,
+  TranscriptBenchmarkRunResponse,
+} from './types';
+
+type ActiveView = 'home' | 'scenario' | 'live' | 'benchmark';
 
 function App() {
+  const [activeView, setActiveView] = useState<ActiveView>('home');
+  const [scenarioData, setScenarioData] = useState<ScenarioListResponse | null>(null);
   const [session, setSession] = useState<SessionState | null>(null);
-  const [phase3Demo, setPhase3Demo] = useState<Phase3DemoResponse | null>(null);
+  const [benchmark, setBenchmark] = useState<TranscriptBenchmarkRunResponse | null>(null);
   const [personas, setPersonas] = useState<StudentPersona[]>([]);
+  const [currentPhase, setCurrentPhase] = useState<LessonPhase | null>(null);
+  const [protocolNotes, setProtocolNotes] = useState<string[]>([]);
   const [teacherMessage, setTeacherMessage] = useState('Before we run this loop, how many times will print(number) execute?');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -20,34 +42,74 @@ function App() {
     getEvaluatorStatus()
       .then(setEvaluatorStatus)
       .catch(() => setEvaluatorStatus(null));
+    getV2Scenarios()
+      .then(setScenarioData)
+      .catch(() => undefined);
   }, []);
 
-  async function handleStartDemo() {
+  async function ensureScenarioData() {
+    if (scenarioData) return scenarioData;
+    const result = await getV2Scenarios();
+    setScenarioData(result);
+    return result;
+  }
+
+  async function handleShowScenario() {
     setLoading(true);
     setError(null);
-    setPhase3Demo(null);
     try {
-      const result = await startSession();
-      setSession(result.session);
-      setPersonas(result.personas);
-      setResponseSource('fallback-ready');
+      await ensureScenarioData();
+      setSession(null);
+      setBenchmark(null);
+      setActiveView('scenario');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Could not start session');
+      setError(err instanceof Error ? err.message : 'Could not load scenario blueprint');
     } finally {
       setLoading(false);
     }
   }
 
-  async function handleStartReview() {
+  async function handleStartLive() {
+    setLoading(true);
+    setError(null);
+    setBenchmark(null);
+    setSavedAnnotations([]);
+    try {
+      const result = await startV2LiveSession({ maxTeacherTurns: 8 });
+      setSession(result.session);
+      setPersonas(result.personas);
+      setScenarioData((current) => current ?? {
+        thesis_positioning: {
+          title: 'PixelClass TIL',
+          research_gap: '',
+          contribution: '',
+          safe_claim: '',
+        },
+        scenarios: [result.scenario],
+        review_protocol: { reviewer_role: '', blinding: '', rating_dimensions: [], metrics: [] },
+      });
+      setCurrentPhase(result.scenario.lesson_phases[0]);
+      setProtocolNotes(result.protocol_notes);
+      setResponseSource('fallback-ready');
+      setActiveView('live');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Could not start live mode');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleRunBenchmark() {
     setLoading(true);
     setError(null);
     setSession(null);
     setSavedAnnotations([]);
     try {
-      const result = await runPhase3Demo();
-      setPhase3Demo(result);
+      const result = await runV2TranscriptBenchmark({ transcriptId: 'python_loops_weak_001' });
+      setBenchmark(result);
+      setActiveView('benchmark');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Could not run Phase 3 demo');
+      setError(err instanceof Error ? err.message : 'Could not run transcript benchmark');
     } finally {
       setLoading(false);
     }
@@ -58,10 +120,12 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const result = await sendTeacherTurn(session.session_id, teacherMessage.trim());
+      const result = await sendV2LiveTeacherTurn(session.session_id, teacherMessage.trim());
       setSession(result.session_state);
       setResponseSource(result.response_source);
-      setTeacherMessage('Can someone trace the next step and explain why?');
+      setCurrentPhase(result.current_phase);
+      setProtocolNotes(result.protocol_notes);
+      setTeacherMessage(nextTeacherPrompt(result.current_phase.phase_id));
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not send teacher message');
     } finally {
@@ -72,7 +136,7 @@ function App() {
   async function handleAnnotate(label: string, evaluationId: string, item: FeedbackItemView, accept: boolean) {
     try {
       await saveQuickAnnotation({
-        reviewerId: 'researcher_phase3_ui',
+        reviewerId: benchmark?.blinded_review.reviewer_id ?? 'expert_reviewer_mvp_ui',
         label,
         evaluationId,
         item,
@@ -85,9 +149,12 @@ function App() {
   }
 
   function handleReset() {
+    setActiveView('home');
     setSession(null);
-    setPhase3Demo(null);
+    setBenchmark(null);
     setPersonas([]);
+    setCurrentPhase(null);
+    setProtocolNotes([]);
     setResponseSource(undefined);
     setTeacherMessage('Before we run this loop, how many times will print(number) execute?');
     setSavedAnnotations([]);
@@ -101,35 +168,78 @@ function App() {
           <span className="logo-mark">▣</span>
           <strong>PixelClass TIL</strong>
         </div>
-        <span>Teacher-in-the-Loop Classroom Simulation</span>
+        <span>Teacher-in-the-Loop evidence-grounded pedagogical evaluation benchmark</span>
       </header>
 
       {error && <div className="error-banner">{error}</div>}
       {loading && <div className="loading-banner pixel-panel">Working...</div>}
 
-      {!session && !phase3Demo ? (
-        <ModeSelect onStartDemo={handleStartDemo} onStartReview={handleStartReview} loading={loading} evaluatorStatus={evaluatorStatus} />
-      ) : phase3Demo ? (
-        <BlindedReviewPanel
-          demo={phase3Demo}
+      {activeView === 'home' ? (
+        <ModeSelect
+          onShowScenario={handleShowScenario}
+          onStartLive={handleStartLive}
+          onRunBenchmark={handleRunBenchmark}
+          loading={loading}
+          evaluatorStatus={evaluatorStatus}
+        />
+      ) : activeView === 'scenario' && scenarioData ? (
+        <ScenarioBlueprintPanel
+          data={scenarioData}
+          onStartLive={handleStartLive}
+          onRunBenchmark={handleRunBenchmark}
+          onReset={handleReset}
+          loading={loading}
+        />
+      ) : activeView === 'benchmark' && benchmark ? (
+        <BenchmarkModePanel
+          benchmark={benchmark}
           savedAnnotations={savedAnnotations}
           onAnnotate={handleAnnotate}
           onReset={handleReset}
         />
-      ) : session ? (
-        <PixelClassroom
-          session={session}
-          personas={personas}
-          teacherMessage={teacherMessage}
-          onTeacherMessageChange={setTeacherMessage}
-          onSendTeacherMessage={handleSendTeacherMessage}
-          onReset={handleReset}
-          loading={loading}
-          responseSource={responseSource}
-        />
+      ) : activeView === 'live' && session ? (
+        <>
+          <section className="live-protocol pixel-panel">
+            <div>
+              <p className="eyebrow">Live Mode · 15-30 minute micro-lesson proxy</p>
+              <h1>{session.lesson_title}</h1>
+              <p>{session.learning_objective}</p>
+            </div>
+            {currentPhase && (
+              <article className="phase-chip">
+                <span className="label">Current phase</span>
+                <strong>{currentPhase.title}</strong>
+                <small>{currentPhase.minute_range} min · {currentPhase.evidence_focus.join(', ')}</small>
+              </article>
+            )}
+            <button className="pixel-button secondary" onClick={handleReset}>Back</button>
+          </section>
+          {protocolNotes.length > 0 && (
+            <section className="note-strip">
+              {protocolNotes.map((note) => <span key={note}>{note}</span>)}
+            </section>
+          )}
+          <PixelClassroom
+            session={session}
+            personas={personas}
+            teacherMessage={teacherMessage}
+            onTeacherMessageChange={setTeacherMessage}
+            onSendTeacherMessage={handleSendTeacherMessage}
+            onReset={handleReset}
+            loading={loading}
+            responseSource={responseSource}
+          />
+        </>
       ) : null}
     </div>
   );
+}
+
+function nextTeacherPrompt(phaseId: string) {
+  if (phaseId.includes('misconception')) return 'Mia thinks one print line means one output. How should we test that idea?';
+  if (phaseId.includes('formative')) return 'Write the output and explain why each value appears.';
+  if (phaseId.includes('reflection')) return 'What rule should we remember about for-loops before next lesson?';
+  return 'Can someone trace the next step and explain why?';
 }
 
 export default App;
