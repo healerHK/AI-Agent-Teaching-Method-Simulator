@@ -1,0 +1,8 @@
+{
+  "dataset_version": "golden_benchmark_expanded_v1.1_transcript_scenarios",
+  "created_at": "2026-08-30T15:08:36.811161+00:00",
+  "description": "Expanded transcript-first benchmark exported from editable 30-minute PixelClass TIL scenarios. Each scenario contains researcher-annotated strong and weak teaching variants.",
+  "scenario_count": 8,
+  "transcript_count": 16,
+  "rubric_version": "rubric_v1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "transcript_id": "hs_quadratic_functions_30m_strong_001",
+  "scores": {
+    "pck_conceptual_accuracy": 5,
+    "scaffolding": 5,
+    "formative_assessment": 4,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 5
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher explains the central Mathematics concept and responds to visible misconception signals.",
+    "scaffolding": "Teacher distributes explanation across worked examples, prompts, and stepwise reasoning.",
+    "formative_assessment": "Teacher includes quick checks and final review, although full independent assessment remains limited in a transcript MVP.",
+    "cognitive_questioning": "Teacher asks prediction, explanation, and transfer questions across the lesson.",
+    "missed_pedagogical_opportunity": "No major known missed opportunity is intentionally embedded in the strong/reference variant."
+  }
+}

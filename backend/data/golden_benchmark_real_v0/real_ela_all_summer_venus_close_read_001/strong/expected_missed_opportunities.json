@@ -1,0 +1,15 @@
+{
+  "transcript_id": "real_ela_all_summer_venus_close_read_001_observed",
+  "missed_opportunities": [
+    {
+      "id": "real_ela_venus_missed_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The lesson could more explicitly distinguish theme from central idea before students begin the group task.",
+      "evidence_turn_ids": [
+        "turn_001",
+        "turn_061"
+      ],
+      "expected_action": "Model one example separating topic/fact from central idea and evidence."
+    }
+  ]
+}

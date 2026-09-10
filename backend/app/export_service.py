@@ -97,8 +97,16 @@ class ExportService:
         missing_values = {
             condition: values.get("missing_evidence_rate") or 0 for condition, values in conditions.items()
         }
+        verified_values = {
+            condition: values.get("verified_rate") or 0 for condition, values in conditions.items()
+        }
+        exact_agreement_values = {
+            condition: values.get("exact_agreement_rate") or 0 for condition, values in conditions.items()
+        }
         (charts_dir / "score_mae.svg").write_text(_bar_chart_svg("Mean absolute error", mae_values), encoding="utf-8")
         (charts_dir / "missing_evidence_rate.svg").write_text(_bar_chart_svg("Missing evidence rate", missing_values), encoding="utf-8")
+        (charts_dir / "evidence_validity_rate.svg").write_text(_bar_chart_svg("Evidence validity rate", verified_values), encoding="utf-8")
+        (charts_dir / "exact_agreement_rate.svg").write_text(_bar_chart_svg("Exact agreement rate", exact_agreement_values), encoding="utf-8")
 
     def _readable_report(self, experiment_id: str, metrics: dict, manifest: dict) -> str:
         lines = [
@@ -122,8 +130,11 @@ class ExportService:
                     f"- Evaluations: {values['evaluation_count']}",
                     f"- Feedback items: {values['feedback_count']}",
                     f"- Mean absolute error: {values['mean_absolute_error']}",
+                    f"- Exact agreement rate: {values.get('exact_agreement_rate')}",
+                    f"- Agreement within ±1: {values.get('within_one_agreement_rate')}",
                     f"- Verified rate: {values['verified_rate']}",
                     f"- Missing evidence rate: {values['missing_evidence_rate']}",
+                    f"- Per-criterion MAE: `{json.dumps(values.get('per_criterion_mae', {}), ensure_ascii=False)}`",
                     "",
                 ]
             )

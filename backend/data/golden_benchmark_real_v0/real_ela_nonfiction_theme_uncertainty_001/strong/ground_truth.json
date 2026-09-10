@@ -1,0 +1,15 @@
+{
+  "transcript_id": "real_ela_nonfiction_theme_uncertainty_001_observed",
+  "rubric_version": "rubric_v1.0",
+  "created_by": "researcher_draft_from_whisper_audio_transcript_v0",
+  "review_status": "human_validated_with_domain_flags",
+  "summary": "Observed public-YouTube-derived classroom audio transcript for Real classroom language arts: nonfiction context, theme, and rhetorical strategy analysis. Researcher-draft annotation only. Human validation v2 applied by human_validator_ty on 2026-09-07T07:33:11.860281+00:00.",
+  "known_issues": [
+    "Transcript was generated from MP3 using local Whisper base.en and may contain transcription errors.",
+    "Speaker diarisation was not available; teacher/student speaker roles are heuristic and require review.",
+    "Student names from the public source were anonymised where detected; source YouTube URLs still need to be added to provenance metadata if available.",
+    "Video/gesture context is unavailable, so some classroom context is implicit.",
+    "This observed transcript is stored in the loader-compatible strong/ folder but should be interpreted as observed_real_classroom rather than synthetic strong teaching.",
+    "Initial annotations were researcher-draft; final labels now include human_decision, evidence_verified, domain_check_required, domain_check_result, confidence, evidence_turn_ids, and adjudication_note. Treat as a human-validated annotation set with evidence/domain-check flags, not independent multi-expert ground truth."
+  ]
+}

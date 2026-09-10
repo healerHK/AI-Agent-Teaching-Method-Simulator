@@ -26,6 +26,14 @@ from app.session_models import (
     TeacherTurnRequest,
     TeacherTurnResponse,
 )
+from app.transcript_models import (
+    RenderedStudentPrompt,
+    TranscriptScenario,
+    TranscriptScenarioListResponse,
+    TranscriptScenarioSaveResponse,
+    TranscriptScenarioTestResponse,
+)
+from app.transcript_service import TranscriptScenarioNotFound, TranscriptScenarioService
 from app.v2_models import (
     LiveSessionStartRequest,
     LiveSessionStartResponse,
@@ -53,6 +61,7 @@ evaluator_runner = EvaluatorRunner(benchmark_loader)
 evidence_verifier = EvidenceVerifier(benchmark_loader)
 blinded_review_service = BlindedReviewService(evaluator_runner)
 annotation_service = AnnotationService()
+transcript_scenario_service = TranscriptScenarioService()
 v2_service = PixelClassV2Service(
     controller=controller,
     loader=benchmark_loader,
@@ -65,6 +74,72 @@ v2_service = PixelClassV2Service(
 @app.get("/api/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "phase": "phase_3_evaluation_pipeline"}
+
+
+@app.get("/api/v2/transcript-system/scenarios", response_model=TranscriptScenarioListResponse)
+def transcript_system_scenarios() -> TranscriptScenarioListResponse:
+    return transcript_scenario_service.list_scenarios()
+
+
+@app.get("/api/v2/transcript-system/scenarios/{scenario_id}", response_model=TranscriptScenario)
+def transcript_system_get_scenario(scenario_id: str) -> TranscriptScenario:
+    try:
+        return transcript_scenario_service.load_scenario(scenario_id)
+    except TranscriptScenarioNotFound:
+        raise HTTPException(status_code=404, detail="Transcript scenario not found")
+
+
+@app.put("/api/v2/transcript-system/scenarios/{scenario_id}", response_model=TranscriptScenarioSaveResponse)
+def transcript_system_save_scenario(
+    scenario_id: str,
+    scenario: TranscriptScenario,
+) -> TranscriptScenarioSaveResponse:
+    if scenario_id != scenario.scenario_id:
+        raise HTTPException(status_code=400, detail="Path scenario_id must match payload scenario_id")
+    return transcript_scenario_service.save_scenario(scenario)
+
+
+@app.get(
+    "/api/v2/transcript-system/scenarios/{scenario_id}/prompts",
+    response_model=list[RenderedStudentPrompt],
+)
+def transcript_system_render_prompts(scenario_id: str) -> list[RenderedStudentPrompt]:
+    try:
+        return transcript_scenario_service.render_student_prompts(scenario_id)
+    except TranscriptScenarioNotFound:
+        raise HTTPException(status_code=404, detail="Transcript scenario not found")
+
+
+@app.post(
+    "/api/v2/transcript-system/scenarios/{scenario_id}/test",
+    response_model=TranscriptScenarioTestResponse,
+)
+def transcript_system_test_scenario(scenario_id: str) -> TranscriptScenarioTestResponse:
+    try:
+        return transcript_scenario_service.run_readiness_test(scenario_id)
+    except TranscriptScenarioNotFound:
+        raise HTTPException(status_code=404, detail="Transcript scenario not found")
+
+
+@app.post(
+    "/api/v2/transcript-system/scenarios/{scenario_id}/til-evaluation",
+    response_model=TranscriptBenchmarkRunResponse,
+)
+def transcript_system_til_evaluation(
+    scenario_id: str,
+    reviewer_id: str = "expert_reviewer_transcript_system",
+) -> TranscriptBenchmarkRunResponse:
+    try:
+        readiness = transcript_scenario_service.run_readiness_test(scenario_id)
+        if not readiness.passed:
+            raise HTTPException(status_code=400, detail="Scenario must pass readiness checks before TIL evaluation")
+        transcript = transcript_scenario_service.to_benchmark_transcript(scenario_id)
+        return v2_service.run_runtime_transcript_benchmark(
+            transcript=transcript,
+            reviewer_id=reviewer_id,
+        )
+    except TranscriptScenarioNotFound:
+        raise HTTPException(status_code=404, detail="Transcript scenario not found")
 
 
 @app.get("/api/v2/scenarios", response_model=ScenarioListResponse)

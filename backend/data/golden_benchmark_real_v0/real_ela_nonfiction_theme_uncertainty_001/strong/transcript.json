@@ -1,0 +1,2956 @@
+{
+  "transcript_id": "real_ela_nonfiction_theme_uncertainty_001_observed",
+  "scenario_id": "real_ela_nonfiction_theme_uncertainty_001",
+  "variant": "strong",
+  "domain": "English Language Arts",
+  "education_level": "secondary_advanced_language_arts",
+  "learning_objective": "Students review guided annotations for a nonfiction/AP-style text, infer context and audience, identify important words and themes, connect textual evidence to rhetorical strategies, and prepare independent analysis of overall purpose.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:00-00:12] Yesterday, I gave you guys some guided annotations, things that you were going to be looking"
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:12-00:14] for as you were reading through the text."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:14-00:17] What were some of the things I asked you to do as you were reading?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:17-00:21] What were some of the techniques or specifics?"
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:21-00:22] Let's see, Student A."
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:22-00:23] Give me one."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:23-00:26] We had to find five words that we thought were most important."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:26-00:29] We had to find five words that we thought were most important."
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:29-00:30] Let's see."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:30-00:31] Okay."
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:31-00:32] Student C."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:32-00:33] Three important sentences."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:33-00:38] Three important sentences, so five important words, three important sentences, okay."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:38-00:40] Shifts in the text."
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:40-00:41] Shifts in the text."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:41-00:43] What kind of shifts are we looking for?"
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:43-00:44] Can you give me one?"
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:44-00:45] Toneships."
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:45-00:46] Toneships."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:46-00:47] Student D, could you give me another one?"
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:47-00:49] Oh, we also had to find three dominant strategies."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:49-00:51] We also had to find three dominant strategies."
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:51-00:54] Now, that's going to be kind of the final step, right?"
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:54-00:59] The final step, analyzing the types of things that he is using, Barry is using, in order"
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:59-01:01] to argue his purpose or his themes."
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:01-01:02] Okay."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:02-01:07] So, before we start talking about what you guys put in the box, your most important words"
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:07-01:10] of the text, I want to review just a little bit."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:10-01:12] Now we know that context is important."
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:12-01:16] We know context is key in non-fiction text, yes?"
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:16-01:17] Okay."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:17-01:19] So, let me tell me what context is."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:19-01:22] Somebody raise your hand and tell me what context is."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:22-01:28] We talked about in reference to the soapstone, we called it occasion, but what is context?"
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:28-01:29] Okay."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:29-01:34] The setting around which event happens."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:34-01:35] The setting around which the event happens."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:35-01:36] Absolutely."
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:36-01:37] So, what is our situation?"
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:37-01:38] What's going on?"
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:38-01:40] And think about why that's important with non-fiction."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:40-01:44] Why is it so important with non-fiction to understand context?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:44-01:46] What our situation actually is?"
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:46-01:49] Can you kind of expand on that for me a little bit, Student E?"
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:49-01:56] That way we can understand like the time period in which it happened, like social status"
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:56-01:57] quotes of that time."
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:57-01:58] Very good."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:58-02:01] We have to understand why the writer is writing it, right?"
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:01-02:03] What is the situation surrounding it?"
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:03-02:07] So, let's talk about that before we move to the text itself."
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:07-02:11] What does the prompt, because we're looking at an AP essay prompt, right, and I told"
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:11-02:14] you that that introductory material is really, really important."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:14-02:15] We looked at that yesterday."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:15-02:18] So, what is our situation?"
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:18-02:19] How many writers are here to tell me?"
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:19-02:21] What is the situation of the text, okay?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:21-02:27] It's when the great influenza, it's when that happened in 1918, the flu epidemic."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:27-02:28] Okay."
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:28-02:31] So, if we think about that, how could that give us insight to audience?"
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:31-02:34] No, it doesn't tell us anything about audience, does it?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:34-02:35] No."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:35-02:37] So, what can we infer about audience?"
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:37-02:38] Okay."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:38-02:41] There will be people in that time who don't want to get the flu."
+    },
+    {
+      "turn_id": "turn_065",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:41-02:43] Yep, they definitely don't want to get it, okay?"
+    },
+    {
+      "turn_id": "turn_066",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:43-02:44] Good."
+    },
+    {
+      "turn_id": "turn_067",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:44-02:47] What else could we kind of infer, okay?"
+    },
+    {
+      "turn_id": "turn_068",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:47-02:49] Like, they want to cure, like, immediately."
+    },
+    {
+      "turn_id": "turn_069",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:49-02:53] They want to, yeah, they're probably getting pretty impatient, right?"
+    },
+    {
+      "turn_id": "turn_070",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:53-02:54] They want it immediately."
+    },
+    {
+      "turn_id": "turn_071",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:54-02:58] So, that could possibly be a characteristic of our audience."
+    },
+    {
+      "turn_id": "turn_072",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:58-02:59] Can we add anything to that?"
+    },
+    {
+      "turn_id": "turn_073",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:59-03:00] Okay?"
+    },
+    {
+      "turn_id": "turn_074",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:00-03:06] Like, what's being done or how far they're going into, to find a cure?"
+    },
+    {
+      "turn_id": "turn_075",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:06-03:07] Very good."
+    },
+    {
+      "turn_id": "turn_076",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:07-03:08] What's being done at that point?"
+    },
+    {
+      "turn_id": "turn_077",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:08-03:09] What is the process?"
+    },
+    {
+      "turn_id": "turn_078",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:09-03:11] Student F, is that kind of what you were going to say, or can you add?"
+    },
+    {
+      "turn_id": "turn_079",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:11-03:15] Well, like, people who are fearful for themselves or their families, that they would get it."
+    },
+    {
+      "turn_id": "turn_080",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:15-03:16] Very good."
+    },
+    {
+      "turn_id": "turn_081",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:16-03:17] All very good answers."
+    },
+    {
+      "turn_id": "turn_082",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:17-03:18] Okay."
+    },
+    {
+      "turn_id": "turn_083",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:18-03:23] So, if we think about that, and again, it doesn't state it directly, what could we potentially"
+    },
+    {
+      "turn_id": "turn_084",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:23-03:25] infer would be the overall purpose?"
+    },
+    {
+      "turn_id": "turn_085",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:25-03:26] What is Barry's overall purpose?"
+    },
+    {
+      "turn_id": "turn_086",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:26-03:29] What is he trying to achieve with his text?"
+    },
+    {
+      "turn_id": "turn_087",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:29-03:32] And again, we haven't talked about this yet, so there's no right or wrong answer."
+    },
+    {
+      "turn_id": "turn_088",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:32-03:36] We're just, again, making educated guesses, okay?"
+    },
+    {
+      "turn_id": "turn_089",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:36-03:42] Kind of like, we're sure people that they are working as artists again, and you can"
+    },
+    {
+      "turn_id": "turn_090",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:42-03:46] expect that this will help them eventually."
+    },
+    {
+      "turn_id": "turn_091",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:46-03:47] Okay."
+    },
+    {
+      "turn_id": "turn_092",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:47-03:48] Okay."
+    },
+    {
+      "turn_id": "turn_093",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:48-03:50] So, potentially setting up an expectation."
+    },
+    {
+      "turn_id": "turn_094",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:50-03:55] Yes, we are working, and we're trying to get there, but maybe not immediately, right?"
+    },
+    {
+      "turn_id": "turn_095",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:55-03:56] We're going to what Student G said."
+    },
+    {
+      "turn_id": "turn_096",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:56-03:57] Okay."
+    },
+    {
+      "turn_id": "turn_097",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:57-03:58] Very, very good."
+    },
+    {
+      "turn_id": "turn_098",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:58-03:59] All right."
+    },
+    {
+      "turn_id": "turn_099",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:59-04:02] So, let's look at what you guys seem to be the most important words."
+    },
+    {
+      "turn_id": "turn_100",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:02-04:08] Now, I told you to look for strong nouns to drive our analysis, right?"
+    },
+    {
+      "turn_id": "turn_101",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:08-04:09] Why would it be nouns?"
+    },
+    {
+      "turn_id": "turn_102",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:10-04:14] Because these most important words will most likely be our what?"
+    },
+    {
+      "turn_id": "turn_103",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:14-04:16] Well part of it, right?"
+    },
+    {
+      "turn_id": "turn_104",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:16-04:17] Which is what?"
+    },
+    {
+      "turn_id": "turn_105",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:17-04:20] What do we determine first before we even move to theme?"
+    },
+    {
+      "turn_id": "turn_106",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:20-04:23] What are the subjects?"
+    },
+    {
+      "turn_id": "turn_107",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:23-04:25] The subjects, very good."
+    },
+    {
+      "turn_id": "turn_108",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:25-04:26] What are the subjects?"
+    },
+    {
+      "turn_id": "turn_109",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:26-04:28] And that becomes our first simple step."
+    },
+    {
+      "turn_id": "turn_110",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:28-04:33] When we're faced with a difficult text, if we get lost in it, we can find those most"
+    },
+    {
+      "turn_id": "turn_111",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:33-04:34] important words, right?"
+    },
+    {
+      "turn_id": "turn_112",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:34-04:35] Okay."
+    },
+    {
+      "turn_id": "turn_113",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:36-04:39] So, now the scary part, which you guys put in the box."
+    },
+    {
+      "turn_id": "turn_114",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:39-04:40] All right."
+    },
+    {
+      "turn_id": "turn_115",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:40-04:41] Let's see."
+    },
+    {
+      "turn_id": "turn_116",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:41-04:43] I'm going to get a volunteer."
+    },
+    {
+      "turn_id": "turn_117",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:43-04:46] I actually am going to pick someone to see."
+    },
+    {
+      "turn_id": "turn_118",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:46-04:49] Now, you can write these words on the board for me."
+    },
+    {
+      "turn_id": "turn_119",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:49-04:52] Let's see what we uncovered."
+    },
+    {
+      "turn_id": "turn_120",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:52-04:55] All right."
+    },
+    {
+      "turn_id": "turn_121",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:55-04:56] Unknown."
+    },
+    {
+      "turn_id": "turn_122",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:56-04:57] The unknown."
+    },
+    {
+      "turn_id": "turn_123",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:57-05:03] We write that on the board for me."
+    },
+    {
+      "turn_id": "turn_124",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:03-05:05] The verb."
+    },
+    {
+      "turn_id": "turn_125",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:05-05:06] Strength."
+    },
+    {
+      "turn_id": "turn_126",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:06-05:07] Very good."
+    },
+    {
+      "turn_id": "turn_127",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:07-05:08] Strength."
+    },
+    {
+      "turn_id": "turn_128",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:08-05:09] Okay."
+    },
+    {
+      "turn_id": "turn_129",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:09-05:10] Courage."
+    },
+    {
+      "turn_id": "turn_130",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:10-05:19] So, we have some that are somewhat overlapping and that's okay."
+    },
+    {
+      "turn_id": "turn_131",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:19-05:23] Ooh, I like this one."
+    },
+    {
+      "turn_id": "turn_132",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:23-05:24] Creativity."
+    },
+    {
+      "turn_id": "turn_133",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:24-05:25] Very good."
+    },
+    {
+      "turn_id": "turn_134",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:25-05:31] And some of these are overlapping and that's okay."
+    },
+    {
+      "turn_id": "turn_135",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:31-05:32] Obstacles."
+    },
+    {
+      "turn_id": "turn_136",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:33-05:42] Ooh, I like this one."
+    },
+    {
+      "turn_id": "turn_137",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:42-05:43] Pioneer."
+    },
+    {
+      "turn_id": "turn_138",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:43-05:44] Pioneer."
+    },
+    {
+      "turn_id": "turn_139",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:44-05:48] I told you that you could not use which words, by the way."
+    },
+    {
+      "turn_id": "turn_140",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:48-05:52] Certainty and uncertainty because those become our surface level subjects."
+    },
+    {
+      "turn_id": "turn_141",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:52-05:56] We kind of get that right from the get go, but we're not necessarily looking for just"
+    },
+    {
+      "turn_id": "turn_142",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:56-05:57] those."
+    },
+    {
+      "turn_id": "turn_143",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:57-05:59] We want to go a step above that, right?"
+    },
+    {
+      "turn_id": "turn_144",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:59-06:02] Not just surface level theme, but our underlying themes too."
+    },
+    {
+      "turn_id": "turn_145",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:02-06:06] So let's put Pioneer up there and let's also put certainty and uncertainty and we'll"
+    },
+    {
+      "turn_id": "turn_146",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:06-06:10] talk about those two together since I told you you couldn't use them."
+    },
+    {
+      "turn_id": "turn_147",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:10-06:12] What else did I tell you couldn't use?"
+    },
+    {
+      "turn_id": "turn_148",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:12-06:13] Scientists."
+    },
+    {
+      "turn_id": "turn_149",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:13-06:17] Science and scientists or science and scientists and we're going to see those words kind of"
+    },
+    {
+      "turn_id": "turn_150",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:17-06:20] creep into our themes and that's okay."
+    },
+    {
+      "turn_id": "turn_151",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:20-06:21] Right?"
+    },
+    {
+      "turn_id": "turn_152",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:21-06:22] Certainty."
+    },
+    {
+      "turn_id": "turn_153",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:22-06:23] Uncertainty."
+    },
+    {
+      "turn_id": "turn_154",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:23-06:26] Science and scientists because those again are the main, main, main subjects, but we want"
+    },
+    {
+      "turn_id": "turn_155",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:26-06:27] to go a step farther."
+    },
+    {
+      "turn_id": "turn_156",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:27-06:28] All right."
+    },
+    {
+      "turn_id": "turn_157",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:28-06:29] All right."
+    },
+    {
+      "turn_id": "turn_158",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:29-06:31] Let's get a couple more out of here."
+    },
+    {
+      "turn_id": "turn_159",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:31-06:32] Ooh."
+    },
+    {
+      "turn_id": "turn_160",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:32-06:34] I like this one."
+    },
+    {
+      "turn_id": "turn_161",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:34-06:35] Confidence."
+    },
+    {
+      "turn_id": "turn_162",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:35-06:37] Very good."
+    },
+    {
+      "turn_id": "turn_163",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:37-06:38] Confidence."
+    },
+    {
+      "turn_id": "turn_164",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:38-06:41] All right."
+    },
+    {
+      "turn_id": "turn_165",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:41-06:43] So we have a good start."
+    },
+    {
+      "turn_id": "turn_166",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:43-06:44] We have a good start."
+    },
+    {
+      "turn_id": "turn_167",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:44-06:47] These are all potentially things, Student H."
+    },
+    {
+      "turn_id": "turn_168",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:47-06:50] These are all potentially subjects, main subjects of the piece."
+    },
+    {
+      "turn_id": "turn_169",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:50-06:53] So that is step one."
+    },
+    {
+      "turn_id": "turn_170",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:53-06:56] Now what we want to do is take it a step farther and that's what you guys are going to be doing"
+    },
+    {
+      "turn_id": "turn_171",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:56-06:57] in your groups."
+    },
+    {
+      "turn_id": "turn_172",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:57-07:01] So quickly I want you to move to your groups and in those groups, here's what I want you"
+    },
+    {
+      "turn_id": "turn_173",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:01-07:02] to do."
+    },
+    {
+      "turn_id": "turn_174",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:02-07:03] Wait, here's what I want you to do."
+    },
+    {
+      "turn_id": "turn_175",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:03-07:04] Look at these words."
+    },
+    {
+      "turn_id": "turn_176",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:04-07:12] We have nine pretty strong nouns up here and I want you in your group to choose three."
+    },
+    {
+      "turn_id": "turn_177",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:12-07:14] Three that you think as a group are most important."
+    },
+    {
+      "turn_id": "turn_178",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:14-07:16] Now I'm only going to give you a couple minutes to do that."
+    },
+    {
+      "turn_id": "turn_179",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:16-07:20] So move to your group, decide and then we're going to move forward."
+    },
+    {
+      "turn_id": "turn_180",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:27-07:42] So let's go ahead and document those and that first column."
+    },
+    {
+      "turn_id": "turn_181",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:42-07:53] That's like the certainty and uncertainty, they kind of have to have confidence in like"
+    },
+    {
+      "turn_id": "turn_182",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:53-07:57] what they do in like their experiments."
+    },
+    {
+      "turn_id": "turn_183",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:57-08:02] Okay, so at this point, we should have decided, are we all there?"
+    },
+    {
+      "turn_id": "turn_184",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:02-08:05] Okay, so that becomes step one, right?"
+    },
+    {
+      "turn_id": "turn_185",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:05-08:08] We have identified our main subjects."
+    },
+    {
+      "turn_id": "turn_186",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:08-08:10] Okay, so let's take it to the next step."
+    },
+    {
+      "turn_id": "turn_187",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:10-08:13] We want to extend beyond the subjects."
+    },
+    {
+      "turn_id": "turn_188",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:13-08:16] And so we want to answer the question, what do we learn about those subjects?"
+    },
+    {
+      "turn_id": "turn_189",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:16-08:19] What is Barry, our author, right?"
+    },
+    {
+      "turn_id": "turn_190",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:19-08:21] What does he want us to learn about the subjects?"
+    },
+    {
+      "turn_id": "turn_191",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:21-08:24] And the answers to that question become our what?"
+    },
+    {
+      "turn_id": "turn_192",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:24-08:26] Themes, right?"
+    },
+    {
+      "turn_id": "turn_193",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:26-08:28] Let's say together, our what?"
+    },
+    {
+      "turn_id": "turn_194",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:28-08:29] Themes."
+    },
+    {
+      "turn_id": "turn_195",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:29-08:30] Yeah, our themes."
+    },
+    {
+      "turn_id": "turn_196",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:30-08:33] Notice we have three."
+    },
+    {
+      "turn_id": "turn_197",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:33-08:37] So can there be three themes that exist in one piece of text?"
+    },
+    {
+      "turn_id": "turn_198",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:37-08:38] Absolutely."
+    },
+    {
+      "turn_id": "turn_199",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:38-08:39] Absolutely."
+    },
+    {
+      "turn_id": "turn_200",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:39-08:43] In fact, we've already been talking about the surface level versus the underlying."
+    },
+    {
+      "turn_id": "turn_201",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:43-08:44] So we know that multiple themes can exist."
+    },
+    {
+      "turn_id": "turn_202",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:44-08:50] Okay, quickly though, before I let you guys lose on answering this question, give me some"
+    },
+    {
+      "turn_id": "turn_203",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:50-08:52] elements of a theme."
+    },
+    {
+      "turn_id": "turn_204",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:52-08:57] What did we talk about had to be present in order for it to truly be a theme?"
+    },
+    {
+      "turn_id": "turn_205",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:57-08:59] So many raise your hand and tell me one thing, okay?"
+    },
+    {
+      "turn_id": "turn_206",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:59-09:01] A universal idea about life."
+    },
+    {
+      "turn_id": "turn_207",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:01-09:03] It has to be a universal idea about life."
+    },
+    {
+      "turn_id": "turn_208",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:03-09:04] Very, very good."
+    },
+    {
+      "turn_id": "turn_209",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:04-09:07] Okay, can someone raise your hand and tell me another one?"
+    },
+    {
+      "turn_id": "turn_210",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:07-09:09] It has to be supported by textual evidence."
+    },
+    {
+      "turn_id": "turn_211",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:09-09:11] Okay, that one is really important."
+    },
+    {
+      "turn_id": "turn_212",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:11-09:16] We can say all day that a theme exists in a work, but unless you can prove it, it's not"
+    },
+    {
+      "turn_id": "turn_213",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:16-09:18] there, right?"
+    },
+    {
+      "turn_id": "turn_214",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:18-09:20] So you have to give me some specifics."
+    },
+    {
+      "turn_id": "turn_215",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:20-09:21] Very good."
+    },
+    {
+      "turn_id": "turn_216",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:21-09:22] Somebody else."
+    },
+    {
+      "turn_id": "turn_217",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:22-09:23] Okay."
+    },
+    {
+      "turn_id": "turn_218",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:23-09:25] It has to be the central unifying idea of a work."
+    },
+    {
+      "turn_id": "turn_219",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:25-09:27] It has to be the central unifying idea."
+    },
+    {
+      "turn_id": "turn_220",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:27-09:31] Guys, remember, that is one of the main things we're going to talk about today."
+    },
+    {
+      "turn_id": "turn_221",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:31-09:36] Yes, all these themes exist, but they are actually, they interact together."
+    },
+    {
+      "turn_id": "turn_222",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:36-09:40] They unify the entire work to achieve the author's overall what?"
+    },
+    {
+      "turn_id": "turn_223",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:40-09:41] Good."
+    },
+    {
+      "turn_id": "turn_224",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:41-09:44] To achieve the author's overall purpose."
+    },
+    {
+      "turn_id": "turn_225",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:44-09:45] That's what we're going to be talking about."
+    },
+    {
+      "turn_id": "turn_226",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:45-09:46] Okay."
+    },
+    {
+      "turn_id": "turn_227",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:46-09:47] Give me one more thing."
+    },
+    {
+      "turn_id": "turn_228",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:47-09:48] Okay."
+    },
+    {
+      "turn_id": "turn_229",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:48-09:49] It has to be a complete sentence."
+    },
+    {
+      "turn_id": "turn_230",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:49-09:50] Yes."
+    },
+    {
+      "turn_id": "turn_231",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:50-09:51] It has to be a complete sentence."
+    },
+    {
+      "turn_id": "turn_232",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:51-09:55] A lot of times you guys will say, I'll say, what's the theme and you'll go love?"
+    },
+    {
+      "turn_id": "turn_233",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:55-09:56] Well, that's not the theme."
+    },
+    {
+      "turn_id": "turn_234",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:56-09:58] What do we learn about love?"
+    },
+    {
+      "turn_id": "turn_235",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:58-10:00] Has to be, has to extend beyond those subjects."
+    },
+    {
+      "turn_id": "turn_236",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:00-10:01] All right."
+    },
+    {
+      "turn_id": "turn_237",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:01-10:02] You guys got them all."
+    },
+    {
+      "turn_id": "turn_238",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:02-10:03] Very good."
+    },
+    {
+      "turn_id": "turn_239",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:03-10:04] Okay."
+    },
+    {
+      "turn_id": "turn_240",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:04-10:05] So those are our four things."
+    },
+    {
+      "turn_id": "turn_241",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:05-10:10] As you're working in your groups and coming up with these themes, answering that question,"
+    },
+    {
+      "turn_id": "turn_242",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:10-10:14] what does Mary want the reader to learn about the subjects, keep those four things in mind."
+    },
+    {
+      "turn_id": "turn_243",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:14-10:21] I want you to now evaluate your three words and choose two and write a theme using that"
+    },
+    {
+      "turn_id": "turn_244",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:21-10:22] word."
+    },
+    {
+      "turn_id": "turn_245",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:22-10:26] So we're going to have two themes, whether it be confidence or the unknown."
+    },
+    {
+      "turn_id": "turn_246",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:26-10:30] Tell me what we learn about those subjects in the piece."
+    },
+    {
+      "turn_id": "turn_247",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:30-10:31] Okay."
+    },
+    {
+      "turn_id": "turn_248",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:31-10:34] So I'm going to give you just about five to ten minutes to do this and we're going to"
+    },
+    {
+      "turn_id": "turn_249",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:34-10:36] check in and see where we are."
+    },
+    {
+      "turn_id": "turn_250",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:36-10:39] In fact, I'm going to come around and I'm going to pick one of your themes for you to"
+    },
+    {
+      "turn_id": "turn_251",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:39-10:41] share with the class."
+    },
+    {
+      "turn_id": "turn_252",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:41-10:42] Okay."
+    },
+    {
+      "turn_id": "turn_253",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:42-10:43] All right."
+    },
+    {
+      "turn_id": "turn_254",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:43-10:44] Let's work."
+    },
+    {
+      "turn_id": "turn_255",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:44-10:49] So when we learn from them being a pioneer, it's obviously the extended metaphor."
+    },
+    {
+      "turn_id": "turn_256",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:49-10:55] Partners don't they like travel to the unknown."
+    },
+    {
+      "turn_id": "turn_257",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:55-10:59] And really go back to that first paragraph, right?"
+    },
+    {
+      "turn_id": "turn_258",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:59-11:04] What does it tell us about certainty and uncertainty?"
+    },
+    {
+      "turn_id": "turn_259",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:04-11:06] What is he telling us?"
+    },
+    {
+      "turn_id": "turn_260",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:06-11:12] Exploring the unknown can help what research and our research for, yeah, like advancements"
+    },
+    {
+      "turn_id": "turn_261",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:12-11:17] in medical, technological, it doesn't have to just be science, but just advancements"
+    },
+    {
+      "turn_id": "turn_262",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:17-11:18] in general."
+    },
+    {
+      "turn_id": "turn_263",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:18-11:19] Good."
+    },
+    {
+      "turn_id": "turn_264",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:19-11:20] That's what drives progression."
+    },
+    {
+      "turn_id": "turn_265",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:20-11:21] Right?"
+    },
+    {
+      "turn_id": "turn_266",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:21-11:22] Very good."
+    },
+    {
+      "turn_id": "turn_267",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:22-11:41] So at this point, I've come around, we all have at least one good theme that we're going"
+    },
+    {
+      "turn_id": "turn_268",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:41-11:43] to share at this point."
+    },
+    {
+      "turn_id": "turn_269",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:43-11:48] And here's one thing I want you guys to really consider is some of us chose the same subjects."
+    },
+    {
+      "turn_id": "turn_270",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:48-11:49] Yes."
+    },
+    {
+      "turn_id": "turn_271",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:49-11:52] We're going to hear some of the words being used over and over again, but what's interesting"
+    },
+    {
+      "turn_id": "turn_272",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:52-11:56] is that we all put different twists on the subjects."
+    },
+    {
+      "turn_id": "turn_273",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:56-11:57] Why?"
+    },
+    {
+      "turn_id": "turn_274",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:57-11:59] Different people."
+    },
+    {
+      "turn_id": "turn_275",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:59-12:01] Different people."
+    },
+    {
+      "turn_id": "turn_276",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:01-12:02] Different people."
+    },
+    {
+      "turn_id": "turn_277",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:02-12:03] Okay."
+    },
+    {
+      "turn_id": "turn_278",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:03-12:05] But what am I trying to get you guys to see?"
+    },
+    {
+      "turn_id": "turn_279",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:05-12:09] Can there be different answers to that question?"
+    },
+    {
+      "turn_id": "turn_280",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:09-12:11] Because there are multiple what within the text."
+    },
+    {
+      "turn_id": "turn_281",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:11-12:12] Absolutely."
+    },
+    {
+      "turn_id": "turn_282",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:12-12:18] So let's hear how different our themes are in reference to the same subjects, potentially"
+    },
+    {
+      "turn_id": "turn_283",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:18-12:19] the same subjects."
+    },
+    {
+      "turn_id": "turn_284",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:19-12:20] All right."
+    },
+    {
+      "turn_id": "turn_285",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:20-12:22] So we're going to start over here and work our way around the room."
+    },
+    {
+      "turn_id": "turn_286",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:22-12:23] Okay."
+    },
+    {
+      "turn_id": "turn_287",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:23-12:24] All right."
+    },
+    {
+      "turn_id": "turn_288",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:24-12:25] Give me your one theme."
+    },
+    {
+      "turn_id": "turn_289",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:25-12:30] Courage and strength are necessary to overcome obstacles dealing with failure and doubt."
+    },
+    {
+      "turn_id": "turn_290",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:30-12:31] Very nice."
+    },
+    {
+      "turn_id": "turn_291",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:31-12:33] Courage and strength are necessary."
+    },
+    {
+      "turn_id": "turn_292",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:33-12:34] Very good."
+    },
+    {
+      "turn_id": "turn_293",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:34-12:35] Very good."
+    },
+    {
+      "turn_id": "turn_294",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:35-12:38] And guys, notice how this extends beyond the text."
+    },
+    {
+      "turn_id": "turn_295",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:38-12:42] This is extending beyond the text, beyond what Barry, beyond our little excerpt that"
+    },
+    {
+      "turn_id": "turn_296",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:42-12:45] we pulled from his entire text."
+    },
+    {
+      "turn_id": "turn_297",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:45-12:46] Very good."
+    },
+    {
+      "turn_id": "turn_298",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:46-12:47] Okay."
+    },
+    {
+      "turn_id": "turn_299",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:47-12:49] Courage pushes you to delve into the unknown."
+    },
+    {
+      "turn_id": "turn_300",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:49-12:53] Courage encourages you very good to delve into the unknown."
+    },
+    {
+      "turn_id": "turn_301",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:53-12:54] Very nice."
+    },
+    {
+      "turn_id": "turn_302",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:54-12:55] Okay."
+    },
+    {
+      "turn_id": "turn_303",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:55-12:58] Exploring the unknown and can help research advance forward."
+    },
+    {
+      "turn_id": "turn_304",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:58-12:59] Very good."
+    },
+    {
+      "turn_id": "turn_305",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:59-13:00] Okay."
+    },
+    {
+      "turn_id": "turn_306",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:00-13:03] So that is, and is she talking just about scientific research?"
+    },
+    {
+      "turn_id": "turn_307",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:03-13:04] No."
+    },
+    {
+      "turn_id": "turn_308",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:04-13:06] She's talking about research in general, right?"
+    },
+    {
+      "turn_id": "turn_309",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:06-13:11] The unknown is what propels us to question, which if we don't question, we can't find"
+    },
+    {
+      "turn_id": "turn_310",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:11-13:13] our answers, right?"
+    },
+    {
+      "turn_id": "turn_311",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:13-13:14] Very nice."
+    },
+    {
+      "turn_id": "turn_312",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:14-13:15] Very nice."
+    },
+    {
+      "turn_id": "turn_313",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:15-13:16] All right."
+    },
+    {
+      "turn_id": "turn_314",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:16-13:17] Uncertainty is good."
+    },
+    {
+      "turn_id": "turn_315",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:17-13:18] If you face it with courage."
+    },
+    {
+      "turn_id": "turn_316",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:18-13:19] Uncertainty can be."
+    },
+    {
+      "turn_id": "turn_317",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:19-13:21] Guys, that statement in itself is a little what?"
+    },
+    {
+      "turn_id": "turn_318",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:21-13:24] Uncertainty can be a good thing."
+    },
+    {
+      "turn_id": "turn_319",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:24-13:25] Awesome."
+    },
+    {
+      "turn_id": "turn_320",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:25-13:26] Okay."
+    },
+    {
+      "turn_id": "turn_321",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:26-13:29] What else did I say is always present?"
+    },
+    {
+      "turn_id": "turn_322",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:29-13:30] Alrighty."
+    },
+    {
+      "turn_id": "turn_323",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:30-13:31] Good."
+    },
+    {
+      "turn_id": "turn_324",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:31-13:32] All right."
+    },
+    {
+      "turn_id": "turn_325",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:33-13:37] Uncertainty drives people to overcome the unknown to discover new things."
+    },
+    {
+      "turn_id": "turn_326",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:37-13:38] Very good."
+    },
+    {
+      "turn_id": "turn_327",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:38-13:41] Do you guys see how these themes are starting to interact with each other, how they're"
+    },
+    {
+      "turn_id": "turn_328",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:41-13:44] kind of crossing over, which is really what we're going to be taught."
+    },
+    {
+      "turn_id": "turn_329",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:44-13:48] This is really the purpose of today's lesson to see how these themes can interact."
+    },
+    {
+      "turn_id": "turn_330",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:48-13:49] Very good."
+    },
+    {
+      "turn_id": "turn_331",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:49-13:50] Okay."
+    },
+    {
+      "turn_id": "turn_332",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:50-13:54] Even when you have uncertainties, you must be confident that you'll overcome them."
+    },
+    {
+      "turn_id": "turn_333",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:54-13:55] Very good."
+    },
+    {
+      "turn_id": "turn_334",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:55-13:58] And that becomes one of the major points, right?"
+    },
+    {
+      "turn_id": "turn_335",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:58-14:00] That they had to be confident in the unknown."
+    },
+    {
+      "turn_id": "turn_336",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:00-14:04] But they had to be confident enough to question and to go into the unknown."
+    },
+    {
+      "turn_id": "turn_337",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:04-14:05] Very, very nice."
+    },
+    {
+      "turn_id": "turn_338",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:05-14:06] All right."
+    },
+    {
+      "turn_id": "turn_339",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:06-14:08] Now here comes the trickier part."
+    },
+    {
+      "turn_id": "turn_340",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:08-14:10] Now you have to prove it."
+    },
+    {
+      "turn_id": "turn_341",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:10-14:11] You say it's there."
+    },
+    {
+      "turn_id": "turn_342",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:11-14:12] Now you have to prove it."
+    },
+    {
+      "turn_id": "turn_343",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:12-14:14] How are you going to prove it?"
+    },
+    {
+      "turn_id": "turn_344",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:14-14:18] Details, examples, et cetera."
+    },
+    {
+      "turn_id": "turn_345",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:18-14:21] Now I'm going to put a little challenge on that next step."
+    },
+    {
+      "turn_id": "turn_346",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:21-14:26] What am I going to ask you to identify when you're pulling those quotes to prove the theme?"
+    },
+    {
+      "turn_id": "turn_347",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:26-14:28] Your favorite thing."
+    },
+    {
+      "turn_id": "turn_348",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:28-14:29] Strategies."
+    },
+    {
+      "turn_id": "turn_349",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:29-14:30] Yeah."
+    },
+    {
+      "turn_id": "turn_350",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:30-14:33] What strategy is the writer using, right?"
+    },
+    {
+      "turn_id": "turn_351",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:33-14:35] Is it an extended metaphor?"
+    },
+    {
+      "turn_id": "turn_352",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:35-14:36] Is it a rhetorical question?"
+    },
+    {
+      "turn_id": "turn_353",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:36-14:38] Is it a rhetorical question?"
+    },
+    {
+      "turn_id": "turn_354",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:38-14:43] What strategy is our writer using in order to argue the theme?"
+    },
+    {
+      "turn_id": "turn_355",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:43-14:45] All right."
+    },
+    {
+      "turn_id": "turn_356",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:45-14:48] So that is the last step."
+    },
+    {
+      "turn_id": "turn_357",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:48-14:49] You got to prove it."
+    },
+    {
+      "turn_id": "turn_358",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:49-14:51] I want you guys to choose one right now."
+    },
+    {
+      "turn_id": "turn_359",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:51-14:55] One right now to prove, choose one theme of the two."
+    },
+    {
+      "turn_id": "turn_360",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:55-14:59] And I would say the one I starred would be the better of the two."
+    },
+    {
+      "turn_id": "turn_361",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:59-15:00] All right."
+    },
+    {
+      "turn_id": "turn_362",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:00-15:04] I like Pioneer because it's like a kind of like the definition."
+    },
+    {
+      "turn_id": "turn_363",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:04-15:11] Um, like it kind of says colleagues will play the road over the way path and those"
+    },
+    {
+      "turn_id": "turn_364",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:11-15:13] writers can be really in straight."
+    },
+    {
+      "turn_id": "turn_365",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:13-15:21] So it's like they're just going to keep adding and adding and eventually they'll have enough."
+    },
+    {
+      "turn_id": "turn_366",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:21-15:22] Okay."
+    },
+    {
+      "turn_id": "turn_367",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:22-15:23] Let's listen to how it sounds."
+    },
+    {
+      "turn_id": "turn_368",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:23-15:25] It is not the courage to venture into the unknown."
+    },
+    {
+      "turn_id": "turn_369",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:25-15:27] It is the courage to accept indeed embrace."
+    },
+    {
+      "turn_id": "turn_370",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:27-15:32] What do you hear about those two sentences to really hammer home the point he's making"
+    },
+    {
+      "turn_id": "turn_371",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:32-15:36] about courage?"
+    },
+    {
+      "turn_id": "turn_372",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:36-15:38] It is not the courage."
+    },
+    {
+      "turn_id": "turn_373",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:38-15:40] It is the courage."
+    },
+    {
+      "turn_id": "turn_374",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:40-15:42] Perfect."
+    },
+    {
+      "turn_id": "turn_375",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:42-15:43] Perfect."
+    },
+    {
+      "turn_id": "turn_376",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:43-15:48] So he's using parallelism to argue that point."
+    },
+    {
+      "turn_id": "turn_377",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:48-15:49] Very nice."
+    },
+    {
+      "turn_id": "turn_378",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:49-15:51] Are you finding one for each one or your sentence?"
+    },
+    {
+      "turn_id": "turn_379",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:51-15:52] We're just one."
+    },
+    {
+      "turn_id": "turn_380",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:52-15:54] I think she said the one she put a star about."
+    },
+    {
+      "turn_id": "turn_381",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:54-15:55] Okay."
+    },
+    {
+      "turn_id": "turn_382",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:56-16:03] All right, guys, let's go ahead and share what we've come up with in reference to proving"
+    },
+    {
+      "turn_id": "turn_383",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:03-16:04] the theme exists."
+    },
+    {
+      "turn_id": "turn_384",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:04-16:07] And again, we're going to hear some of the examples overlap."
+    },
+    {
+      "turn_id": "turn_385",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:07-16:11] That's okay because some examples can prove more than one theme, right?"
+    },
+    {
+      "turn_id": "turn_386",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:11-16:15] All these themes, examples interact to prove an overall purpose."
+    },
+    {
+      "turn_id": "turn_387",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:15-16:16] Okay."
+    },
+    {
+      "turn_id": "turn_388",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:16-16:17] So let's start over here."
+    },
+    {
+      "turn_id": "turn_389",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:17-16:22] If you'll just kind of reiterate your theme one more time and then give us an example of"
+    },
+    {
+      "turn_id": "turn_390",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:22-16:24] where we see it being used."
+    },
+    {
+      "turn_id": "turn_391",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:24-16:28] Our theme was courage and strength are necessary to overcome obstacles dealing with failure"
+    },
+    {
+      "turn_id": "turn_392",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:28-16:29] and doubt."
+    },
+    {
+      "turn_id": "turn_393",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:29-16:33] And then we found it in the text when it says it is not the courage to venture into the"
+    },
+    {
+      "turn_id": "turn_394",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:33-16:34] unknown."
+    },
+    {
+      "turn_id": "turn_395",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:34-16:38] It is the courage to accept indeed embrace uncertainty and that had parallelism."
+    },
+    {
+      "turn_id": "turn_396",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:38-16:39] Parallelism."
+    },
+    {
+      "turn_id": "turn_397",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:39-16:45] So Barry, our statement would be, Barry uses parallelism in order to argue the theme that"
+    },
+    {
+      "turn_id": "turn_398",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:45-16:46] da, da, da, da, da, right?"
+    },
+    {
+      "turn_id": "turn_399",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:46-16:51] And then we could actually pull in that example and prove both things, which is the purpose"
+    },
+    {
+      "turn_id": "turn_400",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:51-16:52] of this class."
+    },
+    {
+      "turn_id": "turn_401",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:52-16:53] We do both, right?"
+    },
+    {
+      "turn_id": "turn_402",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:53-16:54] Strategies and theme."
+    },
+    {
+      "turn_id": "turn_403",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:54-16:55] Very nice."
+    },
+    {
+      "turn_id": "turn_404",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:55-16:56] Very good."
+    },
+    {
+      "turn_id": "turn_405",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:56-16:57] Okay."
+    },
+    {
+      "turn_id": "turn_406",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:57-16:58] And we had courage."
+    },
+    {
+      "turn_id": "turn_407",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:58-17:03] Encourage pushes you to dwell into the unknown, but we picked the same quote."
+    },
+    {
+      "turn_id": "turn_408",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:03-17:04] You picked the same quote."
+    },
+    {
+      "turn_id": "turn_409",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:04-17:05] Is that okay?"
+    },
+    {
+      "turn_id": "turn_410",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:05-17:06] Yes."
+    },
+    {
+      "turn_id": "turn_411",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:06-17:07] That's okay."
+    },
+    {
+      "turn_id": "turn_412",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:07-17:11] Because again, one example proving two themes."
+    },
+    {
+      "turn_id": "turn_413",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:11-17:12] Very nice."
+    },
+    {
+      "turn_id": "turn_414",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:12-17:13] Okay."
+    },
+    {
+      "turn_id": "turn_415",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:13-17:18] Our theme was exploring the unknown can help advance forward in research and our example"
+    },
+    {
+      "turn_id": "turn_416",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:18-17:24] was the less known the more one has to manipulate and even force experiments to yield an answer."
+    },
+    {
+      "turn_id": "turn_417",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:24-17:25] Very good."
+    },
+    {
+      "turn_id": "turn_418",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:25-17:27] And it's just kind of ironic because less is more."
+    },
+    {
+      "turn_id": "turn_419",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:27-17:28] Very good."
+    },
+    {
+      "turn_id": "turn_420",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:28-17:29] Very good."
+    },
+    {
+      "turn_id": "turn_421",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:29-17:32] So the less they know, the more they have to do."
+    },
+    {
+      "turn_id": "turn_422",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:32-17:34] And that's what drives progression."
+    },
+    {
+      "turn_id": "turn_423",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:34-17:35] Very nice."
+    },
+    {
+      "turn_id": "turn_424",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:35-17:36] Very, very nice."
+    },
+    {
+      "turn_id": "turn_425",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:36-17:37] Okay."
+    },
+    {
+      "turn_id": "turn_426",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:37-17:41] Uncertainty is a good, if you face it with courage."
+    },
+    {
+      "turn_id": "turn_427",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:41-17:42] Okay."
+    },
+    {
+      "turn_id": "turn_428",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:42-17:45] Uncertainty is good if you face it with courage and we said that that statement in itself was"
+    },
+    {
+      "turn_id": "turn_429",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:45-17:46] a little ironic."
+    },
+    {
+      "turn_id": "turn_430",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:46-17:47] Okay."
+    },
+    {
+      "turn_id": "turn_431",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:48-17:53] It is not the courage to venture under the unknown, it is the courage to accept and need"
+    },
+    {
+      "turn_id": "turn_432",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:53-17:55] embrace and search and seek."
+    },
+    {
+      "turn_id": "turn_433",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:55-17:56] Very good."
+    },
+    {
+      "turn_id": "turn_434",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:56-18:03] What do we hear, by the way, parallelism, multiple repetition of examples to prove multiple themes."
+    },
+    {
+      "turn_id": "turn_435",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:03-18:04] Very nice."
+    },
+    {
+      "turn_id": "turn_436",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:04-18:05] All right."
+    },
+    {
+      "turn_id": "turn_437",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:05-18:06] Let's go back here."
+    },
+    {
+      "turn_id": "turn_438",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:06-18:11] Uncertainty drives people to overcome the unknown to discover new things."
+    },
+    {
+      "turn_id": "turn_439",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:11-18:12] Okay."
+    },
+    {
+      "turn_id": "turn_440",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:12-18:15] And then give us your example."
+    },
+    {
+      "turn_id": "turn_441",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:15-18:19] There a single step can take them through the looking glass into a world that seems"
+    },
+    {
+      "turn_id": "turn_442",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:19-18:20] entirely different."
+    },
+    {
+      "turn_id": "turn_443",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:20-18:21] Very good."
+    },
+    {
+      "turn_id": "turn_444",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:21-18:22] Listen to that one more time."
+    },
+    {
+      "turn_id": "turn_445",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:22-18:23] Read it for me."
+    },
+    {
+      "turn_id": "turn_446",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:23-18:24] One more time, Student G."
+    },
+    {
+      "turn_id": "turn_447",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:24-18:27] There a single step can take them through the looking glass into a world that seems"
+    },
+    {
+      "turn_id": "turn_448",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:27-18:28] entirely different."
+    },
+    {
+      "turn_id": "turn_449",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:28-18:29] Very good."
+    },
+    {
+      "turn_id": "turn_450",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:29-18:30] Very good."
+    },
+    {
+      "turn_id": "turn_451",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:30-18:32] What strategy is being used there?"
+    },
+    {
+      "turn_id": "turn_452",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:32-18:33] A metaphor."
+    },
+    {
+      "turn_id": "turn_453",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:33-18:34] Metaphor."
+    },
+    {
+      "turn_id": "turn_454",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:34-18:39] We have this beautiful metaphor being used talking about looking through a looking glass, right?"
+    },
+    {
+      "turn_id": "turn_455",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:39-18:42] To venture into the unknown, trying to see through these things."
+    },
+    {
+      "turn_id": "turn_456",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:42-18:43] Very, very good."
+    },
+    {
+      "turn_id": "turn_457",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:43-18:44] All right."
+    },
+    {
+      "turn_id": "turn_458",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:44-18:48] So the scientists must have confidence even in the face of uncertainty and be confident"
+    },
+    {
+      "turn_id": "turn_459",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:48-18:49] that they will overcome it."
+    },
+    {
+      "turn_id": "turn_460",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:49-18:50] Very good."
+    },
+    {
+      "turn_id": "turn_461",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:50-18:56] The example, to move forward forcefully and aggressively even while uncertain requires"
+    },
+    {
+      "turn_id": "turn_462",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:56-18:58] a confidence and strength, deeper than physical courage."
+    },
+    {
+      "turn_id": "turn_463",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:58-18:59] Okay."
+    },
+    {
+      "turn_id": "turn_464",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:59-19:02] And what strategy did we kind of see him using here?"
+    },
+    {
+      "turn_id": "turn_465",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:02-19:04] Well, it might not be a term."
+    },
+    {
+      "turn_id": "turn_466",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:04-19:06] What did you guys notice?"
+    },
+    {
+      "turn_id": "turn_467",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:06-19:10] What was referencing back to the main, like, theme or purpose?"
+    },
+    {
+      "turn_id": "turn_468",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:10-19:11] Very good."
+    },
+    {
+      "turn_id": "turn_469",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:11-19:12] It's referencing back to that main theme."
+    },
+    {
+      "turn_id": "turn_470",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:12-19:16] We had a repetition of a lot of these important words, right?"
+    },
+    {
+      "turn_id": "turn_471",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:16-19:19] Strength, courage, et cetera."
+    },
+    {
+      "turn_id": "turn_472",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:19-19:20] All right."
+    },
+    {
+      "turn_id": "turn_473",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:20-19:21] Very, very nice."
+    },
+    {
+      "turn_id": "turn_474",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:21-19:25] Now, what I want you guys to do at this point, because we just have a few minutes left, we've"
+    },
+    {
+      "turn_id": "turn_475",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:25-19:26] done this in groups, right?"
+    },
+    {
+      "turn_id": "turn_476",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:26-19:30] We've done the steps, the easy step, finding the subject."
+    },
+    {
+      "turn_id": "turn_477",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:30-19:33] We've done two themes, and now we found proof for one of them."
+    },
+    {
+      "turn_id": "turn_478",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:33-19:39] All those blanks that you see on that graphic organizer, I want you to do that on your own."
+    },
+    {
+      "turn_id": "turn_479",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:39-19:40] Okay?"
+    },
+    {
+      "turn_id": "turn_480",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:40-19:41] I want you to do that on your own."
+    },
+    {
+      "turn_id": "turn_481",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:41-19:43] So fill out the rest of it."
+    },
+    {
+      "turn_id": "turn_482",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:43-19:45] Fill out the third theme."
+    },
+    {
+      "turn_id": "turn_483",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:45-19:47] Find proof for the other ones."
+    },
+    {
+      "turn_id": "turn_484",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:47-19:51] Are you going to see some of the quotes overlap for the themes that you're going to identify?"
+    },
+    {
+      "turn_id": "turn_485",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:51-19:54] Absolutely, because that's the point."
+    },
+    {
+      "turn_id": "turn_486",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:54-19:57] These things interact together to achieve the overall purpose."
+    },
+    {
+      "turn_id": "turn_487",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:57-20:02] What we're going to talk about next class meeting is what is his overall purpose, and"
+    },
+    {
+      "turn_id": "turn_488",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:02-20:07] how do these themes work together to achieve it, right?"
+    },
+    {
+      "turn_id": "turn_489",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:07-20:08] Any questions?"
+    },
+    {
+      "turn_id": "turn_490",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:08-20:09] All right."
+    },
+    {
+      "turn_id": "turn_491",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:09-20:10] All right, go ahead and move back."
+    }
+  ]
+}

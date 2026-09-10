@@ -50,7 +50,13 @@ class GroundTruth(BaseModel):
     transcript_id: str = Field(min_length=1)
     rubric_version: str = Field(min_length=1)
     created_by: str = Field(min_length=1)
-    review_status: Literal["draft", "expert_reviewed", "adjudicated", "researcher_annotated"]
+    review_status: Literal[
+        "draft",
+        "expert_reviewed",
+        "adjudicated",
+        "researcher_annotated",
+        "human_validated_with_domain_flags",
+    ]
     summary: str = Field(min_length=1)
     known_issues: list[str] = Field(default_factory=list)
 

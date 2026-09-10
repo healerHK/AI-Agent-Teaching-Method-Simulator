@@ -1,0 +1,18 @@
+{
+  "transcript_id": "real_ela_archetypal_fool_character_001_observed",
+  "scores": {
+    "pck_conceptual_accuracy": 4,
+    "scaffolding": 4,
+    "formative_assessment": 4,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 4
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher explains the fool archetype as ironic comic relief and contrasts it with sidekick/Byronic hero, though audio transcription errors make some examples uncertain.",
+    "scaffolding": "Lesson begins with review of prior archetypes, neighbour brainstorming, whole-class example collection, concept explanation, and transition toward Shakespeare examples.",
+    "formative_assessment": "Teacher monitors student brainstorming, asks for examples, probes explanations, and corrects overgeneralised examples during discussion.",
+    "cognitive_questioning": "Teacher asks students to justify how examples fit the archetype and distinguishes surface humour from deeper wisdom or social function.",
+    "missed_pedagogical_opportunity": "The discussion is rich but could use clearer visual criteria and more explicit respectful-language reframing where student language becomes problematic."
+  }
+}

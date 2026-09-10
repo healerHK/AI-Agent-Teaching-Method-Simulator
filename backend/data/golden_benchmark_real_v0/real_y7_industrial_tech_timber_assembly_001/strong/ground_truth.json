@@ -1,0 +1,13 @@
+{
+  "transcript_id": "real_y7_industrial_tech_timber_assembly_001_observed",
+  "rubric_version": "rubric_v1.0",
+  "created_by": "researcher_draft_from_real_public_resource_v0",
+  "review_status": "human_validated_with_domain_flags",
+  "summary": "Observed, anonymised Year 7 industrial technology lesson transcript. The teacher states objectives/success criteria, uses routines, revisits sanding knowledge, checks understanding, models sanding and chiselling/sawing techniques, and supports guided-to-independent workshop practice. Draft benchmark annotation only. Human validation v2 applied by human_validator_ty on 2026-09-07T07:33:11.860281+00:00.",
+  "known_issues": [
+    "The source includes edited resource captions and observation notes; evaluator transcript excludes AERO on-screen labels to avoid giving the model external rubric hints.",
+    "Some gestures, tool positioning, and workshop context remain implicit in text.",
+    "Student names have been anonymised; source provenance is retained separately from evaluator-visible transcript text.",
+    "Initial annotations were researcher-draft; final labels now include human_decision, evidence_verified, domain_check_required, domain_check_result, confidence, evidence_turn_ids, and adjudication_note. Treat as a human-validated annotation set with evidence/domain-check flags, not independent multi-expert ground truth."
+  ]
+}

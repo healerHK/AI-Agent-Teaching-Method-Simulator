@@ -26,10 +26,10 @@ def iter_benchmark_variants(root: Path = GOLDEN_BENCHMARK_ROOT):
                 yield scenario_path, variant_dir, transcript_path
 
 
-def seed_database() -> None:
+def seed_database(root: Path = GOLDEN_BENCHMARK_ROOT) -> None:
     init_db()
     with connect() as conn:
-        for scenario_path, variant_dir, transcript_path in iter_benchmark_variants():
+        for scenario_path, variant_dir, transcript_path in iter_benchmark_variants(root):
             scenario = Scenario.model_validate(load_json(scenario_path))
             transcript = BenchmarkTranscript.model_validate(load_json(transcript_path))
             ground_truth_path = variant_dir / "ground_truth.json"

@@ -1,0 +1,40 @@
+{
+  "transcript_id": "college_cellular_respiration_30m_weak_001",
+  "missed_opportunities": [
+    {
+      "id": "mo_001",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher does not directly repair the visible biology misconception: Energy is created from nothing during respiration.",
+      "evidence_turn_ids": [
+        "turn_010",
+        "turn_011",
+        "turn_016",
+        "turn_017"
+      ],
+      "expected_action": "Ask the student to explain the misconception, contrast it with the worked example, and state a repaired rule."
+    },
+    {
+      "id": "mo_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher misses a chance to provide step-by-step scaffolding after student uncertainty.",
+      "evidence_turn_ids": [
+        "turn_026",
+        "turn_027",
+        "turn_028",
+        "turn_029"
+      ],
+      "expected_action": "Use a structured evidence/reasoning table or worked-example trace before asking students to generalise."
+    },
+    {
+      "id": "mo_003",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher uses a superficial class-wide check instead of verifying student reasoning.",
+      "evidence_turn_ids": [
+        "turn_018",
+        "turn_020",
+        "turn_054"
+      ],
+      "expected_action": "Use an exit-style prompt requiring each student to justify the answer with evidence."
+    }
+  ]
+}

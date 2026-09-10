@@ -1,22 +1,22 @@
 import type { EvaluatorStatusResponse } from '../types';
 
 interface ModeSelectProps {
+  onOpenTranscriptSystem: () => void;
   onShowScenario: () => void;
-  onStartLive: () => void;
   onRunBenchmark: () => void;
   loading: boolean;
   evaluatorStatus: EvaluatorStatusResponse | null;
 }
 
-export function ModeSelect({ onShowScenario, onStartLive, onRunBenchmark, loading, evaluatorStatus }: ModeSelectProps) {
+export function ModeSelect({ onOpenTranscriptSystem, onShowScenario, onRunBenchmark, loading, evaluatorStatus }: ModeSelectProps) {
   return (
-    <section className="mode-select pixel-panel">
+    <section className="mode-select pixel-panel transcript-first-home">
       <div className="mode-copy">
-        <p className="eyebrow">PixelClass TIL · v2 Honours MVP</p>
-        <h1>Teacher-in-the-Loop Evaluation Benchmark</h1>
+        <p className="eyebrow">PixelClass TIL · Transcript-first build</p>
+        <h1>Build Fixed Classroom Transcripts Before Live Mode</h1>
         <p>
-          Live micro-lesson simulation is the testbed. Fixed transcript benchmark,
-          evidence verification, and blinded expert review are the research contribution.
+          Current priority: create editable 30-minute classroom scenarios across subjects and levels,
+          tune student prompt parameters, and run transcript readiness checks before evaluator testing.
         </p>
         <div className="provider-status-card">
           <span className="label">Evaluator runtime status</span>
@@ -39,20 +39,25 @@ export function ModeSelect({ onShowScenario, onStartLive, onRunBenchmark, loadin
       </div>
 
       <div className="mode-grid">
-        <button className="mode-card primary" onClick={onShowScenario} disabled={loading}>
-          <span className="mode-icon">▤</span>
-          <strong>Scenario Builder / Thesis Blueprint</strong>
-          <small>15-30 min lesson phases, student behaviour layer, claim guardrails</small>
+        <button className="mode-card primary" onClick={onOpenTranscriptSystem} disabled={loading}>
+          <span className="mode-icon">▥</span>
+          <strong>Transcript Scenario System</strong>
+          <small>Pick/edit 30-minute scenarios, tune student prompts, save, and run readiness tests</small>
         </button>
-        <button className="mode-card" onClick={onStartLive} disabled={loading}>
-          <span className="mode-icon">▣</span>
-          <strong>Live Mode: Micro-lesson Simulation</strong>
-          <small>Teacher input + literature-informed virtual student behaviour</small>
+        <button className="mode-card" onClick={onShowScenario} disabled={loading}>
+          <span className="mode-icon">▤</span>
+          <strong>Thesis Blueprint</strong>
+          <small>Research gap, contribution, benchmark framing, and claim guardrails</small>
         </button>
         <button className="mode-card accent" onClick={onRunBenchmark} disabled={loading}>
           <span className="mode-icon">◇</span>
-          <strong>Transcript Benchmark Mode</strong>
-          <small>Fixed transcript → baseline vs TIL → verifier → blinded review</small>
+          <strong>Existing Benchmark A/B Review</strong>
+          <small>Use current golden transcript baseline vs TIL path after transcripts are ready</small>
+        </button>
+        <button className="mode-card disabled" disabled>
+          <span className="mode-icon">▣</span>
+          <strong>Live Mode paused</strong>
+          <small>Per current plan, live classroom mode will be rebuilt after transcript system is stable</small>
         </button>
       </div>
     </section>

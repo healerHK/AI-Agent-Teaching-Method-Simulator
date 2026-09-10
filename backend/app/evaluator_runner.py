@@ -7,6 +7,7 @@ feedback items, and evidence links for verification/blinded review.
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -68,6 +69,8 @@ class EvaluatorRunner:
                 )
                 model_name = provider_config.model_label
             except Exception as exc:  # keep pipeline runnable across provider config experiments
+                if os.getenv("EVALUATOR_STRICT_PROVIDER", "").strip().lower() in {"1", "true", "yes", "on"}:
+                    raise
                 error_message = _provider_error_summary(exc)
                 output = self._generate_output(transcript=transcript, condition=condition)
                 output.response_source = "fallback"
@@ -130,7 +133,9 @@ class EvaluatorRunner:
         user_prompt = _transcript_prompt(transcript)
         client = LLMProviderClient(provider_config)
         data = client.complete_json(system_prompt=system_prompt, user_prompt=user_prompt)
-        feedback_items = [FeedbackItemOutput.model_validate(item) for item in data.get("feedback_items", [])]
+        feedback_items = _normalise_provider_feedback_items(data.get("feedback_items", []))
+        if not feedback_items:
+            raise ValueError("provider returned no valid feedback_items")
         return EvaluationOutput(
             transcript_id=transcript.transcript_id,
             condition=condition,
@@ -190,59 +195,77 @@ class EvaluatorRunner:
 
     def _fallback_til(self, transcript: BenchmarkTranscript) -> EvaluationOutput:
         turns = transcript.turn_map()
+        ordered_turns = transcript.turns
+
+        def pick_turn(preferred_id: str, *, speaker_name: str | None = None, fallback_index: int = 0):
+            if preferred_id in turns:
+                return turns[preferred_id]
+            if speaker_name:
+                for turn in ordered_turns:
+                    if turn.speaker_name.lower() == speaker_name.lower():
+                        return turn
+            return ordered_turns[min(fallback_index, len(ordered_turns) - 1)]
+
+        misconception_turn = pick_turn("turn_004", speaker_name="Mia", fallback_index=1)
+        teacher_response_turn = pick_turn("turn_005", speaker_name="Teacher", fallback_index=2)
+        scaffold_turn = pick_turn("turn_012", speaker_name="Sam", fallback_index=3)
+        follow_up_turn = pick_turn("turn_013", speaker_name="Teacher", fallback_index=4)
+        formative_turn = pick_turn("turn_026", speaker_name="Teacher", fallback_index=max(len(ordered_turns) - 4, 0))
+        closure_turn = pick_turn("turn_029", speaker_name="Mia", fallback_index=max(len(ordered_turns) - 1, 0))
+
         if transcript.variant == "weak":
             items = [
                 FeedbackItemOutput(
                     criterion="pck_conceptual_accuracy",
-                    claim="The teacher does not directly correct Mia's misconception that one written print line means one execution.",
+                    claim=f"The evaluation should focus on whether the teacher explicitly repairs the visible {transcript.domain} misconception rather than moving past it.",
                     score=2,
-                    evidence_turn_ids=["turn_002", "turn_003"],
-                    evidence_quotes=[turns["turn_002"].message, turns["turn_003"].message],
-                    suggested_action="Ask Mia to trace each list item and connect each item to one execution of print(number).",
+                    evidence_turn_ids=[misconception_turn.turn_id, teacher_response_turn.turn_id],
+                    evidence_quotes=[misconception_turn.message, teacher_response_turn.message],
+                    suggested_action="Ask the student to compare their misconception with a concrete evidence row from the transcript and then state a repaired rule.",
                     confidence=0.86,
                 ),
                 FeedbackItemOutput(
                     criterion="scaffolding",
-                    claim="The teacher misses Sam's need for stepwise tracing of the loop variable.",
-                    score=1,
-                    evidence_turn_ids=["turn_004", "turn_005"],
-                    evidence_quotes=[turns["turn_004"].message, turns["turn_005"].message],
-                    suggested_action="Create a two-column trace table with iteration number and value of number.",
+                    claim="The teacher needs stronger step-by-step scaffolding for the student who signals uncertainty.",
+                    score=2,
+                    evidence_turn_ids=[scaffold_turn.turn_id, follow_up_turn.turn_id],
+                    evidence_quotes=[scaffold_turn.message, follow_up_turn.message],
+                    suggested_action="Use a two-column evidence/reasoning table so students must connect each answer to a transcript-supported explanation.",
                     confidence=0.88,
                 ),
                 FeedbackItemOutput(
-                    criterion="missed_pedagogical_opportunity",
-                    claim="The teacher rejects Lina's request to trace the loop and moves on too quickly.",
-                    score=1,
-                    evidence_turn_ids=["turn_008", "turn_009"],
-                    evidence_quotes=[turns["turn_008"].message, turns["turn_009"].message],
-                    suggested_action="Pause the topic shift and model one trace before asking students to finish the remaining iterations.",
-                    confidence=0.91,
+                    criterion="formative_assessment",
+                    claim="The transcript should be checked for whether the final task asks students to justify the answer with evidence, not only produce an answer.",
+                    score=3,
+                    evidence_turn_ids=[formative_turn.turn_id, closure_turn.turn_id],
+                    evidence_quotes=[formative_turn.message, closure_turn.message],
+                    suggested_action="Use an exit ticket that requires a claim, one evidence quote/step, and a repaired misconception statement.",
+                    confidence=0.84,
                 ),
             ]
-            summary = "TIL feedback: the main issues are missed misconception repair, weak scaffolding, and missed trace opportunities."
+            summary = "TIL feedback: evaluate misconception repair, evidence-linked scaffolding, and formative checks on the selected fixed transcript."
         else:
             items = [
                 FeedbackItemOutput(
                     criterion="pck_conceptual_accuracy",
-                    claim="The teacher accurately addresses the misconception that a print line written once only executes once.",
+                    claim="The teacher addresses the visible misconception with evidence from the lesson transcript.",
                     score=5,
-                    evidence_turn_ids=["turn_003", "turn_004"],
-                    evidence_quotes=[turns["turn_003"].message, turns["turn_004"].message],
-                    suggested_action="Keep eliciting misconceptions before formal explanation.",
+                    evidence_turn_ids=[misconception_turn.turn_id, teacher_response_turn.turn_id],
+                    evidence_quotes=[misconception_turn.message, teacher_response_turn.message],
+                    suggested_action="Keep eliciting misconceptions before formal explanation and asking for evidence-linked repair.",
                     confidence=0.89,
                 ),
                 FeedbackItemOutput(
                     criterion="formative_assessment",
-                    claim="The teacher checks student understanding after the explanation.",
+                    claim="The teacher checks student understanding after modelling and guided practice.",
                     score=4,
-                    evidence_turn_ids=["turn_005", "turn_007", "turn_008"],
-                    evidence_quotes=[turns["turn_005"].message, turns["turn_007"].message, turns["turn_008"].message],
-                    suggested_action="Ask one additional transfer question with a different list length.",
+                    evidence_turn_ids=[formative_turn.turn_id, closure_turn.turn_id],
+                    evidence_quotes=[formative_turn.message, closure_turn.message],
+                    suggested_action="Add one transfer question with a changed surface feature but the same underlying concept.",
                     confidence=0.82,
                 ),
             ]
-            summary = "TIL feedback: the teacher uses accurate misconception repair, trace scaffolding, and formative checks."
+            summary = "TIL feedback: the teacher uses misconception repair, evidence scaffolding, and formative checks."
         return EvaluationOutput(
             transcript_id=transcript.transcript_id,
             condition="til",
@@ -338,6 +361,63 @@ class EvaluatorRunner:
                         ),
                     )
             conn.commit()
+
+
+CRITERION_ALIASES = {
+    "pck": "pck_conceptual_accuracy",
+    "conceptual_accuracy": "pck_conceptual_accuracy",
+    "pck_conceptual_accuracy": "pck_conceptual_accuracy",
+    "scaffolding": "scaffolding",
+    "formative_assessment": "formative_assessment",
+    "assessment": "formative_assessment",
+    "cognitive_questioning": "cognitive_questioning",
+    "questioning": "cognitive_questioning",
+    "missed_opportunity": "missed_pedagogical_opportunity",
+    "missed_pedagogical_opportunity": "missed_pedagogical_opportunity",
+}
+
+
+def _normalise_provider_feedback_items(raw_items) -> list[FeedbackItemOutput]:
+    """Coerce common provider JSON variations without accepting unusable items."""
+
+    if not isinstance(raw_items, list):
+        return []
+    normalised: list[FeedbackItemOutput] = []
+    for raw in raw_items:
+        if not isinstance(raw, dict):
+            continue
+        item = dict(raw)
+        criterion = str(item.get("criterion", "")).strip().lower()
+        criterion = criterion.replace(" ", "_").replace("-", "_")
+        if "concept" in criterion and "accur" in criterion:
+            criterion = "pck_conceptual_accuracy"
+        elif "formative" in criterion or criterion == "assessment":
+            criterion = "formative_assessment"
+        elif "cognitive" in criterion or "question" in criterion:
+            criterion = "cognitive_questioning"
+        elif "miss" in criterion and "opportun" in criterion:
+            criterion = "missed_pedagogical_opportunity"
+        criterion = CRITERION_ALIASES.get(criterion, criterion)
+        item["criterion"] = criterion
+        try:
+            item["score"] = int(round(float(item.get("score", 3))))
+            item["score"] = max(1, min(5, item["score"]))
+        except Exception:
+            item["score"] = 3
+        try:
+            item["confidence"] = float(item.get("confidence", 0.5))
+            item["confidence"] = max(0.0, min(1.0, item["confidence"]))
+        except Exception:
+            item["confidence"] = 0.5
+        if isinstance(item.get("evidence_turn_ids"), str):
+            item["evidence_turn_ids"] = [item["evidence_turn_ids"]]
+        if isinstance(item.get("evidence_quotes"), str):
+            item["evidence_quotes"] = [item["evidence_quotes"]]
+        try:
+            normalised.append(FeedbackItemOutput.model_validate(item))
+        except Exception:
+            continue
+    return normalised[:3]
 
 
 def _transcript_prompt(transcript: BenchmarkTranscript) -> str:

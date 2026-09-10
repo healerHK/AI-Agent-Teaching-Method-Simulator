@@ -1,0 +1,21 @@
+{
+  "scenario_id": "college_stoichiometry_30m",
+  "title": "Stoichiometry: mole ratios and limiting reactants",
+  "domain": "Chemistry",
+  "education_level": "college",
+  "learning_objective": "Balanced equations define mole ratios used to identify limiting reactants and product yield.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "Grams in the equation can be compared directly without converting to moles.",
+    "The reactant with the smaller mass is always limiting.",
+    "Coefficients only balance atoms and do not affect calculations."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "balanced equation",
+    "mole conversion table"
+  ]
+}

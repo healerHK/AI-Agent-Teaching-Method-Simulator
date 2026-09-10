@@ -1,0 +1,13 @@
+{
+  "transcript_id": "real_ela_all_summer_venus_close_read_001_observed",
+  "rubric_version": "rubric_v1.0",
+  "created_by": "researcher_draft_from_audio_transcript_v0",
+  "review_status": "human_validated_with_domain_flags",
+  "summary": "Observed anonymised classroom transcript for Real classroom language arts: All Summer in a Day and Venus close reading. This benchmark annotation now has a human-validated final-label layer with evidence/domain-check flags; it is not an independent multi-expert gold standard. Human validation v2 applied by human_validator_ty on 2026-09-07T07:33:11.860281+00:00.",
+  "known_issues": [
+    "Transcript was generated from audio and may contain transcription or diarisation errors.",
+    "Video/gesture context is unavailable, so some classroom context is implicit.",
+    "This observed transcript is stored in the schema-compatible strong/ folder but should be interpreted as observed_real_classroom rather than synthetic strong teaching.",
+    "Initial annotations were researcher-draft; final labels now include human_decision, evidence_verified, domain_check_required, domain_check_result, confidence, evidence_turn_ids, and adjudication_note. Treat as a human-validated annotation set with evidence/domain-check flags, not independent multi-expert ground truth."
+  ]
+}

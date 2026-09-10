@@ -20,3 +20,7 @@ def test_phase4_benchmark_runner_exports_results(tmp_path: Path, monkeypatch):
     assert (export_dir / "metrics_summary.json").exists()
     assert (export_dir / "reproducibility_manifest.json").exists()
     assert (export_dir / "charts" / "score_mae.svg").exists()
+    assert (export_dir / "charts" / "evidence_validity_rate.svg").exists()
+    metrics = (export_dir / "metrics_summary.json").read_text(encoding="utf-8")
+    assert "exact_agreement_rate" in metrics
+    assert "per_criterion_mae" in metrics

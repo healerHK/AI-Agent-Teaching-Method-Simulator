@@ -1,0 +1,21 @@
+{
+  "scenario_id": "uni_primary_source_analysis_30m",
+  "title": "Primary source analysis: evidence, context, and historical claims",
+  "domain": "History / Humanities",
+  "education_level": "university",
+  "learning_objective": "Historical claims should connect textual evidence with context, audience, purpose, and limitation.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "A primary source is automatically objective.",
+    "Quoting a line is enough without explaining context or purpose.",
+    "The author's intent can be known with certainty from one excerpt."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "primary source excerpt",
+    "source analysis worksheet"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "transcript_id": "real_ela_archetypal_fool_character_001_observed",
+  "missed_opportunities": [
+    {
+      "id": "real_ela_fool_missed_001",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "Several student examples blur fool, sidekick, prankster, and Byronic hero; the teacher could anchor the distinction in a visible comparison chart.",
+      "evidence_turn_ids": [
+        "turn_019",
+        "turn_023",
+        "turn_041",
+        "turn_132",
+        "turn_134",
+        "turn_232",
+        "turn_234",
+        "turn_421"
+      ],
+      "expected_action": "Create a brief comparison chart listing defining features and non-examples for each related archetype."
+    },
+    {
+      "id": "real_ela_fool_missed_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "A student uses insensitive language while describing Forrest/Bubba; the teacher could pause to model respectful academic language.",
+      "evidence_turn_ids": [
+        "turn_093",
+        "turn_339",
+        "turn_403"
+      ],
+      "expected_action": "Reframe the comment using respectful language such as “perceived as unintelligent/underestimated” and explain why word choice matters."
+    },
+    {
+      "id": "real_ela_fool_missed_003",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The transcript contains many examples but limited closure summarising the final criteria students should apply independently.",
+      "evidence_turn_ids": [
+        "turn_409",
+        "turn_530"
+      ],
+      "expected_action": "End with a concise exit-ticket or criteria recap: comic relief + underestimated status + surprising wisdom/thematic insight."
+    }
+  ]
+}

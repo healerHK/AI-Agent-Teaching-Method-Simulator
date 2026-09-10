@@ -1,0 +1,26 @@
+{
+  "scenario_id": "real_ela_archetypal_fool_character_001",
+  "title": "Real classroom language arts: archetypal character of the fool",
+  "domain": "English Language Arts",
+  "education_level": "secondary_language_arts",
+  "learning_objective": "Students identify the archetypal character of the fool, distinguish it from related archetypes such as sidekick, trickster/prankster and Byronic hero, and justify examples from literature and popular culture.",
+  "common_misconceptions": [
+    "Equating the fool with any funny character rather than an ironic comic-relief figure who may reveal wisdom.",
+    "Confusing the fool with sidekick, prankster/trickster, or Byronic hero archetypes.",
+    "Offering examples without explaining textual evidence or the character function.",
+    "Assuming low social/intellectual status prevents a character from carrying wisdom or thematic insight."
+  ],
+  "target_concepts": [
+    "archetypal_theory",
+    "the_fool",
+    "comic_relief",
+    "irony",
+    "sidekick",
+    "trickster",
+    "byronic_hero",
+    "literary_examples",
+    "pop_culture_examples",
+    "shakespeare",
+    "real_classroom_transcript"
+  ]
+}

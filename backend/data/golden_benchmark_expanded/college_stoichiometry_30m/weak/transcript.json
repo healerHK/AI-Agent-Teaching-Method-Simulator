@@ -1,0 +1,394 @@
+{
+  "transcript_id": "college_stoichiometry_30m_weak_001",
+  "scenario_id": "college_stoichiometry_30m",
+  "variant": "weak",
+  "domain": "Chemistry",
+  "education_level": "college",
+  "learning_objective": "Balanced equations define mole ratios used to identify limiting reactants and product yield.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good morning, everyone."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Good morning, sir."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 1 — INTRODUCTION. Before we practise, connect the explanation to this situation: planning a laboratory synthesis where excess reagent is deliberately used to consume a more expensive reactant completely. In `2H2 + O2 -> 2H2O`, what quantitative information do the coefficients provide beyond atom balance?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "They balance atoms, but I am not sure how they become numbers in the calculation."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "This is straightforward, so I will give the answer rather than asking for reasoning."
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I often compare the given amounts directly before converting to moles."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "That uncertainty is useful. Alice, can you make the idea more precise?"
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "The coefficients are mole ratios: 2 mol H2 react with 1 mol O2 to produce 2 mol H2O."
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Explanation. Copy the rule and the final answer from the board. I will skip the reasoning steps today, so use memorisation rather than evidence from the example."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Sir, can I compare grams of hydrogen and oxygen directly to find the limiting reagent?"
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Let's not spend time unpacking that misconception now. Just memorise the final rule and we will move on."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "So the evidence chain is grams to moles, ratio comparison, limiting reagent, product moles, and then grams of product if needed."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "For the water equation, 1 mol O2 requires 2 mol H2 and produces 2 mol H2O."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "So the limiting reagent is the reactant that runs out according to the balanced mole ratio?"
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Explanation. Copy the rule and the final answer from the board. I will skip the reasoning steps today, so use memorisation rather than evidence from the example."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "I thought the smaller mass is automatically limiting."
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Let's not spend time unpacking that misconception now. Just memorise the final rule and we will move on."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Everyone understands, right? Good, we can continue."
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "The ratio is 2:1, two moles of H2 per one mole of O2."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Everyone understands, right? Good, we can continue."
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "Because the limiting reagent is consumed first and stops product formation."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, before comparing reactants, what unit do we need?"
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "Moles."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 4 — WORKED EXAMPLE. Suppose a lab has 6.0 mol H2 and 2.0 mol O2. The balanced equation requires 2 mol H2 per 1 mol O2. If all 2.0 mol O2 react, they require 4.0 mol H2. We have 6.0 mol H2, so hydrogen is in excess and oxygen is limiting. From the coefficient ratio, 1 mol O2 produces 2 mol H2O, so 2.0 mol O2 produces 4.0 mol H2O. That is the theoretical yield in moles. If the problem asks grams, multiply by the molar mass of water. If actual yield is supplied, percent yield is actual divided by theoretical times 100 percent. A formal solution could include a reaction table. Initial: H2 = 6.0 mol, O2 = 2.0 mol, H2O = 0. Change: consume 4.0 mol H2 and 2.0 mol O2 to form 4.0 mol H2O. Final: H2 = 2.0 mol, O2 = 0, H2O = 4.0 mol. The table makes the limiting reagent visible rather than hidden inside arithmetic. If the final answer is reported in grams, round using appropriate significant figures from the measured inputs, not from the exact coefficients."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "This is straightforward, so I will give the answer rather than asking for reasoning."
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Oxygen limits it, because 2.0 mol O2 needs only 4.0 mol H2 and hydrogen remains in excess."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "You should be able to follow this without a step-by-step table. Try to keep up with the example."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The theoretical product is 4.0 mol H2O, and grams would come from multiplying by water's molar mass. If actual yield were 3.2 mol H2O, percent yield would be `3.2/4.0 × 100 = 80%`, but that calculation only makes sense after the theoretical maximum is established."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "You should be able to follow this without a step-by-step table. Try to keep up with the example."
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Because the equation requires hydrogen twice as much, so raw moles alone are not enough; we compare the ratio."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "If oxygen drops to 1.0 mol while hydrogen stays 6.0 mol, oxygen still limits and water becomes 2.0 mol."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Correct. The ratio scales. One mole of oxygen requires two moles of hydrogen and makes two moles of water. Hydrogen is now even more in excess. This kind of transfer is why I prefer a reaction table: initial moles, required change, product formed, and excess left. It makes the limiting-reagent logic visible. If the problem gave masses instead of moles, the same table would come after molar-mass conversion. Grams of oxygen divided by `32.00 g/mol` gives moles of O2, while grams of hydrogen divided by about `2.016 g/mol` gives moles of H2. Only after that conversion can the coefficient ratio be used correctly."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "The table also prevents mixing up given amount, required amount, and leftover amount."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "If coefficients are only there to balance atoms, maybe I can ignore them after balancing."
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Careful. The coefficients are the conversion factors. Ignoring them removes the quantitative meaning of the equation. A balanced equation is not only a legal sentence about atoms; it is the central evidence for mole-to-mole conversion. If you ignore coefficients, theoretical yield becomes guesswork. A second repair is to label every fraction. If a conversion factor comes from the balanced equation, it should contain coefficients and chemical formulas. If it comes from molar mass, it should contain grams per mole. Students make many stoichiometry errors because they write naked numbers without chemical meaning. Labels protect the reasoning."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "For solution stoichiometry, the same sequence starts after converting molarity times volume into moles. I would also watch significant figures and reagent purity, because measured lab quantities are not exact even when the balanced equation is exact."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Do the same type of problem silently. I will not check each person's reasoning today."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Lily, simple check: what unit must we use before applying coefficients?"
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Moles."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, is smaller mass automatically the limiting reagent?"
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "No. Molar mass and mole ratios matter."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Chloe, explain theoretical yield in context."
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "It is the maximum product predicted from the limiting reagent if the reaction proceeds as written. It is an ideal maximum, so lower actual yield points to experimental loss, side reactions, or incomplete reaction."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, if 3.0 mol O2 reacts with excess H2, how many moles of H2O can form?"
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The 1:2 ratio from O2 to H2O gives 6.0 mol H2O."
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, extension: where does percent yield enter?"
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "After theoretical yield is known, percent yield compares actual yield to theoretical yield times 100 percent. If side reactions occur, percent yield drops not because stoichiometry failed, but because the ideal reaction model did not capture all experimental pathways."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, what problem-solving sequence will you write first?"
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Balance, convert to moles, compare ratios, find limiting reagent, calculate product."
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 6 — MISCONCEPTION REPAIR. Lily, if someone compares grams directly, what correction should you make?"
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Convert grams to moles first because coefficients compare particles or moles, not grams."
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "My warning note is: smaller mass is not chemical evidence by itself."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. Put `stoichiometric coefficients`, `mole ratios`, `limiting reagent`, `theoretical yield`, and `percent yield` in one checklist. Every calculation line should state which conversion factor came from the balanced equation and which came from molar mass or experimental data. Also write what would falsify your answer. If your limiting reagent calculation leaves a negative amount of the supposed excess reactant, your limiting choice was wrong. If your theoretical yield is based on the excess reagent, it is not a maximum controlled by the stopping reactant. Chemistry calculations should be internally checked, not only numerically computed."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Everyone understands, right? Good, we can continue."
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Balanced equations encode mole ratios through stoichiometric coefficients. That is why the balanced equation is evidence, not decorative setup."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question two: Ben, second takeaway?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The limiting reagent determines theoretical yield because it is consumed first. Excess reagent can remain, but it cannot raise yield once the limiting reagent is gone."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question three: Chloe, third takeaway?"
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Masses must be converted to moles before reaction ratios are compared."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, one sentence: how will you avoid limiting-reagent mistakes?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I will convert to moles and compare the balanced ratio instead of comparing grams directly."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "What is our homework, sir?"
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Homework: solve two limiting-reagent problems. For each, show the balanced equation, mole conversions, ratio comparison, limiting reagent, theoretical yield, excess reagent left, and percent yield if actual yield is provided. Include one sentence explaining why each conversion factor is valid: molar mass, coefficient ratio, or percent-yield definition. Mark the limiting reagent with a short justification, not just a circled answer."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Goodbye, sir."
+    }
+  ]
+}

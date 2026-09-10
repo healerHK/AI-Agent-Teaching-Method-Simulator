@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from dataclasses import dataclass
 from typing import Any, Literal
 
@@ -55,6 +56,8 @@ def evaluator_provider_config(condition: str) -> LLMProviderConfig:
         or os.getenv("LLM_PROVIDER")
         or "fallback"
     ).strip().lower()
+    provider_aliases = {"claude": "anthropic", "google": "gemini"}
+    provider = provider_aliases.get(provider, provider)
     if provider not in SUPPORTED_LLM_PROVIDERS:
         provider = "fallback"
 
@@ -72,6 +75,11 @@ def evaluator_provider_config(condition: str) -> LLMProviderConfig:
         or os.getenv("OPENAI_TEMPERATURE_EVALUATOR")
         or "0.2"
     )
+    timeout_seconds = float(
+        os.getenv(f"{condition_prefix}_EVALUATOR_TIMEOUT_SECONDS")
+        or os.getenv("EVALUATOR_TIMEOUT_SECONDS")
+        or "60"
+    )
     if provider == "fallback":
         model = "deterministic-fallback"
         api_key = None
@@ -87,6 +95,7 @@ def evaluator_provider_config(condition: str) -> LLMProviderConfig:
         api_key=api_key,
         base_url=base_url,
         temperature=temperature,
+        timeout_seconds=timeout_seconds,
     )
 
 
@@ -173,7 +182,7 @@ def _gemini_model_candidates(requested_model: str) -> list[str]:
 
     configured_fallbacks = [
         value.strip()
-        for value in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-flash-latest").split(",")
+        for value in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-3.6-flash,gemini-flash-latest").split(",")
         if value.strip()
     ]
     candidates: list[str] = []
@@ -202,7 +211,63 @@ def _is_gemini_model_availability_error(exc: httpx.HTTPStatusError) -> bool:
     return status in {"NOT_FOUND", "INVALID_ARGUMENT"} and "model" in message
 
 
+def _is_temperature_unsupported_error(exc: httpx.HTTPStatusError) -> bool:
+    """Detect providers/models that require default or omitted temperature."""
+
+    response = exc.response
+    if response is None or response.status_code != 400:
+        return False
+    try:
+        payload = response.json()
+    except Exception:
+        return False
+    text = json.dumps(payload, ensure_ascii=False).lower()
+    return "temperature" in text and (
+        "unsupported" in text
+        or "deprecated" in text
+        or "only the default" in text
+    )
+
+
+TRANSIENT_HTTP_STATUSES = {429, 500, 502, 503, 504}
+
+
+def _post_json_with_retries(
+    client: httpx.Client,
+    url: str,
+    *,
+    json_payload: dict[str, Any],
+    headers: dict[str, str] | None = None,
+    attempts: int = 3,
+) -> httpx.Response:
+    """POST JSON with conservative retries for transient provider failures."""
+
+    last_exc: httpx.HTTPStatusError | None = None
+    last_timeout: httpx.TimeoutException | None = None
+    for attempt in range(attempts):
+        try:
+            response = client.post(url, headers=headers, json=json_payload)
+            response.raise_for_status()
+            return response
+        except httpx.TimeoutException as exc:
+            last_timeout = exc
+            if attempt >= attempts - 1:
+                raise
+            time.sleep(1.5 * (2**attempt))
+        except httpx.HTTPStatusError as exc:
+            last_exc = exc
+            status = exc.response.status_code if exc.response is not None else None
+            if status not in TRANSIENT_HTTP_STATUSES or attempt >= attempts - 1:
+                raise
+            time.sleep(1.5 * (2**attempt))
+    if last_exc is not None:
+        raise last_exc
+    assert last_timeout is not None
+    raise last_timeout
+
+
 class LLMProviderClient:
+
     def __init__(self, config: LLMProviderConfig) -> None:
         self.config = config
 
@@ -237,7 +302,20 @@ class LLMProviderClient:
                 headers={"Authorization": f"Bearer {self.config.api_key}"},
                 json=payload,
             )
-            response.raise_for_status()
+            try:
+                response.raise_for_status()
+            except httpx.HTTPStatusError as exc:
+                if _is_temperature_unsupported_error(exc):
+                    payload.pop("temperature", None)
+                    self.config.temperature = 1.0
+                    response = client.post(
+                        f"{base_url}/chat/completions",
+                        headers={"Authorization": f"Bearer {self.config.api_key}"},
+                        json=payload,
+                    )
+                    response.raise_for_status()
+                else:
+                    raise
         data = response.json()
         return data["choices"][0]["message"]["content"]
 
@@ -248,6 +326,7 @@ class LLMProviderClient:
             "model": self.config.model,
             "temperature": self.config.temperature,
             "max_tokens": 2000,
+            "thinking": {"type": "disabled"},
             "system": system_prompt,
             "messages": [{"role": "user", "content": user_prompt}],
         }
@@ -261,7 +340,24 @@ class LLMProviderClient:
                 },
                 json=payload,
             )
-            response.raise_for_status()
+            try:
+                response.raise_for_status()
+            except httpx.HTTPStatusError as exc:
+                if _is_temperature_unsupported_error(exc):
+                    payload.pop("temperature", None)
+                    self.config.temperature = 1.0
+                    response = client.post(
+                        f"{base_url}/messages",
+                        headers={
+                            "x-api-key": self.config.api_key,
+                            "anthropic-version": "2023-06-01",
+                            "content-type": "application/json",
+                        },
+                        json=payload,
+                    )
+                    response.raise_for_status()
+                else:
+                    raise
         data = response.json()
         chunks = data.get("content", [])
         return "\n".join(chunk.get("text", "") for chunk in chunks if chunk.get("type") == "text")
@@ -280,12 +376,12 @@ class LLMProviderClient:
         last_model_error: httpx.HTTPStatusError | None = None
         for model in _gemini_model_candidates(self.config.model):
             with httpx.Client(timeout=self.config.timeout_seconds) as client:
-                response = client.post(
-                    f"{base_url}/models/{model}:generateContent?key={self.config.api_key}",
-                    json=payload,
-                )
                 try:
-                    response.raise_for_status()
+                    response = _post_json_with_retries(
+                        client,
+                        f"{base_url}/models/{model}:generateContent?key={self.config.api_key}",
+                        json_payload=payload,
+                    )
                 except httpx.HTTPStatusError as exc:
                     if _is_gemini_model_availability_error(exc):
                         last_model_error = exc

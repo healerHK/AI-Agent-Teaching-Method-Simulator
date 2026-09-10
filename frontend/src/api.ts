@@ -8,6 +8,11 @@ import type {
   StartSessionResponse,
   TeacherTurnResponse,
   TranscriptBenchmarkRunResponse,
+  TranscriptScenario,
+  TranscriptScenarioListResponse,
+  TranscriptScenarioSaveResponse,
+  TranscriptScenarioTestResponse,
+  RenderedStudentPrompt,
 } from './types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://127.0.0.1:8000';
@@ -54,6 +59,40 @@ export function runPhase3Demo(): Promise<Phase3DemoResponse> {
 
 export function getV2Scenarios(): Promise<ScenarioListResponse> {
   return request<ScenarioListResponse>('/api/v2/scenarios');
+}
+
+export function listTranscriptScenarios(): Promise<TranscriptScenarioListResponse> {
+  return request<TranscriptScenarioListResponse>('/api/v2/transcript-system/scenarios');
+}
+
+export function getTranscriptScenario(scenarioId: string): Promise<TranscriptScenario> {
+  return request<TranscriptScenario>(`/api/v2/transcript-system/scenarios/${scenarioId}`);
+}
+
+export function saveTranscriptScenario(scenario: TranscriptScenario): Promise<TranscriptScenarioSaveResponse> {
+  return request<TranscriptScenarioSaveResponse>(`/api/v2/transcript-system/scenarios/${scenario.scenario_id}`, {
+    method: 'PUT',
+    body: JSON.stringify(scenario),
+  });
+}
+
+export function renderTranscriptScenarioPrompts(scenarioId: string): Promise<RenderedStudentPrompt[]> {
+  return request<RenderedStudentPrompt[]>(`/api/v2/transcript-system/scenarios/${scenarioId}/prompts`);
+}
+
+export function testTranscriptScenario(scenarioId: string): Promise<TranscriptScenarioTestResponse> {
+  return request<TranscriptScenarioTestResponse>(`/api/v2/transcript-system/scenarios/${scenarioId}/test`, {
+    method: 'POST',
+    body: JSON.stringify({}),
+  });
+}
+
+export function runTranscriptScenarioTILEvaluation(scenarioId: string, reviewerId?: string): Promise<TranscriptBenchmarkRunResponse> {
+  const params = new URLSearchParams({ reviewer_id: reviewerId ?? `expert_reviewer_${scenarioId}` });
+  return request<TranscriptBenchmarkRunResponse>(`/api/v2/transcript-system/scenarios/${scenarioId}/til-evaluation?${params.toString()}`, {
+    method: 'POST',
+    body: JSON.stringify({}),
+  });
 }
 
 export function startV2LiveSession(params?: { scenarioId?: string; maxTeacherTurns?: number }): Promise<LiveSessionStartResponse> {

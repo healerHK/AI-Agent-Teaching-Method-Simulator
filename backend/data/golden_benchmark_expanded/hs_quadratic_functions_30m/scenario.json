@@ -1,0 +1,22 @@
+{
+  "scenario_id": "hs_quadratic_functions_30m",
+  "title": "Quadratic functions: structural forms, discriminant, and modelling interpretation",
+  "domain": "Mathematics",
+  "education_level": "college",
+  "learning_objective": "Equivalent quadratic forms reveal intercepts, vertex, axis of symmetry, discriminant information, and transformation behaviour.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "The constant term is always the x-intercept.",
+    "A negative b value means the parabola opens downward.",
+    "The vertex can be found by guessing from the graph only."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "quadratic form comparison sheet",
+    "graphing calculator or plotting grid",
+    "discriminant and completing-square worksheet"
+  ]
+}

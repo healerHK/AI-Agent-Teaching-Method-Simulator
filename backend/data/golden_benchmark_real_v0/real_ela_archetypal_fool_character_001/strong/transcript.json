@@ -1,0 +1,3550 @@
+{
+  "transcript_id": "real_ela_archetypal_fool_character_001_observed",
+  "scenario_id": "real_ela_archetypal_fool_character_001",
+  "variant": "strong",
+  "domain": "English Language Arts",
+  "education_level": "secondary_language_arts",
+  "learning_objective": "Students identify the archetypal character of the fool, distinguish it from related archetypes such as sidekick, trickster/prankster and Byronic hero, and justify examples from literature and popular culture.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:00-00:15] As usual on Wednesday, we're going to start with our archetypal theory."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:15-00:18] Today's archetypal character is the fool."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:18-00:20] Our last two characters have been a little bit challenging."
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:20-00:25] Remember that recently we took a look at the alter ego, which is fairly difficult."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:25-00:28] And we took a look at the Byronic hero, which is quite difficult, that rough around the"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:28-00:31] edges kind of hero, very different than the standard hero."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:31-00:34] This is a figure that I think is a lot more recognizable."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:34-00:39] So as usual, take a moment to read over the description and turn to your neighbors and"
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[00:39-00:44] do some informal brainstorming about figures you think fit this model, both from literature"
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:44-00:52] and from pop culture."
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:52-00:55] He's a little too intelligent, I think, maybe."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:55-00:57] He's more of a Byronic hero."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[00:57-01:00] This one needs to be a little good."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:00-01:03] Oh yes, Forrest Gump is perfect."
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:03-01:04] That's a perfect example."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:04-01:05] Never come back from that."
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:05-01:08] He wants to give you a bunch of bars and parrots for you."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:08-01:12] The only thing about his parrot is that he's a little too clever."
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:12-01:14] Yeah, he's more of a sidekick."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:14-01:19] You want a character that generates a little bit more silly comic-related."
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:19-01:20] Maybe so, yeah."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:20-01:26] I think the fact that he will always be driven to best for him."
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:27-01:29] Yeah, sometimes this character merges with the sidekick."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:29-01:31] Yeah, that happens quite often, actually."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:31-01:33] Anything good?"
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:33-01:34] Yeah, we're trying to..."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:34-01:37] I don't know if I'll be with him."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:37-01:38] Maybe so."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:38-01:42] The thing about Moby Dick, though, is I don't know if there are really any uproariously funny"
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:42-01:44] moments in that one."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:44-01:46] It's a little bit of a serious book."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:46-01:47] I got that one."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:47-01:48] I got that one."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:48-01:49] Peter Pettigrew."
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:49-01:50] Peter Pettigrew."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:50-01:51] I'm here."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:51-01:52] I'm here."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:52-01:53] Potter?"
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:53-01:54] I say the twins."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:54-01:55] Yeah."
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:56-01:58] It's also like the prankster, because I have to be like..."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[01:58-01:59] Sometimes?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[01:59-02:00] Because I have to be like a dumb character."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:00-02:01] I feel like..."
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:01-02:05] It's like mostly the fool is a little bit substandard intelligence, but then we'll have off these"
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:05-02:09] moments of crazy epiphany, which is where the irony comes in."
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:09-02:13] You know, we perceive the fool to be lowly in stature and lowly in intelligence, but"
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:13-02:15] then he'll come out with some kind of jam."
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:15-02:16] Yeah."
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:16-02:17] Would you..."
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:17-02:18] Fuck Finn be one?"
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:18-02:19] Um, I think he's stupid and dolphin."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:19-02:20] Okay."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:20-02:21] Probably the goofballs there."
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:21-02:22] Yeah."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:22-02:23] Yeah."
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:23-02:24] Uh huh."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:24-02:25] Jim is..."
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:25-02:26] Jim is a Byronic hero."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:26-02:27] Slash hero's best friend."
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:27-02:28] Okay."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:28-02:29] Yeah."
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:29-02:30] Absolutely."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:30-02:31] Anything good?"
+    },
+    {
+      "turn_id": "turn_065",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:31-02:32] Uh, Patrick's."
+    },
+    {
+      "turn_id": "turn_066",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:32-02:33] Patrick's perfect."
+    },
+    {
+      "turn_id": "turn_067",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:33-02:34] That's perfect."
+    },
+    {
+      "turn_id": "turn_068",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:34-02:35] Yeah."
+    },
+    {
+      "turn_id": "turn_069",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:35-02:36] Girlfriend."
+    },
+    {
+      "turn_id": "turn_070",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:36-02:37] Absolutely."
+    },
+    {
+      "turn_id": "turn_071",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:37-02:40] That's a good one."
+    },
+    {
+      "turn_id": "turn_072",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:40-02:50] Now that everyone has had a chance to disembrace roaming and speak with neighbors, um, as you know,"
+    },
+    {
+      "turn_id": "turn_073",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[02:50-02:55] as usual, we're going to discuss these, uh, these characteristics together and come"
+    },
+    {
+      "turn_id": "turn_074",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[02:55-03:00] up with some examples from literature and pop culture."
+    },
+    {
+      "turn_id": "turn_075",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:00-03:06] So the fool, um, as I mentioned, this is a very common, very common character as well."
+    },
+    {
+      "turn_id": "turn_076",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:06-03:11] And what you look for here is you look for the fool to be an ironic form of comic relief."
+    },
+    {
+      "turn_id": "turn_077",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:11-03:13] So what is comic relief?"
+    },
+    {
+      "turn_id": "turn_078",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:13-03:16] Someone give us an understanding of, of comic relief."
+    },
+    {
+      "turn_id": "turn_079",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:16-03:17] Yes."
+    },
+    {
+      "turn_id": "turn_080",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:17-03:18] I give this a serious moment."
+    },
+    {
+      "turn_id": "turn_081",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:18-03:20] It's that one person who just makes it like eases the moon."
+    },
+    {
+      "turn_id": "turn_082",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:20-03:21] Absolutely."
+    },
+    {
+      "turn_id": "turn_083",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:21-03:22] I like the way he said that eases the mood."
+    },
+    {
+      "turn_id": "turn_084",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:22-03:24] That's what you look for in comic relief."
+    },
+    {
+      "turn_id": "turn_085",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:24-03:30] Um, therefore we'll often find fools in what kinds of works of literature then class."
+    },
+    {
+      "turn_id": "turn_086",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:30-03:32] Drama or tragedy."
+    },
+    {
+      "turn_id": "turn_087",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:32-03:33] Yep."
+    },
+    {
+      "turn_id": "turn_088",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:33-03:36] You look for this figure to kind of shake things up because if the mood gets too serious,"
+    },
+    {
+      "turn_id": "turn_089",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:36-03:38] it's hard for the audience to maintain focus."
+    },
+    {
+      "turn_id": "turn_090",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:38-03:41] And we have a little bit of irony here."
+    },
+    {
+      "turn_id": "turn_091",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:41-03:44] And here's essentially the, the irony that goes on."
+    },
+    {
+      "turn_id": "turn_092",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:44-03:51] Although the fool is ridiculous, and although the fool may not have the highest social"
+    },
+    {
+      "turn_id": "turn_093",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:51-03:56] standing or may not be the most intellectually gifted, the fool will sometimes come out with"
+    },
+    {
+      "turn_id": "turn_094",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[03:56-03:59] these little gems of wisdom."
+    },
+    {
+      "turn_id": "turn_095",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[03:59-04:14] So the irony here is that, um, although lowly, the fool is usually moments hearily wise."
+    },
+    {
+      "turn_id": "turn_096",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:15-04:19] The fool will have these little quick, wise moments, and we're going to talk about why."
+    },
+    {
+      "turn_id": "turn_097",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:19-04:24] Um, so again, his appearance or his station in life, you know, his socioeconomic status,"
+    },
+    {
+      "turn_id": "turn_098",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:24-04:31] he may not be noble, okay, maybe kind of lowly or ridiculous or silly, but this often reminds"
+    },
+    {
+      "turn_id": "turn_099",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:31-04:34] us of how arbitrary class snobbery can be."
+    },
+    {
+      "turn_id": "turn_100",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:34-04:36] Um, what is arbitrary?"
+    },
+    {
+      "turn_id": "turn_101",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:36-04:37] Random."
+    },
+    {
+      "turn_id": "turn_102",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:37-04:38] Random."
+    },
+    {
+      "turn_id": "turn_103",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:38-04:39] Random."
+    },
+    {
+      "turn_id": "turn_104",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:39-04:43] Unfair, you know, not based on, not based on fact because a lot of times when people in"
+    },
+    {
+      "turn_id": "turn_105",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:43-04:46] uncertain social classes, the higher ones, when they consider themselves better than"
+    },
+    {
+      "turn_id": "turn_106",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:46-04:51] everyone else, that class snobbery is shattered by the fool because here's the fool in the"
+    },
+    {
+      "turn_id": "turn_107",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:51-04:55] lower class or who gets less respect and he'll see something about the upper class that"
+    },
+    {
+      "turn_id": "turn_108",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[04:55-04:58] really exposes their ridiculousness at their folly."
+    },
+    {
+      "turn_id": "turn_109",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[04:58-05:00] So he's a commentator."
+    },
+    {
+      "turn_id": "turn_110",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:00-05:04] He comments upon the powerful people, the wealthy people in society, and he gets away"
+    },
+    {
+      "turn_id": "turn_111",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:04-05:05] with it."
+    },
+    {
+      "turn_id": "turn_112",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:05-05:11] How can the fool get away with making these kinds of comments?"
+    },
+    {
+      "turn_id": "turn_113",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:11-05:12] How can he do it?"
+    },
+    {
+      "turn_id": "turn_114",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:12-05:13] Can he get away with it?"
+    },
+    {
+      "turn_id": "turn_115",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:13-05:14] Yes."
+    },
+    {
+      "turn_id": "turn_116",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:14-05:19] Because he's like not afraid to say stupid things, so he can kind of say what's on everyone"
+    },
+    {
+      "turn_id": "turn_117",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:19-05:20] else's mind."
+    },
+    {
+      "turn_id": "turn_118",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:20-05:21] Absolutely."
+    },
+    {
+      "turn_id": "turn_119",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:21-05:24] And then if he says something that does kind of hit close to home, everybody says, oh,"
+    },
+    {
+      "turn_id": "turn_120",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:24-05:26] well, he's always saying ridiculous things like that."
+    },
+    {
+      "turn_id": "turn_121",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:26-05:28] It makes it safe, right?"
+    },
+    {
+      "turn_id": "turn_122",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:28-05:31] Um, so at times, this is what we were just getting at."
+    },
+    {
+      "turn_id": "turn_123",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:31-05:37] He can relate profound wisdom or irony because this inferior status gives him insight on"
+    },
+    {
+      "turn_id": "turn_124",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:37-05:38] the human condition."
+    },
+    {
+      "turn_id": "turn_125",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:38-05:43] See, he's in a lot of ways the fool should feel like an outsider."
+    },
+    {
+      "turn_id": "turn_126",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:43-05:49] And you know that when you remove yourself from a situation, that's when you get perspective."
+    },
+    {
+      "turn_id": "turn_127",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:49-05:52] When you're in the situation, it's hard to get a good perspective because you're biased"
+    },
+    {
+      "turn_id": "turn_128",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:52-05:54] because you're in it."
+    },
+    {
+      "turn_id": "turn_129",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:54-05:55] Okay."
+    },
+    {
+      "turn_id": "turn_130",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[05:55-05:57] Now, what's also kind of funny about the fool?"
+    },
+    {
+      "turn_id": "turn_131",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[05:57-06:02] The fool will often have, strangely, these streaks of good luck."
+    },
+    {
+      "turn_id": "turn_132",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:02-06:05] And sometimes you'll see this archetype merge with the sidekick."
+    },
+    {
+      "turn_id": "turn_133",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:05-06:08] But what will make the fool a little bit different?"
+    },
+    {
+      "turn_id": "turn_134",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:08-06:15] This is one of the distinguishing factors is that the sidekick may never have a moment"
+    },
+    {
+      "turn_id": "turn_135",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:15-06:18] of real wisdom, whereas the fool will."
+    },
+    {
+      "turn_id": "turn_136",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:18-06:20] So that's one way that you can separate them."
+    },
+    {
+      "turn_id": "turn_137",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:20-06:23] But sometimes these figures do merge, do combine."
+    },
+    {
+      "turn_id": "turn_138",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:23-06:24] Okay."
+    },
+    {
+      "turn_id": "turn_139",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:24-06:25] Does all that make sense?"
+    },
+    {
+      "turn_id": "turn_140",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:25-06:26] Okay."
+    },
+    {
+      "turn_id": "turn_141",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:26-06:27] So let's hear from you."
+    },
+    {
+      "turn_id": "turn_142",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:27-06:29] What are some examples first from literature?"
+    },
+    {
+      "turn_id": "turn_143",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:29-06:33] You know, so here we're looking for examples from books and plays and major works."
+    },
+    {
+      "turn_id": "turn_144",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:33-06:34] Oh, wow."
+    },
+    {
+      "turn_id": "turn_145",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:34-06:35] Very good."
+    },
+    {
+      "turn_id": "turn_146",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:35-06:36] So let's go with Student A right here."
+    },
+    {
+      "turn_id": "turn_147",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:36-06:37] And Rodrigo?"
+    },
+    {
+      "turn_id": "turn_148",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:37-06:40] Tell us about where Rodrigo comes from."
+    },
+    {
+      "turn_id": "turn_149",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:40-06:45] Well, you can pull because during the whole play, he's providing comic relief, you know,"
+    },
+    {
+      "turn_id": "turn_150",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:45-06:48] with all the crying and overdoes, the moment and things."
+    },
+    {
+      "turn_id": "turn_151",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:48-06:53] But when Cassie was going on about Othello and basically just like saying all these bad"
+    },
+    {
+      "turn_id": "turn_152",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:53-06:55] things about him, he's like, well, why don't you quit?"
+    },
+    {
+      "turn_id": "turn_153",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:55-06:56] Yeah."
+    },
+    {
+      "turn_id": "turn_154",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:56-06:58] And so that was a good advice from him."
+    },
+    {
+      "turn_id": "turn_155",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[06:58-06:59] It was."
+    },
+    {
+      "turn_id": "turn_156",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[06:59-07:00] And you know what?"
+    },
+    {
+      "turn_id": "turn_157",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:00-07:02] In Act Five, I won't ruin it because we're not too Act Five yet."
+    },
+    {
+      "turn_id": "turn_158",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:02-07:06] But in Act Five, Rodrigo is going to have this great moment of wisdom."
+    },
+    {
+      "turn_id": "turn_159",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:06-07:08] He's going to figure something out that no one else has."
+    },
+    {
+      "turn_id": "turn_160",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:08-07:11] So just wait for that moment in Act Five."
+    },
+    {
+      "turn_id": "turn_161",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:11-07:12] Shikobi."
+    },
+    {
+      "turn_id": "turn_162",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:12-07:14] I say on first."
+    },
+    {
+      "turn_id": "turn_163",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:14-07:15] Yeah."
+    },
+    {
+      "turn_id": "turn_164",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:15-07:16] Tell us about it."
+    },
+    {
+      "turn_id": "turn_165",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:16-07:18] Because he kind of like does everything that they said."
+    },
+    {
+      "turn_id": "turn_166",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:18-07:23] Like he says all the stuff about Beowulf that nobody else kind of expected, like anyone"
+    },
+    {
+      "turn_id": "turn_167",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:23-07:24] to say to him."
+    },
+    {
+      "turn_id": "turn_168",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:24-07:29] And then like at the end, he did have like the wisdom where him and Beowulf, it like exchanged"
+    },
+    {
+      "turn_id": "turn_169",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:29-07:30] the swords and stuff."
+    },
+    {
+      "turn_id": "turn_170",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:30-07:31] That kind of fits perfect."
+    },
+    {
+      "turn_id": "turn_171",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:31-07:32] Very good."
+    },
+    {
+      "turn_id": "turn_172",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:32-07:33] He does fit well."
+    },
+    {
+      "turn_id": "turn_173",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:33-07:39] Anybody think of the clue that tells us that Unfirth may be of an inferior status?"
+    },
+    {
+      "turn_id": "turn_174",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:39-07:41] There's one little clue in the epic."
+    },
+    {
+      "turn_id": "turn_175",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:41-07:42] What's that?"
+    },
+    {
+      "turn_id": "turn_176",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:42-07:45] He sits at Rothgar's feet."
+    },
+    {
+      "turn_id": "turn_177",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:45-07:47] That may give him a court jester kind of role."
+    },
+    {
+      "turn_id": "turn_178",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:47-07:48] We're not sure though."
+    },
+    {
+      "turn_id": "turn_179",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:48-07:49] That's ambiguous in the epic."
+    },
+    {
+      "turn_id": "turn_180",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:49-07:50] That's an excellent example."
+    },
+    {
+      "turn_id": "turn_181",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:50-07:51] All right."
+    },
+    {
+      "turn_id": "turn_182",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:51-07:52] Who else has an example?"
+    },
+    {
+      "turn_id": "turn_183",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:52-07:53] Humza."
+    },
+    {
+      "turn_id": "turn_184",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:53-07:56] Mary and Pippin from Lord of the Rings."
+    },
+    {
+      "turn_id": "turn_185",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[07:56-07:58] Tell us how they fit."
+    },
+    {
+      "turn_id": "turn_186",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[07:58-08:01] Because like they're always joking around the whole movie, but then eventually when"
+    },
+    {
+      "turn_id": "turn_187",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:01-08:05] they're both under stress, they both come through it in different ways."
+    },
+    {
+      "turn_id": "turn_188",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:05-08:06] Absolutely."
+    },
+    {
+      "turn_id": "turn_189",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:06-08:07] They bring the trees, right?"
+    },
+    {
+      "turn_id": "turn_190",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:07-08:08] They bring the ants."
+    },
+    {
+      "turn_id": "turn_191",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:08-08:09] And something else to look out for."
+    },
+    {
+      "turn_id": "turn_192",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:09-08:12] This is worth jotting down."
+    },
+    {
+      "turn_id": "turn_193",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:12-08:17] Look for silly names here too."
+    },
+    {
+      "turn_id": "turn_194",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:17-08:20] You know when we look at these names, look at Unfirth, right?"
+    },
+    {
+      "turn_id": "turn_195",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:20-08:21] No courage, no peace."
+    },
+    {
+      "turn_id": "turn_196",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:21-08:24] This was something we looked at etymologically at one point."
+    },
+    {
+      "turn_id": "turn_197",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:24-08:25] Look at Mary and Pippin."
+    },
+    {
+      "turn_id": "turn_198",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:25-08:26] What does Mary mean?"
+    },
+    {
+      "turn_id": "turn_199",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:26-08:27] It's happy."
+    },
+    {
+      "turn_id": "turn_200",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:27-08:28] By happy or jolly."
+    },
+    {
+      "turn_id": "turn_201",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:28-08:29] Yeah."
+    },
+    {
+      "turn_id": "turn_202",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:29-08:31] So look for the names to be a little silly too."
+    },
+    {
+      "turn_id": "turn_203",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:31-08:32] Okay."
+    },
+    {
+      "turn_id": "turn_204",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:32-08:33] Excellent example."
+    },
+    {
+      "turn_id": "turn_205",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:33-08:34] What's another one?"
+    },
+    {
+      "turn_id": "turn_206",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:34-08:35] Yes."
+    },
+    {
+      "turn_id": "turn_207",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:35-08:36] Neville."
+    },
+    {
+      "turn_id": "turn_208",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:36-08:37] From Harry Potter."
+    },
+    {
+      "turn_id": "turn_209",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:37-08:38] Very good."
+    },
+    {
+      "turn_id": "turn_210",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:38-08:39] What's his whole name?"
+    },
+    {
+      "turn_id": "turn_211",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:39-08:40] Longbottom."
+    },
+    {
+      "turn_id": "turn_212",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:40-08:41] Longbottom."
+    },
+    {
+      "turn_id": "turn_213",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:41-08:44] You know, it's kind of like saying big bottom."
+    },
+    {
+      "turn_id": "turn_214",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:44-08:45] It's pretty funny."
+    },
+    {
+      "turn_id": "turn_215",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:45-08:47] He has a goofy appearance in the films."
+    },
+    {
+      "turn_id": "turn_216",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:47-08:48] You know, he's got buck teeth and everything."
+    },
+    {
+      "turn_id": "turn_217",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:48-08:51] But boy, he comes through, doesn't he?"
+    },
+    {
+      "turn_id": "turn_218",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:51-08:53] A couple of times he comes through for Harry and the friends."
+    },
+    {
+      "turn_id": "turn_219",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:53-08:54] Yeah."
+    },
+    {
+      "turn_id": "turn_220",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:54-08:55] Good."
+    },
+    {
+      "turn_id": "turn_221",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:55-08:56] Okay."
+    },
+    {
+      "turn_id": "turn_222",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:56-08:57] What's another one?"
+    },
+    {
+      "turn_id": "turn_223",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:57-08:58] Yes."
+    },
+    {
+      "turn_id": "turn_224",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[08:58-08:59] Elora?"
+    },
+    {
+      "turn_id": "turn_225",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[08:59-09:00] Well, that's a movie."
+    },
+    {
+      "turn_id": "turn_226",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:00-09:01] Nevermind."
+    },
+    {
+      "turn_id": "turn_227",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:01-09:02] Okay."
+    },
+    {
+      "turn_id": "turn_228",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:02-09:03] I'll call you back."
+    },
+    {
+      "turn_id": "turn_229",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:03-09:04] I'll call you back."
+    },
+    {
+      "turn_id": "turn_230",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:04-09:05] Yes."
+    },
+    {
+      "turn_id": "turn_231",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:05-09:06] I'm not sure."
+    },
+    {
+      "turn_id": "turn_232",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:06-09:09] But with Ron Weasley, he's still sort of the sidekick in the fool."
+    },
+    {
+      "turn_id": "turn_233",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:09-09:11] At times, absolutely."
+    },
+    {
+      "turn_id": "turn_234",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:11-09:17] Ron Weasley has moments where he is in fact a sidekick, but he does fulfill a fool role"
+    },
+    {
+      "turn_id": "turn_235",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:17-09:18] as well."
+    },
+    {
+      "turn_id": "turn_236",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:18-09:20] I have to answer the phone."
+    },
+    {
+      "turn_id": "turn_237",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:20-09:21] This is realistic."
+    },
+    {
+      "turn_id": "turn_238",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:21-09:22] Okay."
+    },
+    {
+      "turn_id": "turn_239",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:22-09:23] Okay."
+    },
+    {
+      "turn_id": "turn_240",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:23-09:24] Sadie."
+    },
+    {
+      "turn_id": "turn_241",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:24-09:27] Also from Harry Potter is Fred and George."
+    },
+    {
+      "turn_id": "turn_242",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:27-09:28] What's that?"
+    },
+    {
+      "turn_id": "turn_243",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:28-09:29] Fred and George."
+    },
+    {
+      "turn_id": "turn_244",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:29-09:30] Okay."
+    },
+    {
+      "turn_id": "turn_245",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:30-09:31] Tell us about it."
+    },
+    {
+      "turn_id": "turn_246",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:31-09:35] They like have their joke shop even when everything is all gray and then like they"
+    },
+    {
+      "turn_id": "turn_247",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:35-09:39] played pranks at the school and everything's bad, like when they have the bad teachers"
+    },
+    {
+      "turn_id": "turn_248",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:39-09:40] and stuff."
+    },
+    {
+      "turn_id": "turn_249",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:40-09:41] That's excellent."
+    },
+    {
+      "turn_id": "turn_250",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:41-09:42] Thank you."
+    },
+    {
+      "turn_id": "turn_251",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:42-09:44] You can really tell Rowling loves archetypal theory."
+    },
+    {
+      "turn_id": "turn_252",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:44-09:45] Tons of archetypes."
+    },
+    {
+      "turn_id": "turn_253",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:45-09:46] Yes."
+    },
+    {
+      "turn_id": "turn_254",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:46-09:48] I don't know if the Mad Hatter counts."
+    },
+    {
+      "turn_id": "turn_255",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[09:48-09:49] Oh, absolutely."
+    },
+    {
+      "turn_id": "turn_256",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:49-09:50] The Mad Hatter and..."
+    },
+    {
+      "turn_id": "turn_257",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:50-09:51] The cat."
+    },
+    {
+      "turn_id": "turn_258",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:51-09:52] The cat."
+    },
+    {
+      "turn_id": "turn_259",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:52-09:57] The Mad Hatter's partner in silliness."
+    },
+    {
+      "turn_id": "turn_260",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:57-09:58] The March Hare."
+    },
+    {
+      "turn_id": "turn_261",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[09:59-10:01] Oh, the rabbit."
+    },
+    {
+      "turn_id": "turn_262",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:01-10:03] No, not the white rabbit."
+    },
+    {
+      "turn_id": "turn_263",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:03-10:04] The white rabbit is different."
+    },
+    {
+      "turn_id": "turn_264",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:04-10:07] He's one with the watch, right, with Alice and Alice in Wonderland."
+    },
+    {
+      "turn_id": "turn_265",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:07-10:10] The Mad Hatter is, of course, spouting nonsense."
+    },
+    {
+      "turn_id": "turn_266",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:10-10:17] This is Lewis Carroll doing some satire because in the 1800s, when hats were made, the workers"
+    },
+    {
+      "turn_id": "turn_267",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:17-10:20] used mercury to shine them up and they used their hands."
+    },
+    {
+      "turn_id": "turn_268",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:20-10:22] They didn't use gloves with the mercury."
+    },
+    {
+      "turn_id": "turn_269",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:22-10:25] Mercury is poisonous and if you handle it too much, it can cause insanity."
+    },
+    {
+      "turn_id": "turn_270",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:25-10:28] In England, Mad means crazy."
+    },
+    {
+      "turn_id": "turn_271",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:28-10:30] Yeah, so he's mad."
+    },
+    {
+      "turn_id": "turn_272",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:30-10:31] He's crazy because of the hat-making."
+    },
+    {
+      "turn_id": "turn_273",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:31-10:40] Lewis Carroll's doing a bit of satire here and a March Hare in March rabbits propagate."
+    },
+    {
+      "turn_id": "turn_274",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:40-10:43] In England, if you say that someone's acting like a March Hare, it means they're acting"
+    },
+    {
+      "turn_id": "turn_275",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:43-10:46] crazy out of control."
+    },
+    {
+      "turn_id": "turn_276",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:46-10:48] These two are absolutely fools in Alice in Wonderland."
+    },
+    {
+      "turn_id": "turn_277",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:48-10:49] Very good."
+    },
+    {
+      "turn_id": "turn_278",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:49-10:50] All right."
+    },
+    {
+      "turn_id": "turn_279",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[10:50-10:52] What's another example from Lit here?"
+    },
+    {
+      "turn_id": "turn_280",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:52-10:53] Yes."
+    },
+    {
+      "turn_id": "turn_281",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:54-10:59] Well, the advisor from Mulan, it was a book too, so Mulan was a book too, but the advisor"
+    },
+    {
+      "turn_id": "turn_282",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[10:59-11:00] to the general."
+    },
+    {
+      "turn_id": "turn_283",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:00-11:03] Tell us about it."
+    },
+    {
+      "turn_id": "turn_284",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:03-11:05] He wasn't really helpful at first."
+    },
+    {
+      "turn_id": "turn_285",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:05-11:10] He kept trying to suck up to the general and then he kind of helped out at the end with"
+    },
+    {
+      "turn_id": "turn_286",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:10-11:11] the general's son."
+    },
+    {
+      "turn_id": "turn_287",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:11-11:14] So he's more of a fool as opposed to a wise old man?"
+    },
+    {
+      "turn_id": "turn_288",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:14-11:15] Yeah."
+    },
+    {
+      "turn_id": "turn_289",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:15-11:16] Okay."
+    },
+    {
+      "turn_id": "turn_290",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:16-11:17] Sounds good."
+    },
+    {
+      "turn_id": "turn_291",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:17-11:20] So we'll put him down here for pop culture."
+    },
+    {
+      "turn_id": "turn_292",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:20-11:24] Is there anything else you wanted to say about literature before we move to pop culture?"
+    },
+    {
+      "turn_id": "turn_293",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:24-11:25] Student B?"
+    },
+    {
+      "turn_id": "turn_294",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:25-11:30] I don't know about this one, but maybe Wilson from Gatsby."
+    },
+    {
+      "turn_id": "turn_295",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:30-11:31] Huh."
+    },
+    {
+      "turn_id": "turn_296",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:31-11:32] Explain."
+    },
+    {
+      "turn_id": "turn_297",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:32-11:38] He just seems like he's like always like part of everyone's joke and stuff."
+    },
+    {
+      "turn_id": "turn_298",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:38-11:39] He's just not."
+    },
+    {
+      "turn_id": "turn_299",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:39-11:40] He never really succeeds."
+    },
+    {
+      "turn_id": "turn_300",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:40-11:41] Yeah."
+    },
+    {
+      "turn_id": "turn_301",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:41-11:43] He is the butt of everyone's jokes."
+    },
+    {
+      "turn_id": "turn_302",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:43-11:44] Yeah."
+    },
+    {
+      "turn_id": "turn_303",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:44-11:45] He's kind of a perennial loser."
+    },
+    {
+      "turn_id": "turn_304",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:45-11:46] Yeah."
+    },
+    {
+      "turn_id": "turn_305",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:46-11:47] I can see where you're going with that."
+    },
+    {
+      "turn_id": "turn_306",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[11:47-11:52] I wonder, is there a, does he have a, um, a lucky streak or a moment of wisdom?"
+    },
+    {
+      "turn_id": "turn_307",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:52-11:54] That's the only thing that, that's why I said I didn't know about that."
+    },
+    {
+      "turn_id": "turn_308",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:54-11:55] Yeah."
+    },
+    {
+      "turn_id": "turn_309",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:55-11:56] I think that you're right."
+    },
+    {
+      "turn_id": "turn_310",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:56-11:57] I think he's kind of a tweener."
+    },
+    {
+      "turn_id": "turn_311",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:57-11:58] I think he has elements of it."
+    },
+    {
+      "turn_id": "turn_312",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:58-11:59] I think that's a good point."
+    },
+    {
+      "turn_id": "turn_313",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[11:59-12:00] Uh, humza."
+    },
+    {
+      "turn_id": "turn_314",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:00-12:03] Would Peter Pettigrew be one from Harry?"
+    },
+    {
+      "turn_id": "turn_315",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:03-12:04] Explain."
+    },
+    {
+      "turn_id": "turn_316",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:04-12:08] Uh, because, well, he'd be the fool to both Voldemort and kind of Harry Potter, because"
+    },
+    {
+      "turn_id": "turn_317",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:08-12:10] Voldemort always kind of like picks on him and stuff."
+    },
+    {
+      "turn_id": "turn_318",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:10-12:15] But when Harry really needs him, Peter Pettigrew comes through because Harry basically saved"
+    },
+    {
+      "turn_id": "turn_319",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:15-12:16] his life."
+    },
+    {
+      "turn_id": "turn_320",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:16-12:19] He has that streak of, of helpfulness, that could work."
+    },
+    {
+      "turn_id": "turn_321",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:19-12:20] Absolutely."
+    },
+    {
+      "turn_id": "turn_322",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:20-12:21] Uh, Jack."
+    },
+    {
+      "turn_id": "turn_323",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:21-12:28] I don't know his name, but in the shake-off play we read in Tintecray the Seagull."
+    },
+    {
+      "turn_id": "turn_324",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:28-12:29] Seagull, sure."
+    },
+    {
+      "turn_id": "turn_325",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:29-12:32] Um, the, I think he's like the grandfather character."
+    },
+    {
+      "turn_id": "turn_326",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:32-12:33] Okay."
+    },
+    {
+      "turn_id": "turn_327",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:33-12:44] To the main character whose name is, I don't, I don't know his name, but yeah, he's like"
+    },
+    {
+      "turn_id": "turn_328",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:44-12:49] really jovial the whole time while there's a lot of just like, melodramatic things going"
+    },
+    {
+      "turn_id": "turn_329",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:49-12:52] on in everyone's lives and he just kind of pokes fun at it."
+    },
+    {
+      "turn_id": "turn_330",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:52-12:53] Okay."
+    },
+    {
+      "turn_id": "turn_331",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[12:53-12:58] And he has, I guess, insight to the human condition."
+    },
+    {
+      "turn_id": "turn_332",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[12:58-13:03] Does his poking fun involve making fun of how seriously the characters are taking their"
+    },
+    {
+      "turn_id": "turn_333",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:03-13:04] lives and everything?"
+    },
+    {
+      "turn_id": "turn_334",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:04-13:05] That would, that seemed to be actually perfect."
+    },
+    {
+      "turn_id": "turn_335",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:05-13:06] Yeah."
+    },
+    {
+      "turn_id": "turn_336",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:06-13:09] I haven't read it in many years, so I don't remember the character either, but the example"
+    },
+    {
+      "turn_id": "turn_337",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:09-13:10] sounds good."
+    },
+    {
+      "turn_id": "turn_338",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:10-13:13] Um, others from Lit."
+    },
+    {
+      "turn_id": "turn_339",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:13-13:18] I was also thinking about, uh, Lenny from, of Mice and Men, um, who is, you know, intellectually"
+    },
+    {
+      "turn_id": "turn_340",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:18-13:22] challenged, but definitely is wise about some things, that he's the only character on"
+    },
+    {
+      "turn_id": "turn_341",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:22-13:24] the ranch who isn't racist."
+    },
+    {
+      "turn_id": "turn_342",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:24-13:27] He's the only character on the ranch who talks to Curly's wife."
+    },
+    {
+      "turn_id": "turn_343",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:27-13:29] Um, so those are some ideas there."
+    },
+    {
+      "turn_id": "turn_344",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:29-13:33] One thing I wanted to do before we hit pop culture, Shakespeare does something great in"
+    },
+    {
+      "turn_id": "turn_345",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:33-13:38] Romeo and Juliet with the fool because he spreads the full characteristics to two different"
+    },
+    {
+      "turn_id": "turn_346",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:38-13:39] characters."
+    },
+    {
+      "turn_id": "turn_347",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:39-13:43] Think of which two characters in Romeo and Juliet have these characteristics and they're"
+    },
+    {
+      "turn_id": "turn_348",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:43-13:47] not taking seriously before they have these moments of intense wisdom."
+    },
+    {
+      "turn_id": "turn_349",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:47-13:52] Uh, yes, Student F, Mercutio and the nurse from Romeo and Juliet, and let's give that man some"
+    },
+    {
+      "turn_id": "turn_350",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[13:52-13:56] snaps."
+    },
+    {
+      "turn_id": "turn_351",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:56-13:57] So tell us about that."
+    },
+    {
+      "turn_id": "turn_352",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[13:57-14:00] Tell us about Mercutio and the nurse and how that works."
+    },
+    {
+      "turn_id": "turn_353",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:00-14:03] Well, Mercutio is kind of like, um, Romeo's best buddy."
+    },
+    {
+      "turn_id": "turn_354",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:03-14:08] They always get into trouble and Mercutio doesn't really take anything seriously."
+    },
+    {
+      "turn_id": "turn_355",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:08-14:13] And the nurse sort of just looks after Juliet and like even though she's sort of like the"
+    },
+    {
+      "turn_id": "turn_356",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:13-14:18] help to the Capulet family so they don't really pay any attention to her, but she like knows"
+    },
+    {
+      "turn_id": "turn_357",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:18-14:19] things."
+    },
+    {
+      "turn_id": "turn_358",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:19-14:20] Yeah."
+    },
+    {
+      "turn_id": "turn_359",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:20-14:21] Very good."
+    },
+    {
+      "turn_id": "turn_360",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:21-14:22] That's a nice job."
+    },
+    {
+      "turn_id": "turn_361",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:22-14:24] I was, I was really amazed by how quickly you came up with that."
+    },
+    {
+      "turn_id": "turn_362",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:24-14:27] So does everybody have these examples written down for lit?"
+    },
+    {
+      "turn_id": "turn_363",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:27-14:28] Yes."
+    },
+    {
+      "turn_id": "turn_364",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:28-14:29] Yeah."
+    },
+    {
+      "turn_id": "turn_365",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:29-14:30] We're going to go ahead and move on to pop culture."
+    },
+    {
+      "turn_id": "turn_366",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:30-14:33] Cause I know you're really dying to share your examples for pop culture."
+    },
+    {
+      "turn_id": "turn_367",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:33-14:37] This is so common in pop culture and entertainment."
+    },
+    {
+      "turn_id": "turn_368",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:37-14:38] So what are some examples?"
+    },
+    {
+      "turn_id": "turn_369",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:38-14:40] Yeah, I knew it."
+    },
+    {
+      "turn_id": "turn_370",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:40-14:43] I could tell you're simmering here into the surface with ideas."
+    },
+    {
+      "turn_id": "turn_371",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:43-14:44] Yes."
+    },
+    {
+      "turn_id": "turn_372",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:44-14:47] Go ahead in the back for she."
+    },
+    {
+      "turn_id": "turn_373",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:47-14:48] Jar Jar from Star Wars."
+    },
+    {
+      "turn_id": "turn_374",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:48-14:49] Yes."
+    },
+    {
+      "turn_id": "turn_375",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:49-14:50] Tell us how."
+    },
+    {
+      "turn_id": "turn_376",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[14:50-14:54] You mean man, like everything goes wrong."
+    },
+    {
+      "turn_id": "turn_377",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[14:54-15:01] He's always the one to mess something up and make the audience laugh when everything's"
+    },
+    {
+      "turn_id": "turn_378",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:01-15:03] going terribly wrong."
+    },
+    {
+      "turn_id": "turn_379",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:03-15:04] Right."
+    },
+    {
+      "turn_id": "turn_380",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:04-15:06] And what's his streak of luck?"
+    },
+    {
+      "turn_id": "turn_381",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:06-15:09] He gets this funny little stroke of luck later on."
+    },
+    {
+      "turn_id": "turn_382",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:09-15:10] What happens to him?"
+    },
+    {
+      "turn_id": "turn_383",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:10-15:13] Do you remember that is really kind of great or lucky?"
+    },
+    {
+      "turn_id": "turn_384",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:13-15:14] Does anybody remember?"
+    },
+    {
+      "turn_id": "turn_385",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:14-15:15] Can anybody tag team?"
+    },
+    {
+      "turn_id": "turn_386",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:15-15:16] Do you remember what happens to Jar Jar?"
+    },
+    {
+      "turn_id": "turn_387",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:16-15:17] Yeah."
+    },
+    {
+      "turn_id": "turn_388",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:17-15:22] I think when he was in the middle of the war and then he got lucky because nobody shot"
+    },
+    {
+      "turn_id": "turn_389",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:22-15:23] him."
+    },
+    {
+      "turn_id": "turn_390",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:23-15:24] Right."
+    },
+    {
+      "turn_id": "turn_391",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:24-15:28] He walks to the battlefield with people falling in every direction and he just kind of walks"
+    },
+    {
+      "turn_id": "turn_392",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:28-15:30] casually through it."
+    },
+    {
+      "turn_id": "turn_393",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:30-15:35] Also later on he becomes a very important ambassador type for his country just by sheer"
+    },
+    {
+      "turn_id": "turn_394",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:35-15:36] luck."
+    },
+    {
+      "turn_id": "turn_395",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:36-15:37] You know, he never designed this for himself."
+    },
+    {
+      "turn_id": "turn_396",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:37-15:39] That's a great example."
+    },
+    {
+      "turn_id": "turn_397",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:39-15:40] What's another example?"
+    },
+    {
+      "turn_id": "turn_398",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:40-15:41] Yes."
+    },
+    {
+      "turn_id": "turn_399",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:41-15:42] Student D."
+    },
+    {
+      "turn_id": "turn_400",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:42-15:45] We came up with Bubba and Forrest from Forrest Gump."
+    },
+    {
+      "turn_id": "turn_401",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:45-15:47] Absolutely."
+    },
+    {
+      "turn_id": "turn_402",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:47-15:48] Tell us how."
+    },
+    {
+      "turn_id": "turn_403",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[15:48-15:56] Well, they're both kind of like, they give the impression that they're kind of [ableist term]"
+    },
+    {
+      "turn_id": "turn_404",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[15:56-16:03] in a way and, but then they both give, they both give like great ideas and saving lives"
+    },
+    {
+      "turn_id": "turn_405",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:03-16:09] and just like putting themselves in other people's hands like that kind of thing."
+    },
+    {
+      "turn_id": "turn_406",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:09-16:10] Absolutely."
+    },
+    {
+      "turn_id": "turn_407",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:10-16:11] Yeah."
+    },
+    {
+      "turn_id": "turn_408",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:11-16:12] They're, they're wise about the things that matter."
+    },
+    {
+      "turn_id": "turn_409",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:12-16:15] That's a hallmark of the fool, but not taken seriously by society despite how much they"
+    },
+    {
+      "turn_id": "turn_410",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:15-16:16] add to it."
+    },
+    {
+      "turn_id": "turn_411",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:16-16:17] Yeah."
+    },
+    {
+      "turn_id": "turn_412",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:17-16:18] That's excellent."
+    },
+    {
+      "turn_id": "turn_413",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:18-16:19] They both are fools."
+    },
+    {
+      "turn_id": "turn_414",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:19-16:20] Very good."
+    },
+    {
+      "turn_id": "turn_415",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:20-16:21] Who to choose?"
+    },
+    {
+      "turn_id": "turn_416",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:21-16:22] Let's see here."
+    },
+    {
+      "turn_id": "turn_417",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:22-16:23] Yes."
+    },
+    {
+      "turn_id": "turn_418",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:23-16:24] For son."
+    },
+    {
+      "turn_id": "turn_419",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:24-16:25] I said, I booed from Aladdin."
+    },
+    {
+      "turn_id": "turn_420",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:25-16:26] Tell us about it."
+    },
+    {
+      "turn_id": "turn_421",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:26-16:32] Um, well, he's kind of like the fool and not really the sidekick to the whole movie."
+    },
+    {
+      "turn_id": "turn_422",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:32-16:40] I think his, like, his point of wisdom is telling Aladdin to go talk to Jasmine, really?"
+    },
+    {
+      "turn_id": "turn_423",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:40-16:47] Like, I don't think he has like a real, like, good, like, shriek of love, you know?"
+    },
+    {
+      "turn_id": "turn_424",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:47-16:51] No, I think you're right because he is the one that, he is the one that pushes Aladdin"
+    },
+    {
+      "turn_id": "turn_425",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:51-16:54] into, you know, chasing Jasmine, which is his love."
+    },
+    {
+      "turn_id": "turn_426",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:54-16:55] Absolutely."
+    },
+    {
+      "turn_id": "turn_427",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[16:55-16:56] Yeah."
+    },
+    {
+      "turn_id": "turn_428",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:56-16:59] But he has his foolish moments too, like in the cave of wonders when he steals the, the"
+    },
+    {
+      "turn_id": "turn_429",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[16:59-17:00] jewel, you know?"
+    },
+    {
+      "turn_id": "turn_430",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:00-17:01] So he does that foolish moment as well."
+    },
+    {
+      "turn_id": "turn_431",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:01-17:02] That's a really good example."
+    },
+    {
+      "turn_id": "turn_432",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:02-17:04] Um, Student H, what did you come up with?"
+    },
+    {
+      "turn_id": "turn_433",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:04-17:07] I came up with Homer Simpson."
+    },
+    {
+      "turn_id": "turn_434",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:07-17:08] Absolutely."
+    },
+    {
+      "turn_id": "turn_435",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:08-17:12] Because he does shed wisdom to his children."
+    },
+    {
+      "turn_id": "turn_436",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:12-17:16] And also he's not really taking serious by a lot of people."
+    },
+    {
+      "turn_id": "turn_437",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:16-17:17] Absolutely."
+    },
+    {
+      "turn_id": "turn_438",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:17-17:19] Does anybody know the joke in his name?"
+    },
+    {
+      "turn_id": "turn_439",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:19-17:21] There's a joke in both names."
+    },
+    {
+      "turn_id": "turn_440",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:21-17:24] Um, let's see here, uh, Student G, you want to try?"
+    },
+    {
+      "turn_id": "turn_441",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:24-17:26] Where are the jokes in this name?"
+    },
+    {
+      "turn_id": "turn_442",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:26-17:33] Um, Homer was like the person who made the Iliad and Antigone, the Odyssey, the Odyssey."
+    },
+    {
+      "turn_id": "turn_443",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:33-17:45] Um, and, um, he's really well known for being very, like, just amazing with words and what"
+    },
+    {
+      "turn_id": "turn_444",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:45-17:46] he does."
+    },
+    {
+      "turn_id": "turn_445",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:46-17:47] That's right."
+    },
+    {
+      "turn_id": "turn_446",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:47-17:51] So the irony here is that, you know, Homer is, um, as Student G said, the one who brings us"
+    },
+    {
+      "turn_id": "turn_447",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:51-17:52] the Odyssey."
+    },
+    {
+      "turn_id": "turn_448",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[17:52-17:56] So he's one of the world's great poets and he's amazing with words, whereas Homer Simpson"
+    },
+    {
+      "turn_id": "turn_449",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[17:56-18:00] is not the most eloquent character you've ever met."
+    },
+    {
+      "turn_id": "turn_450",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:00-18:02] And then take a look at Simpson."
+    },
+    {
+      "turn_id": "turn_451",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:02-18:04] Is anybody have an idea what's going on with, uh, with Simpson?"
+    },
+    {
+      "turn_id": "turn_452",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:04-18:05] Yes, Student A."
+    },
+    {
+      "turn_id": "turn_453",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:05-18:06] Simple."
+    },
+    {
+      "turn_id": "turn_454",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:06-18:07] It's like simple."
+    },
+    {
+      "turn_id": "turn_455",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:07-18:08] Absolutely."
+    },
+    {
+      "turn_id": "turn_456",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:08-18:09] Yes."
+    },
+    {
+      "turn_id": "turn_457",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:09-18:10] A really funny name here."
+    },
+    {
+      "turn_id": "turn_458",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:10-18:11] Excellent job."
+    },
+    {
+      "turn_id": "turn_459",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:11-18:12] Um, who else has some examples here?"
+    },
+    {
+      "turn_id": "turn_460",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:12-18:13] Who hasn't gone yet?"
+    },
+    {
+      "turn_id": "turn_461",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:13-18:14] Student C."
+    },
+    {
+      "turn_id": "turn_462",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:14-18:15] Uh, the donkey from Shrek."
+    },
+    {
+      "turn_id": "turn_463",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:15-18:16] Absolutely."
+    },
+    {
+      "turn_id": "turn_464",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:16-18:17] Tell us about it."
+    },
+    {
+      "turn_id": "turn_465",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:17-18:20] Uh, well, he's kind of like Shrek's sidekick for like the journey, like through the woods"
+    },
+    {
+      "turn_id": "turn_466",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:20-18:21] or whatever."
+    },
+    {
+      "turn_id": "turn_467",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:21-18:27] Like provides comic relief and a bunch of like, uh, dumb sayings and he also has some"
+    },
+    {
+      "turn_id": "turn_468",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:27-18:30] like, wise words of wisdom at some points."
+    },
+    {
+      "turn_id": "turn_469",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:30-18:31] He does."
+    },
+    {
+      "turn_id": "turn_470",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:31-18:32] Shrek."
+    },
+    {
+      "turn_id": "turn_471",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:32-18:34] You know, donkey says the things that we're often thinking, you know, the things that"
+    },
+    {
+      "turn_id": "turn_472",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:34-18:35] we want to say."
+    },
+    {
+      "turn_id": "turn_473",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:35-18:36] That's a great example."
+    },
+    {
+      "turn_id": "turn_474",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:36-18:37] Um, yes."
+    },
+    {
+      "turn_id": "turn_475",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:37-18:38] Go ahead."
+    },
+    {
+      "turn_id": "turn_476",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:38-18:39] Okay."
+    },
+    {
+      "turn_id": "turn_477",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:39-18:40] I don't know her name, but it's from Gone with the Wind."
+    },
+    {
+      "turn_id": "turn_478",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:40-18:44] And she's one of the really squeaky voice and she's like, she's telling him she knows how"
+    },
+    {
+      "turn_id": "turn_479",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:44-18:45] to deliver the baby."
+    },
+    {
+      "turn_id": "turn_480",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:45-18:46] But she does it."
+    },
+    {
+      "turn_id": "turn_481",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:46-18:47] Oh, yes."
+    },
+    {
+      "turn_id": "turn_482",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:47-18:51] Um, that's like the only funny part in the movie."
+    },
+    {
+      "turn_id": "turn_483",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:52-18:53] Is it sissy?"
+    },
+    {
+      "turn_id": "turn_484",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:53-18:54] It's something like that."
+    },
+    {
+      "turn_id": "turn_485",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[18:54-18:55] It's something like that."
+    },
+    {
+      "turn_id": "turn_486",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:55-18:56] I absolutely know what you mean."
+    },
+    {
+      "turn_id": "turn_487",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[18:56-19:00] I want to say, I'm going to put this in quotes because I'm not exactly sure."
+    },
+    {
+      "turn_id": "turn_488",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:00-19:01] She's one of the servants."
+    },
+    {
+      "turn_id": "turn_489",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:01-19:02] Yeah."
+    },
+    {
+      "turn_id": "turn_490",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:02-19:03] She absolutely is the fool."
+    },
+    {
+      "turn_id": "turn_491",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:03-19:04] Yeah."
+    },
+    {
+      "turn_id": "turn_492",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:04-19:05] I think that that's her name."
+    },
+    {
+      "turn_id": "turn_493",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:05-19:07] So this one definitely check up on me on this one."
+    },
+    {
+      "turn_id": "turn_494",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:07-19:08] So I'm not exactly sure."
+    },
+    {
+      "turn_id": "turn_495",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:08-19:09] I haven't seen it in a while."
+    },
+    {
+      "turn_id": "turn_496",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:09-19:10] Um, yes."
+    },
+    {
+      "turn_id": "turn_497",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:10-19:15] Well, I'm not exactly sure either, but, um, would Harpo from the killer purple be one?"
+    },
+    {
+      "turn_id": "turn_498",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:15-19:16] I think so."
+    },
+    {
+      "turn_id": "turn_499",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:16-19:17] Give it a try."
+    },
+    {
+      "turn_id": "turn_500",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:17-19:18] Okay."
+    },
+    {
+      "turn_id": "turn_501",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:18-19:21] Well, isn't Harpo like, well, in the movie, he was like always the one who goes."
+    },
+    {
+      "turn_id": "turn_502",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:21-19:24] I was getting trouble and like, can do things right."
+    },
+    {
+      "turn_id": "turn_503",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:24-19:29] And, um, Sofia always didn't like the way he did things and stuff like that."
+    },
+    {
+      "turn_id": "turn_504",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:29-19:30] Good."
+    },
+    {
+      "turn_id": "turn_505",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:30-19:31] That'd be fine."
+    },
+    {
+      "turn_id": "turn_506",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:31-19:32] I think so."
+    },
+    {
+      "turn_id": "turn_507",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:32-19:33] And if we think about the name too, can you think of another famous Harpo?"
+    },
+    {
+      "turn_id": "turn_508",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:33-19:34] This is before your time."
+    },
+    {
+      "turn_id": "turn_509",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:34-19:37] But I don't know if you've heard of this name before."
+    },
+    {
+      "turn_id": "turn_510",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:37-19:40] Anyone ever heard of it before?"
+    },
+    {
+      "turn_id": "turn_511",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:40-19:41] Harpo Marx."
+    },
+    {
+      "turn_id": "turn_512",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:41-19:42] Marx brothers."
+    },
+    {
+      "turn_id": "turn_513",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:42-19:43] That's way before your time."
+    },
+    {
+      "turn_id": "turn_514",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:43-19:44] Okay."
+    },
+    {
+      "turn_id": "turn_515",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:44-19:45] That's even before my time."
+    },
+    {
+      "turn_id": "turn_516",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:45-19:49] If you can imagine that, I mean, I went to high school shortly after the Civil War."
+    },
+    {
+      "turn_id": "turn_517",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:49-19:50] So, um, let's see."
+    },
+    {
+      "turn_id": "turn_518",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:50-19:52] Uh, go ahead, Trent."
+    },
+    {
+      "turn_id": "turn_519",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[19:52-19:54] Uh, Shaggy and Scooby."
+    },
+    {
+      "turn_id": "turn_520",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:54-19:55] Tell us about it."
+    },
+    {
+      "turn_id": "turn_521",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[19:55-20:00] They're always like, it's called like, Scooby, like, do, it looks like the show's centered"
+    },
+    {
+      "turn_id": "turn_522",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:00-20:01] around him."
+    },
+    {
+      "turn_id": "turn_523",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:01-20:02] But he's always like a scaredy cat."
+    },
+    {
+      "turn_id": "turn_524",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:02-20:06] Even though he's like the big, great, you know, dog and he's always like trying to like"
+    },
+    {
+      "turn_id": "turn_525",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:06-20:07] get out of the mystery."
+    },
+    {
+      "turn_id": "turn_526",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:07-20:11] And he always ends up like running into like the villain or doing something like he didn't"
+    },
+    {
+      "turn_id": "turn_527",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:11-20:14] accidentally to like catch the villain or always be the wrong place the wrong time and"
+    },
+    {
+      "turn_id": "turn_528",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:14-20:15] get lucky."
+    },
+    {
+      "turn_id": "turn_529",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:15-20:16] Every time."
+    },
+    {
+      "turn_id": "turn_530",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:16-20:17] It's a formula."
+    },
+    {
+      "turn_id": "turn_531",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:17-20:18] Yeah."
+    },
+    {
+      "turn_id": "turn_532",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:18-20:19] Yeah, that's very, very good."
+    },
+    {
+      "turn_id": "turn_533",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:19-20:21] There's a few more so we can progress to Shakespeare."
+    },
+    {
+      "turn_id": "turn_534",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:21-20:22] Let's see."
+    },
+    {
+      "turn_id": "turn_535",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:22-20:24] Has everyone had a chance to speak whose hands are raised?"
+    },
+    {
+      "turn_id": "turn_536",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:24-20:25] Oh, Student E."
+    },
+    {
+      "turn_id": "turn_537",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:25-20:27] How do you add me to that?"
+    },
+    {
+      "turn_id": "turn_538",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:27-20:28] Give us a character."
+    },
+    {
+      "turn_id": "turn_539",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:28-20:29] But yes."
+    },
+    {
+      "turn_id": "turn_540",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:29-20:31] You just feel like the water boy?"
+    },
+    {
+      "turn_id": "turn_541",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:31-20:32] Okay."
+    },
+    {
+      "turn_id": "turn_542",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:32-20:33] Excellent."
+    },
+    {
+      "turn_id": "turn_543",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:33-20:34] Tell us about it."
+    },
+    {
+      "turn_id": "turn_544",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:34-20:36] Because he's like always doing funny stuff."
+    },
+    {
+      "turn_id": "turn_545",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:36-20:39] Anyplace like a fool and almost all his movies."
+    },
+    {
+      "turn_id": "turn_546",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:39-20:40] Sure."
+    },
+    {
+      "turn_id": "turn_547",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:40-20:43] Now, Student E brings up something we've discussed before."
+    },
+    {
+      "turn_id": "turn_548",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:43-20:48] There are certain actors and actresses that get typecast into these archetypal roles."
+    },
+    {
+      "turn_id": "turn_549",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:48-20:53] For instance, Angelina Jolie is often which archetypal character that we studied?"
+    },
+    {
+      "turn_id": "turn_550",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:53-20:54] The femme fatale."
+    },
+    {
+      "turn_id": "turn_551",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:54-20:55] Right?"
+    },
+    {
+      "turn_id": "turn_552",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:55-20:58] And so here, Student C Sandler is often the fool."
+    },
+    {
+      "turn_id": "turn_553",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[20:58-20:59] Yeah."
+    },
+    {
+      "turn_id": "turn_554",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[20:59-21:00] So look for that."
+    },
+    {
+      "turn_id": "turn_555",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:00-21:04] Also, I've noticed that some actors tend to be Byronic heroes."
+    },
+    {
+      "turn_id": "turn_556",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:04-21:08] I've noticed that Brad Pitt has taken a lot of Byronic hero characters."
+    },
+    {
+      "turn_id": "turn_557",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:08-21:09] Yeah."
+    },
+    {
+      "turn_id": "turn_558",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:09-21:10] Just a couple more, everyone."
+    },
+    {
+      "turn_id": "turn_559",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:10-21:11] Let's see."
+    },
+    {
+      "turn_id": "turn_560",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:11-21:12] Go ahead, Cleo."
+    },
+    {
+      "turn_id": "turn_561",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:12-21:13] Moshe you from..."
+    },
+    {
+      "turn_id": "turn_562",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:13-21:14] Tell us about it."
+    },
+    {
+      "turn_id": "turn_563",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:15-21:16] Tell us about it."
+    },
+    {
+      "turn_id": "turn_564",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:16-21:22] Um, because he's like always the one that's just cracking jokes and..."
+    },
+    {
+      "turn_id": "turn_565",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:22-21:26] But then he always has like the times where when something happens, he's always the one"
+    },
+    {
+      "turn_id": "turn_566",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:26-21:29] that like gives the insight and knows what to do about it."
+    },
+    {
+      "turn_id": "turn_567",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:29-21:30] He's right there."
+    },
+    {
+      "turn_id": "turn_568",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:30-21:31] Yeah."
+    },
+    {
+      "turn_id": "turn_569",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:31-21:32] Yeah."
+    },
+    {
+      "turn_id": "turn_570",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:32-21:33] Let's do one more."
+    },
+    {
+      "turn_id": "turn_571",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:33-21:34] Let's see here."
+    },
+    {
+      "turn_id": "turn_572",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:34-21:35] Uh, Student B."
+    },
+    {
+      "turn_id": "turn_573",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:35-21:38] The drug dealer from Flight."
+    },
+    {
+      "turn_id": "turn_574",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:38-21:39] Explain."
+    },
+    {
+      "turn_id": "turn_575",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:39-21:44] Because like every time, every time it's a really intense movie."
+    },
+    {
+      "turn_id": "turn_576",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:44-21:45] Okay."
+    },
+    {
+      "turn_id": "turn_577",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:45-21:49] And then every time they show him, he just comes and like breaks up all of the tension"
+    },
+    {
+      "turn_id": "turn_578",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:49-21:50] in the movie."
+    },
+    {
+      "turn_id": "turn_579",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:50-21:54] Even though, I mean, it's unfortunate that he's a drug dealer, but then at the same time,"
+    },
+    {
+      "turn_id": "turn_580",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[21:54-21:58] he always says like, he gives him advice all the time, so..."
+    },
+    {
+      "turn_id": "turn_581",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[21:58-22:02] I think that works great, Student B, especially because the fool is supposed to be outside"
+    },
+    {
+      "turn_id": "turn_582",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[22:02-22:04] of the typical society."
+    },
+    {
+      "turn_id": "turn_583",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[22:04-22:09] He's definitely not within that circle because drug dealing is on a legitimate legal kind"
+    },
+    {
+      "turn_id": "turn_584",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[22:09-22:11] of business, but it probably gives him insight."
+    },
+    {
+      "turn_id": "turn_585",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[22:11-22:13] Yeah, that's excellent."
+    },
+    {
+      "turn_id": "turn_586",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[22:13-22:18] Class, any questions about this concept, about the, uh, the archetypal fool?"
+    },
+    {
+      "turn_id": "turn_587",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[22:18-22:21] I think good."
+    },
+    {
+      "turn_id": "turn_588",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[22:21-22:23] All right."
+    },
+    {
+      "turn_id": "turn_589",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "[22:23-22:26] Uh, class, give yourselves some snaps, please."
+    },
+    {
+      "turn_id": "turn_590",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "[22:26-22:27] Excellent."
+    }
+  ]
+}

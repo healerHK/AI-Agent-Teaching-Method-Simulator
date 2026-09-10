@@ -1,0 +1,394 @@
+{
+  "transcript_id": "college_cellular_respiration_30m_strong_001",
+  "scenario_id": "college_cellular_respiration_30m",
+  "variant": "strong",
+  "domain": "Biology",
+  "education_level": "college",
+  "learning_objective": "Cellular respiration transfers energy from glucose to ATP through linked stages.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good morning, everyone."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Good morning, sir."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 1 — INTRODUCTION. Before we practise, connect the explanation to this situation: explaining why sprinting muscle cells quickly shift ATP strategy when oxygen delivery cannot keep up with demand. When glucose is oxidized during aerobic respiration, where is most of the usable energy temporarily stored before ATP synthase makes ATP?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I know ATP appears, but I am not sure whether glucose directly becomes ATP or passes energy through carriers."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good attempt, Noah. Why do you think that?"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I remember the pathway names, but I do not have the mechanism linking them."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "That uncertainty is useful. Alice, can you make the idea more precise?"
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Much of the energy is transferred to reduced electron carriers, mainly NADH and FADH2, which deliver electrons to the electron transport chain."
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. PART 2 — CONCEPT EXPLANATION. Cellular respiration is best understood as controlled redox energy transfer. Glucose is oxidized step by step, and electron carriers such as NAD+ and FAD are reduced to NADH and FADH2. In eukaryotic cells, glycolysis occurs in the cytosol, while pyruvate oxidation, the citric acid cycle, and oxidative phosphorylation are associated with mitochondria. The electron transport chain in the inner mitochondrial membrane passes electrons through protein complexes. The energy released pumps protons, building a proton-motive force. ATP synthase then couples proton flow back across the membrane to phosphorylation of ADP. That coupling mechanism is chemiosmosis. Notice this is a systems explanation, not a vocabulary list. The cell does not simply store energy in ATP at one location. It moves electrons through carriers, stores potential energy in an electrochemical gradient, and uses a molecular machine to couple proton flow to ATP formation. Membrane integrity matters. If the inner mitochondrial membrane becomes leaky, electron transport may continue but ATP yield falls because the proton-motive force cannot be maintained. One more college-level distinction: substrate-level phosphorylation makes ATP directly from a phosphorylated intermediate, while oxidative phosphorylation uses electron transport and a proton gradient. Keeping those mechanisms separate prevents ATP-yield misconceptions."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Sir, is cellular respiration basically the same thing as breathing?"
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "No. Breathing is organism-level gas exchange: oxygen enters the body and carbon dioxide leaves. Cellular respiration is the intracellular metabolic pathway that transfers energy from organic molecules into ATP. Breathing supports aerobic respiration because oxygen is needed as the terminal electron acceptor, but the two processes occur at different biological scales. Confusing them hides the actual mechanism: electrons, carriers, membranes, gradients, and ATP synthase."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "So oxygen matters because it accepts electrons at the end, not because it directly becomes ATP."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "NADH and FADH2 donate electrons to the chain, and proton pumping stores energy as an electrochemical gradient."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "So ATP production depends on both electron flow and the proton gradient?"
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. Most aerobic ATP production is not a simple one-step conversion of glucose into ATP. It is a coupling system. Electron transfer releases free energy; proton pumping stores that energy in the gradient; ATP synthase converts gradient energy into chemical bond energy in ATP. If any link is blocked, the yield changes dramatically. This is why diagrams should show membranes, not just arrows between stage names. Oxidative phosphorylation is spatial: proton concentration differs across compartments, and ATP synthase uses that compartmental difference. If students omit the membrane, they often miss why chemiosmosis works."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "I thought glycolysis makes most ATP because it is the first stage we learn."
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Glycolysis is essential, but its direct ATP yield is small. It produces a net two ATP per glucose and also makes NADH. Most ATP in aerobic respiration is associated with oxidative phosphorylation, because the electron transport chain and chemiosmosis can use many reduced carriers generated from glucose oxidation."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 3 — QUICK CHECK. What molecule is reduced to NADH during glucose oxidation?"
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "NAD+ accepts electrons and is reduced to NADH."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Why is oxygen required at the end of the electron transport chain?"
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "It is the terminal electron acceptor, allowing electron flow to continue and water to form."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, where is the proton gradient built in mitochondria?"
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "Across the inner mitochondrial membrane."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 4 — WORKED EXAMPLE. Trace one glucose molecule conceptually. Glycolysis splits glucose into pyruvate and produces a small amount of ATP plus NADH. Pyruvate oxidation links glycolysis to the citric acid cycle by producing acetyl-CoA and more NADH. The citric acid cycle oxidizes acetyl groups to carbon dioxide while generating NADH and FADH2. Those carriers deliver high-energy electrons to the electron transport chain. Complexes pump protons from the matrix toward the intermembrane space, creating a proton-motive force made of chemical concentration difference and electrical potential. ATP synthase allows protons to flow back and uses that flow to make ATP. We can also connect the mechanism to experimental evidence. If an inhibitor blocks Complex IV, oxygen cannot accept electrons efficiently and the chain backs up. If an uncoupler dissipates the proton gradient, electron transport can continue but ATP synthase loses the gradient that drives phosphorylation. These cases show why naming the stages is not enough; different disruptions produce different mechanistic failures."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, what is the immediate purpose of the electron transport chain?"
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "It transfers electrons through membrane complexes and uses released energy to pump protons across the inner mitochondrial membrane. That is the energy-conversion step that links redox chemistry to membrane transport."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, continue the worked example using the next calculation or procedure step."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "Then ATP synthase uses proton flow down the gradient to phosphorylate ADP to ATP. The coupling is indirect: electrons do not push ATP synthase physically; electron-transfer energy first builds the gradient, and the gradient drives ATP synthase."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, why can cyanide shut down ATP production so quickly?"
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Because it blocks electron transport, so the proton gradient cannot be maintained for ATP synthase."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "If oxygen is unavailable, glycolysis can continue only if NAD+ is regenerated by fermentation."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Correct. Without oxygen, the electron transport chain backs up because electrons cannot be passed to the final acceptor. NADH cannot be efficiently reoxidized through the chain, so cells use fermentation pathways to regenerate NAD+ and keep glycolysis running. But fermentation does not run the citric acid cycle poorly; it bypasses oxidative phosphorylation and gives much lower ATP yield. In muscle cells, this explains the transition during intense exercise. Glycolysis can generate ATP quickly, but without sufficient oxygen delivery oxidative phosphorylation cannot keep up, so fermentation regenerates NAD+ and supports short-term glycolytic ATP production. The tradeoff is low yield and metabolic consequences such as lactate accumulation. Anaerobic metabolism solves a different constraint."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "That explains why anaerobic metabolism supports short bursts but cannot match aerobic ATP yield for sustained work."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "So fermentation is just a weaker Krebs cycle."
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Careful. Fermentation is not the citric acid cycle running badly. Its central purpose is NAD+ regeneration without an electron transport chain. It allows glycolysis to continue when oxidative phosphorylation is unavailable. That distinction matters when interpreting muscle fatigue, yeast metabolism, and poisoning cases. Another repair is to ask what problem the pathway is solving. The citric acid cycle extracts electrons from carbon fuels and loads carriers. Fermentation regenerates NAD+ when the electron transport chain is unavailable. Those are not the same biochemical job. If the job is different, the pathway is not simply a weaker version of another pathway."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "The key diagnostic variable is whether reduced electron carriers can be reoxidized and whether the proton-motive force can be sustained. I would also compare aerobic respiration with photosynthesis at a high level: both use electron transport and proton gradients, but the energy source and cellular context differ."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. PART 5 — DIFFERENTIATED PRACTICE. We keep the rhythm realistic: I do most of the explanation, and each student gives short evidence that the mechanism is understood. The goal is not to force every student into a long speech; the goal is to sample whether students can follow electron flow, proton flow, and ATP production as one coupled mechanism."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Lily, simple check: name one reduced electron carrier."
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "NADH."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, does most aerobic ATP come directly from glycolysis?"
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "No. Most comes from oxidative phosphorylation and chemiosmosis."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Chloe, mechanism check: what is chemiosmosis?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "It is ATP production coupled to proton movement down an electrochemical gradient through ATP synthase. In other words, the gradient is the immediate energy source for ATP synthase."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, connect NADH to the proton-motive force."
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "NADH donates electrons to the chain; electron transfer powers proton pumping and builds the gradient."
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, extension: why does FADH2 usually yield less ATP than NADH?"
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "FADH2 enters the chain later, so fewer protons are pumped per electron pair. This also explains why ATP yield estimates are approximate; shuttle systems, membrane leakiness, and cellular conditions affect the final count."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, if you get lost in the pathway, what should you track?"
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Track electrons, NADH/FADH2, proton pumping, and oxygen as the terminal acceptor."
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 6 — MISCONCEPTION REPAIR. Lily, if someone says respiration creates energy, how do we repair that claim?"
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Say energy is transferred from glucose through carriers and gradients into ATP and heat; it is not created from nothing."
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "My warning note is: first stage does not mean biggest ATP yield."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. Add `NADH`, `FADH2`, `electron transport chain`, `proton-motive force`, `chemiosmosis`, `ATP synthase`, and `oxygen terminal electron acceptor` to one mechanism map. The map should show arrows of energy transfer, not just a list of stage names. When you study, make arrows for matter and arrows for energy separately. Carbon from glucose leaves as carbon dioxide; electrons move through NADH and FADH2; protons move across the membrane; ATP is produced by ATP synthase. Separating those flows prevents most pathway misconceptions."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 7 — FINAL REVIEW. Alice, first takeaway?"
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Cellular respiration is a redox pathway that transfers energy from glucose through electron carriers. The words oxidation and reduction should therefore point to electron movement, not just to a memorised stage name."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question two: Ben, second takeaway?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The electron transport chain builds a proton-motive force that powers ATP synthase. This is why membrane structure is inseparable from energy conversion."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question three: Chloe, third takeaway?"
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Oxygen keeps aerobic electron flow going by acting as the terminal electron acceptor."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, one sentence: how will you study respiration now?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I will follow electrons and protons through the pathway instead of memorising stage names only."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "What is our homework, sir?"
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Homework: draw a mechanism map from glucose to NADH/FADH2 to electron transport to proton-motive force to ATP synthase. Add one annotation explaining fermentation as NAD+ regeneration and one annotation explaining why oxygen absence lowers ATP yield. Add a short note explaining why a cell with damaged inner mitochondrial membranes may consume oxygen yet produce less ATP. Label substrate-level phosphorylation separately from oxidative phosphorylation."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Goodbye, sir."
+    }
+  ]
+}

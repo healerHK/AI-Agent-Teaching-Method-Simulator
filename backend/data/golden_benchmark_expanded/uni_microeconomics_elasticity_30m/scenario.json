@@ -1,0 +1,21 @@
+{
+  "scenario_id": "uni_microeconomics_elasticity_30m",
+  "title": "Microeconomics: price elasticity and revenue reasoning",
+  "domain": "Economics",
+  "education_level": "university",
+  "learning_objective": "Price elasticity of demand describes responsiveness of quantity demanded to price changes.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "Elasticity is the same as slope.",
+    "Raising price always increases revenue.",
+    "A percentage change in price and quantity should use raw unit differences only."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "demand schedule",
+    "revenue calculation worksheet"
+  ]
+}

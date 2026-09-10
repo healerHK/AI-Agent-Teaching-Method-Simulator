@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {
   getEvaluatorStatus,
   getV2Scenarios,
+  runTranscriptScenarioTILEvaluation,
   runV2TranscriptBenchmark,
   saveQuickAnnotation,
   sendV2LiveTeacherTurn,
@@ -11,6 +12,7 @@ import { BenchmarkModePanel } from './components/BenchmarkModePanel';
 import { ModeSelect } from './components/ModeSelect';
 import { PixelClassroom } from './components/PixelClassroom';
 import { ScenarioBlueprintPanel } from './components/ScenarioBlueprintPanel';
+import { TranscriptSystemPanel } from './components/TranscriptSystemPanel';
 import type {
   EvaluatorStatusResponse,
   FeedbackItemView,
@@ -21,7 +23,8 @@ import type {
   TranscriptBenchmarkRunResponse,
 } from './types';
 
-type ActiveView = 'home' | 'scenario' | 'live' | 'benchmark';
+type ActiveView = 'home' | 'scenario' | 'live' | 'benchmark' | 'transcriptSystem';
+type AppTheme = 'classic' | 'black-orbit';
 
 function App() {
   const [activeView, setActiveView] = useState<ActiveView>('home');
@@ -37,6 +40,19 @@ function App() {
   const [responseSource, setResponseSource] = useState<string | undefined>();
   const [savedAnnotations, setSavedAnnotations] = useState<string[]>([]);
   const [evaluatorStatus, setEvaluatorStatus] = useState<EvaluatorStatusResponse | null>(null);
+  const [theme, setTheme] = useState<AppTheme>(() => {
+    const savedTheme = window.localStorage.getItem('pixelclass-theme');
+    return savedTheme === 'black-orbit'
+      || savedTheme === 'edge-hightech'
+      || savedTheme === 'edu-transformer'
+      || savedTheme === 'cyberpunk'
+      ? 'black-orbit'
+      : 'classic';
+  });
+
+  useEffect(() => {
+    window.localStorage.setItem('pixelclass-theme', theme);
+  }, [theme]);
 
   useEffect(() => {
     getEvaluatorStatus()
@@ -69,6 +85,14 @@ function App() {
     }
   }
 
+  function handleOpenTranscriptSystem() {
+    setSession(null);
+    setBenchmark(null);
+    setSavedAnnotations([]);
+    setError(null);
+    setActiveView('transcriptSystem');
+  }
+
   async function handleStartLive() {
     setLoading(true);
     setError(null);
@@ -99,13 +123,15 @@ function App() {
     }
   }
 
-  async function handleRunBenchmark() {
+  async function handleRunBenchmark(scenarioId?: string) {
     setLoading(true);
     setError(null);
     setSession(null);
     setSavedAnnotations([]);
     try {
-      const result = await runV2TranscriptBenchmark({ transcriptId: 'python_loops_weak_001' });
+      const result = scenarioId
+        ? await runTranscriptScenarioTILEvaluation(scenarioId, `expert_reviewer_${scenarioId}`)
+        : await runV2TranscriptBenchmark({ transcriptId: 'python_loops_weak_001' });
       setBenchmark(result);
       setActiveView('benchmark');
     } catch (err) {
@@ -162,13 +188,21 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell theme-${theme}`}>
       <header className="topbar">
         <div>
           <span className="logo-mark">▣</span>
           <strong>PixelClass TIL</strong>
         </div>
-        <span>Teacher-in-the-Loop evidence-grounded pedagogical evaluation benchmark</span>
+        <span className="topbar-copy">Teacher-in-the-Loop evidence-grounded pedagogical evaluation benchmark</span>
+        <button
+          className="theme-toggle"
+          type="button"
+          aria-label="Switch visual theme"
+          onClick={() => setTheme((current) => (current === 'classic' ? 'black-orbit' : 'classic'))}
+        >
+          {theme === 'classic' ? 'Black Orbit UI' : 'Classic Pixel UI'}
+        </button>
       </header>
 
       {error && <div className="error-banner">{error}</div>}
@@ -176,16 +210,18 @@ function App() {
 
       {activeView === 'home' ? (
         <ModeSelect
+          onOpenTranscriptSystem={handleOpenTranscriptSystem}
           onShowScenario={handleShowScenario}
-          onStartLive={handleStartLive}
           onRunBenchmark={handleRunBenchmark}
           loading={loading}
           evaluatorStatus={evaluatorStatus}
         />
+      ) : activeView === 'transcriptSystem' ? (
+        <TranscriptSystemPanel onReset={handleReset} onProceedToTILEvaluation={handleRunBenchmark} />
       ) : activeView === 'scenario' && scenarioData ? (
         <ScenarioBlueprintPanel
           data={scenarioData}
-          onStartLive={handleStartLive}
+          onOpenTranscriptSystem={handleOpenTranscriptSystem}
           onRunBenchmark={handleRunBenchmark}
           onReset={handleReset}
           loading={loading}

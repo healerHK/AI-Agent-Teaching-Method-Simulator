@@ -27,7 +27,11 @@ class MetricsService:
                 "verified_count": 0,
                 "missing_evidence_count": 0,
                 "invalid_evidence_count": 0,
+                "scored_feedback_count": 0,
+                "exact_agreement_count": 0,
+                "within_one_count": 0,
                 "absolute_errors": [],
+                "per_criterion_errors": defaultdict(list),
             }
         )
 
@@ -44,7 +48,14 @@ class MetricsService:
                 by_condition[condition]["feedback_count"] += 1
                 expected = expected_scores.get(feedback["criterion"])
                 if expected is not None and feedback["score"] is not None:
-                    by_condition[condition]["absolute_errors"].append(abs(int(feedback["score"]) - expected))
+                    error = abs(int(feedback["score"]) - expected)
+                    by_condition[condition]["absolute_errors"].append(error)
+                    by_condition[condition]["per_criterion_errors"][feedback["criterion"]].append(error)
+                    by_condition[condition]["scored_feedback_count"] += 1
+                    if error == 0:
+                        by_condition[condition]["exact_agreement_count"] += 1
+                    if error <= 1:
+                        by_condition[condition]["within_one_count"] += 1
                 status = feedback["verification_status"]
                 if status == "verified":
                     by_condition[condition]["verified_count"] += 1
@@ -56,10 +67,19 @@ class MetricsService:
         summary: dict[str, Any] = {"experiment_id": experiment_id, "conditions": {}}
         for condition, values in by_condition.items():
             abs_errors = values.pop("absolute_errors")
+            per_criterion_errors = values.pop("per_criterion_errors")
             feedback_count = values["feedback_count"] or 1
+            scored_count = values["scored_feedback_count"] or 1
             summary["conditions"][condition] = {
                 **values,
                 "mean_absolute_error": round(mean(abs_errors), 4) if abs_errors else None,
+                "exact_agreement_rate": round(values["exact_agreement_count"] / scored_count, 4),
+                "within_one_agreement_rate": round(values["within_one_count"] / scored_count, 4),
+                "per_criterion_mae": {
+                    criterion: round(mean(errors), 4)
+                    for criterion, errors in sorted(per_criterion_errors.items())
+                    if errors
+                },
                 "verified_rate": round(values["verified_count"] / feedback_count, 4),
                 "missing_evidence_rate": round(values["missing_evidence_count"] / feedback_count, 4),
                 "invalid_evidence_rate": round(values["invalid_evidence_count"] / feedback_count, 4),

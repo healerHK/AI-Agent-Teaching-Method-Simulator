@@ -23,6 +23,10 @@ def load_json(path: Path) -> dict:
 class GoldenBenchmarkLoader:
     def __init__(self, root: Path = GOLDEN_BENCHMARK_ROOT) -> None:
         self.root = root
+        self.runtime_transcripts: dict[str, BenchmarkTranscript] = {}
+
+    def register_runtime_transcript(self, transcript: BenchmarkTranscript) -> None:
+        self.runtime_transcripts[transcript.transcript_id] = transcript
 
     def dataset_version(self) -> DatasetVersion:
         return DatasetVersion.model_validate(load_json(self.root / "DATASET_VERSION.json"))
@@ -49,6 +53,17 @@ class GoldenBenchmarkLoader:
                         "education_level": transcript.education_level,
                     }
                 )
+        for transcript in self.runtime_transcripts.values():
+            items.append(
+                {
+                    "transcript_id": transcript.transcript_id,
+                    "scenario_id": transcript.scenario_id,
+                    "scenario_title": f"Runtime transcript: {transcript.scenario_id}",
+                    "variant": transcript.variant,
+                    "domain": transcript.domain,
+                    "education_level": transcript.education_level,
+                }
+            )
         return items
 
     def find_variant_dir(self, transcript_id: str) -> Path:
@@ -64,6 +79,8 @@ class GoldenBenchmarkLoader:
         raise FileNotFoundError(f"Unknown transcript_id: {transcript_id}")
 
     def load_transcript(self, transcript_id: str) -> BenchmarkTranscript:
+        if transcript_id in self.runtime_transcripts:
+            return self.runtime_transcripts[transcript_id]
         variant_dir = self.find_variant_dir(transcript_id)
         return BenchmarkTranscript.model_validate(load_json(variant_dir / "transcript.json"))
 

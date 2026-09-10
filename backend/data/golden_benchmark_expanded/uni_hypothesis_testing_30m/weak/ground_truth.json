@@ -1,0 +1,14 @@
+{
+  "transcript_id": "uni_hypothesis_testing_30m_weak_001",
+  "rubric_version": "rubric_v1.0",
+  "created_by": "researcher_annotation_freeze_script_v1",
+  "review_status": "researcher_annotated",
+  "summary": "Weak transcript variant: teacher rushes past visible misconceptions, gives generic explanations, avoids step-by-step scaffolding, and uses superficial formative checks.",
+  "known_issues": [
+    "misconception_not_addressed",
+    "low_scaffolding",
+    "weak_formative_assessment",
+    "low_cognitive_questioning",
+    "missed_student_reasoning_signal"
+  ]
+}

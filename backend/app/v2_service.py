@@ -18,6 +18,7 @@ from app.blinding import BlindedReviewService
 from app.database import connect, init_db
 from app.evaluator_runner import EvaluatorRunner
 from app.evidence_verifier import EvidenceVerifier
+from app.models import BenchmarkTranscript
 from app.session_controller import ClassroomSessionController, PERSONAS, SessionNotFound
 from app.v2_models import (
     LessonPhase,
@@ -254,6 +255,29 @@ def scenario_spec(loader: GoldenBenchmarkLoader | None = None) -> ScenarioSpec:
     )
 
 
+def scenario_spec_from_transcript(transcript: BenchmarkTranscript) -> ScenarioSpec:
+    return ScenarioSpec(
+        scenario_id=transcript.scenario_id,
+        title=f"Selected transcript scenario: {transcript.scenario_id}",
+        mode="live_micro_lesson_and_transcript_benchmark",
+        estimated_duration_minutes=30,
+        subject_domain=transcript.domain,
+        education_level=transcript.education_level,
+        learning_objective=transcript.learning_objective,
+        core_misconceptions=["See selected scenario transcript and editable scenario metadata."],
+        lesson_phases=_lesson_phases(),
+        virtual_student_behaviour_claim="researcher-designed fixed transcript; not a real-student behaviour claim",
+        student_behaviour_architecture=_student_behaviour_architecture(),
+        planned_benchmark_variants=[transcript.transcript_id],
+        available_transcript_ids=[transcript.transcript_id],
+        claim_guardrails=[
+            "Selected scenario transcripts are researcher-designed draft benchmark material unless source documents/expert review are attached.",
+            "Do not claim real classroom fidelity without real data and ethics approval.",
+            "Use this step to test evidence-grounded feedback quality on a fixed transcript.",
+        ],
+    )
+
+
 class PixelClassV2Service:
     def __init__(
         self,
@@ -356,6 +380,100 @@ class PixelClassV2Service:
             review_metrics=self.review_metrics_summary(reviewer_id=reviewer_id),
             claim_guardrails=spec.claim_guardrails,
         )
+
+    def run_runtime_transcript_benchmark(
+        self,
+        *,
+        transcript: BenchmarkTranscript,
+        reviewer_id: str,
+    ) -> TranscriptBenchmarkRunResponse:
+        self.loader.register_runtime_transcript(transcript)
+        self._ensure_runtime_transcript_seed(transcript)
+        baseline_id, experiment_id, _ = self.evaluator_runner.run(
+            transcript_id=transcript.transcript_id,
+            condition="baseline",
+        )
+        til_id, _, _ = self.evaluator_runner.run(
+            transcript_id=transcript.transcript_id,
+            condition="til",
+            experiment_id=experiment_id,
+        )
+        baseline_verification = self.evidence_verifier.verify_evaluation(baseline_id)
+        til_verification = self.evidence_verifier.verify_evaluation(til_id)
+        blinded_review = self.blinded_review_service.create_review(
+            transcript_id=transcript.transcript_id,
+            reviewer_id=reviewer_id,
+            evaluation_ids=[baseline_id, til_id],
+        )
+        spec = scenario_spec_from_transcript(transcript)
+        return TranscriptBenchmarkRunResponse(
+            thesis_positioning=thesis_positioning(),
+            transcript_id=transcript.transcript_id,
+            transcript=transcript,
+            scenario=spec,
+            benchmark_protocol={
+                "controlled_comparison": True,
+                "pipeline": [
+                    "selected fixed transcript scenario",
+                    "generic/baseline evaluator",
+                    "TIL evidence-grounded evaluator",
+                    "evidence verifier",
+                    "blinded expert review",
+                    "metrics summary",
+                ],
+                "baseline_condition_hidden_from_reviewer": True,
+                "experiment_id": experiment_id,
+                "main_claim_scope": "selected-scenario evidence-grounded feedback quality; draft transcript, not real classroom fidelity",
+                "selected_scenario_id": transcript.scenario_id,
+            },
+            baseline_evaluation_id=baseline_id,
+            til_evaluation_id=til_id,
+            baseline_verification=baseline_verification,
+            til_verification=til_verification,
+            blinded_review=blinded_review,
+            review_metrics=self.review_metrics_summary(reviewer_id=reviewer_id),
+            claim_guardrails=spec.claim_guardrails,
+        )
+
+    def _ensure_runtime_transcript_seed(self, transcript: BenchmarkTranscript) -> None:
+        with connect() as conn:
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO scenarios
+                (scenario_id, title, domain, education_level, learning_objective, source_path)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    transcript.scenario_id,
+                    f"Runtime transcript scenario: {transcript.scenario_id}",
+                    transcript.domain,
+                    transcript.education_level,
+                    transcript.learning_objective,
+                    f"runtime:transcript_system:{transcript.scenario_id}",
+                ),
+            )
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO golden_benchmark_items
+                (transcript_id, scenario_id, variant, domain, education_level,
+                 transcript_path, ground_truth_path, expected_scores_path,
+                 expected_missed_opportunities_path, expert_annotation_path)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    transcript.transcript_id,
+                    transcript.scenario_id,
+                    transcript.variant,
+                    transcript.domain,
+                    transcript.education_level,
+                    f"runtime:{transcript.transcript_id}",
+                    "runtime:not_applicable",
+                    "runtime:not_applicable",
+                    "runtime:not_applicable",
+                    "runtime:not_applicable",
+                ),
+            )
+            conn.commit()
 
     def _ensure_v2_scenario_seed(self, spec: ScenarioSpec) -> None:
         with connect() as conn:

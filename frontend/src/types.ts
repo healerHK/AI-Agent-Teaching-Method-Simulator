@@ -215,3 +215,116 @@ export interface TranscriptBenchmarkRunResponse extends Phase3DemoResponse {
   review_metrics: ReviewMetricsSummary;
   claim_guardrails: string[];
 }
+
+export type EducationLevel = 'high_school' | 'college' | 'university';
+
+export interface StudentPromptParameters {
+  participation_style: string;
+  confidence: number;
+  misconception_strength: number;
+  prior_knowledge: string;
+  affect: string;
+  response_length: 'short' | 'medium' | 'long';
+  language_level: string;
+  prompt_instructions: string;
+}
+
+export interface StudentPromptProfile {
+  student_id: string;
+  name: string;
+  role: string;
+  background: string;
+  learning_needs: string[];
+  parameters: StudentPromptParameters;
+}
+
+export interface LessonPhaseDraft {
+  phase_id: string;
+  title: string;
+  minute_start: number;
+  minute_end: number;
+  teacher_goal: string;
+  expected_student_events: string[];
+  evidence_focus: string[];
+}
+
+export interface TranscriptTurnDraft {
+  turn_id: string;
+  minute: number;
+  speaker_role: 'teacher' | 'student' | 'controller';
+  speaker_name: string;
+  message: string;
+  student_id?: string | null;
+  pedagogical_tags: string[];
+}
+
+export interface TranscriptScenario {
+  scenario_id: string;
+  title: string;
+  subject: string;
+  education_level: EducationLevel;
+  course_context: string;
+  estimated_duration_minutes: number;
+  learning_objectives: string[];
+  prerequisite_knowledge: string[];
+  misconception_targets: string[];
+  materials_needed: string[];
+  lesson_phases: LessonPhaseDraft[];
+  student_profiles: StudentPromptProfile[];
+  transcript_turns: TranscriptTurnDraft[];
+  teacher_prompt_template: string;
+  student_prompt_template: string;
+  evaluator_focus: string[];
+  editable_notes: string;
+}
+
+export interface TranscriptScenarioSummary {
+  scenario_id: string;
+  title: string;
+  subject: string;
+  education_level: EducationLevel;
+  estimated_duration_minutes: number;
+  student_count: number;
+  turn_count: number;
+  misconception_count: number;
+}
+
+export interface TranscriptScenarioListResponse {
+  scenarios: TranscriptScenarioSummary[];
+  library_summary: {
+    scenario_count: number;
+    subjects: string[];
+    education_levels: EducationLevel[];
+    duration_policy: string;
+    live_mode_scope: string;
+    [key: string]: unknown;
+  };
+}
+
+export interface RenderedStudentPrompt {
+  student_id: string;
+  name: string;
+  role: string;
+  prompt: string;
+}
+
+export interface ScenarioValidationCheck {
+  check_id: string;
+  status: 'pass' | 'warn' | 'fail';
+  message: string;
+}
+
+export interface TranscriptScenarioTestResponse {
+  scenario_id: string;
+  passed: boolean;
+  checks: ScenarioValidationCheck[];
+  rendered_student_prompts: RenderedStudentPrompt[];
+  transcript_preview_markdown: string;
+  next_steps: string[];
+}
+
+export interface TranscriptScenarioSaveResponse {
+  scenario_id: string;
+  saved: boolean;
+  path: string;
+}

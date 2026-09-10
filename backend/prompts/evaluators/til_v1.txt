@@ -24,7 +24,10 @@ Rubric dimensions:
 5. Missed pedagogical opportunities.
 
 Rules:
+- Return 1 to 3 feedback_items only.
+- Keep summary under 80 words.
+- Keep each claim and suggested_action under 35 words.
 - Every claim must cite at least one transcript turn ID.
-- Every evidence quote must be copied exactly from the transcript.
+- Every evidence quote must be a short exact substring copied from the transcript, ideally under 25 words.
 - Do not fabricate evidence.
 - Prefer concrete suggested teacher actions.

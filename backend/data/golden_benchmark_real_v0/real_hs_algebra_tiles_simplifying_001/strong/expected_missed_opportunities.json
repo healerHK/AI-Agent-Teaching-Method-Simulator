@@ -1,0 +1,35 @@
+{
+  "transcript_id": "real_hs_algebra_tiles_simplifying_001_observed",
+  "missed_opportunities": [
+    {
+      "id": "real_alg_missed_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "Positive/negative tile meaning is partly explained by colour and informal association rather than a stable mathematical convention.",
+      "evidence_turn_ids": [
+        "turn_118",
+        "turn_121",
+        "turn_122",
+        "turn_123",
+        "turn_124",
+        "turn_125"
+      ],
+      "expected_action": "Clarify that colour is a classroom convention for sign, then connect sign to the written expression and mat region."
+    },
+    {
+      "id": "real_alg_missed_003",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "A student mixes x, xÃ‚Â², and 3xÃ‚Â² while simplifying; the correction arrives, but a concise rule for like terms could be reinforced before moving on.",
+      "evidence_turn_ids": [
+        "turn_128",
+        "turn_130",
+        "turn_131",
+        "turn_132",
+        "turn_133",
+        "turn_136",
+        "turn_139",
+        "turn_140"
+      ],
+      "expected_action": "State that only terms with the same variable part and exponent combine, then map each tile group to 4xÃ‚Â² + yÃ‚Â²."
+    }
+  ]
+}

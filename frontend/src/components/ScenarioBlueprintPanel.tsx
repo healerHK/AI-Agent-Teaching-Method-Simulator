@@ -2,7 +2,7 @@ import type { ScenarioListResponse } from '../types';
 
 interface ScenarioBlueprintPanelProps {
   data: ScenarioListResponse;
-  onStartLive: () => void;
+  onOpenTranscriptSystem: () => void;
   onRunBenchmark: () => void;
   onReset: () => void;
   loading: boolean;
@@ -10,7 +10,7 @@ interface ScenarioBlueprintPanelProps {
 
 export function ScenarioBlueprintPanel({
   data,
-  onStartLive,
+  onOpenTranscriptSystem,
   onRunBenchmark,
   onReset,
   loading,
@@ -104,8 +104,8 @@ export function ScenarioBlueprintPanel({
       </section>
 
       <section className="action-strip pixel-panel">
-        <button className="pixel-button" onClick={onStartLive} disabled={loading}>Start Live Mode</button>
-        <button className="pixel-button secondary" onClick={onRunBenchmark} disabled={loading}>Run Transcript Benchmark</button>
+        <button className="pixel-button" onClick={onOpenTranscriptSystem} disabled={loading}>Open Transcript System</button>
+        <button className="pixel-button secondary" onClick={onRunBenchmark} disabled={loading}>Run Existing Benchmark</button>
       </section>
     </main>
   );

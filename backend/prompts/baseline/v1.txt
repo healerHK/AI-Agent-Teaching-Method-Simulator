@@ -17,3 +17,4 @@ Return JSON only with this shape:
 }
 
 As the generic baseline, do not use a detailed rubric. Give broad teacher feedback. If evidence is not explicit, leave evidence arrays empty instead of inventing quotes.
+Return 1 to 3 feedback_items only. Keep summary under 80 words, each claim/action under 35 words, and any evidence quote as a short exact transcript substring.

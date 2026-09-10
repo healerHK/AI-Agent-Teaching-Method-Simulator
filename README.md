@@ -71,12 +71,30 @@ cd D:/Code/til-classroom-sim/backend
 uv run pytest -q
 ```
 
-Run a Phase 4 benchmark/export:
+Run a Phase 4 benchmark/export on the original seed benchmark:
 
 ```bash
 cd D:/Code/til-classroom-sim/backend
 uv run python -m scripts.run_benchmark --conditions baseline,til --repetitions 1 --transcript-id python_loops_weak_001
 ```
+
+## Freeze and run the expanded transcript benchmark
+
+The transcript-first scenario library can be frozen into an expanded golden benchmark dataset with strong and weak teaching variants for each scenario:
+
+```bash
+cd D:/Code/til-classroom-sim/backend
+EVALUATOR_PROVIDER=fallback EVALUATOR_MODEL=deterministic-fallback uv run python -m scripts.freeze_transcript_scenarios
+```
+
+Run the expanded deterministic fallback benchmark:
+
+```bash
+cd D:/Code/til-classroom-sim/backend
+EVALUATOR_PROVIDER=fallback EVALUATOR_MODEL=deterministic-fallback uv run python -m scripts.run_benchmark --benchmark-root data/golden_benchmark_expanded --conditions baseline,til --repetitions 3
+```
+
+If using a real provider, first confirm the provider smoke test succeeds, then run the same command without overriding `EVALUATOR_PROVIDER` to fallback. Current thesis-safe framing: fallback runs validate the pipeline/reproducibility; provider-backed runs are required for final real-LLM claims.
 
 Exports are written by default under:
 

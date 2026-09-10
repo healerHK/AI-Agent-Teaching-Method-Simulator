@@ -1,0 +1,394 @@
+{
+  "transcript_id": "uni_hypothesis_testing_30m_strong_001",
+  "scenario_id": "uni_hypothesis_testing_30m",
+  "variant": "strong",
+  "domain": "Statistics",
+  "education_level": "university",
+  "learning_objective": "A p-value measures compatibility with the null model; it is not the probability that the null is true.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good morning, everyone."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Good morning, sir."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 1 — INTRODUCTION. Before we practise, connect the explanation to this situation: interpreting a small randomized pilot study comparing weekly study hours between two learning-app groups. If a test reports `p=0.03`, what probability is being described, and what common interpretation must we avoid?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I want to say the null has a 3 percent chance of being true, but I think that is not right."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good attempt, Noah. Why do you think that?"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I remember that p-values are conditional, but I forget which condition comes first."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "That uncertainty is useful. Alice, can you make the idea more precise?"
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "The p-value is the probability, assuming the null model is true, of observing a statistic at least as extreme as the one obtained."
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. PART 2 — CONCEPT EXPLANATION. A frequentist hypothesis test begins by specifying a null model, often a no-effect or no-difference model. From that model we derive a sampling distribution for a statistic. The observed statistic is then located within that distribution. The p-value is a tail probability under the null model. It is not the probability that the null hypothesis is true, and it is not the probability that the result happened by random chance in a vague sense. It is a conditional probability about data extremeness, assuming the null model and assumptions are in place. I am going slowly because p-values are among the most misquoted ideas in applied research. The null model is a hypothetical data-generating model, not a belief we secretly know is true. We temporarily assume it to ask how unusual the observed statistic would be. If assumptions are wrong, sampling was biased, or multiple analyses were tried without adjustment, a small p-value can mislead. This is why journals increasingly ask for estimation and uncertainty, not p-values alone."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Sir, does statistically significant mean the result is important for real students?"
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "No. Statistical significance and practical importance are different claims. Significance addresses how incompatible the data are with the null model at a chosen alpha level. Practical importance asks about effect size, cost, feasibility, confidence interval, study design, and consequences. With a large sample, a tiny effect can be statistically significant. With a small sample, a meaningful effect may fail to reach significance because uncertainty is large."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "So the decision sentence and the real-world interpretation sentence should be separate."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "We compare p to alpha, but then report the estimated difference, confidence interval if available, and effect size before making a practical claim."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "So p=0.03 is conditional on assuming no true difference first?"
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. That conditional structure is the heart of the interpretation. If we say `there is a 3 percent chance the null is true`, we have reversed the conditioning. Frequentist p-values do not assign posterior probabilities to hypotheses. They evaluate how surprising the observed statistic is under a specified null model. This is why good statistical writing includes assumptions. Independence, random sampling or random assignment, approximate normality or sufficient sample size, and measurement validity are not decorative caveats. They define when the sampling distribution used for the p-value is trustworthy."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "I thought failing to reject the null proves there is no effect."
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "It does not. Failing to reject means the data did not provide sufficient evidence against the null at the chosen alpha. The study may be underpowered, the measurement may be noisy, or the true effect may be smaller than the design can detect. A careful conclusion says `we do not have sufficient evidence`, not `we proved no effect`."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 3 — QUICK CHECK. If alpha is 0.05 and p is 0.03, what is the formal decision?"
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Reject the null hypothesis at the 0.05 significance level."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "What is a Type I error?"
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "Rejecting a true null hypothesis; alpha controls its long-run probability under the model."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, after a significance decision, what quantity helps judge practical importance?"
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "Effect size, ideally with a confidence interval."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 4 — WORKED EXAMPLE. Suppose a pilot study estimates that App A students study 2.1 more hours per week than App B students. The standard error is 0.8, the p-value is 0.012, and Cohen's d is 0.35. At alpha 0.05, the p-value is below the threshold, so we reject the null model of no mean difference. But the interpretation cannot stop there. The observed difference is estimated, not exact; the effect size is small to moderate; and because this is a pilot, design quality and sample size matter. A university-level conclusion says: the data provide statistical evidence of a difference, but practical adoption requires considering effect size, uncertainty, cost, and replication. We should also distinguish statistical evidence from causal evidence. Random assignment supports causal interpretation more than an observational comparison, but even randomized pilots need checks: attrition, measurement quality, compliance, and whether the outcome was pre-specified. A p-value cannot repair poor design. It only quantifies extremeness under a model. Complete interpretation includes design, estimate, uncertainty, and practical context."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, what is the statistical decision at alpha 0.05?"
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Reject H0 because 0.012 is less than 0.05; the observed statistic is unusual under the null model."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, continue the worked example using the next calculation or procedure step."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "But with d around 0.35, we should describe the effect as small to moderate and avoid claiming the app is educationally transformative without more evidence. I would phrase it as evidence of a difference, not proof of a large educational benefit, because magnitude and uncertainty still matter."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, why can we not say there is a 98.8 percent chance the app works?"
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Because the p-value is not the probability that the alternative is true; it is a probability about data extremeness under the null."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "If alpha changes to 0.01, the same p-value would no longer meet the stricter decision threshold."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Correct. The data have not changed; the pre-set rule for action has changed. That is why alpha should be chosen before examining the result. Otherwise, the researcher can unconsciously move the threshold to match the desired conclusion. This connects hypothesis testing to research integrity, not only calculation. This threshold issue connects to Type I error. If alpha is 0.05, then under repeated studies where the null is true and assumptions hold, about 5 percent of tests would reject by chance. Lowering alpha reduces Type I error risk but can increase Type II error risk, meaning we may miss real effects. There is no magic threshold; there is a tradeoff tied to research consequences."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "The written conclusion should mention the alpha level and uncertainty instead of saying proved or disproved."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "If the sample is huge, significance must mean the effect is important."
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Careful. Huge samples can make very small effects statistically detectable. That is why effect size and practical context are not optional. Conversely, a non-significant result in a small study might still be compatible with meaningful effects. Interpretation requires decision, magnitude, uncertainty, and design quality together. For practical importance, ask whether the effect would change a decision. A mean increase of 0.1 study hours might be significant in a massive dataset but irrelevant for policy. A two-hour increase with wide uncertainty might be practically promising but statistically inconclusive. Responsible interpretation holds both ideas at once instead of forcing every result into yes or no."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "I would also check randomization, assumptions, multiple comparisons, confidence intervals, and whether the interval excludes trivial effects. I would also check whether the analysis was pre-registered or whether many outcomes were tested, because multiple testing can inflate false positives."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. PART 5 — DIFFERENTIATED PRACTICE. The lecture remains teacher-led, but each short response gives evaluator evidence: null model, decision rule, sampling distribution, effect size, and interpretation caution. These brief checks also mirror real statistics teaching, where interpretation errors matter more than mechanical arithmetic after software prints the output."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Lily, simple check: what does the null hypothesis usually represent?"
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "A no-effect or baseline model we test against."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, does failing to reject prove no effect?"
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "No. It means insufficient evidence to reject at that alpha."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Chloe, why do we mention the sampling distribution?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Because the p-value is calculated from where the observed statistic falls under the null distribution. Without that reference distribution, the observed statistic has no p-value interpretation."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, state the p-value decision rule."
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "If p is less than or equal to alpha, reject H0; otherwise, fail to reject H0."
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, extension: what would a Bayesian critique point out?"
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "It would distinguish p-values from posterior probabilities and ask for priors or Bayes factors to assign probabilities to hypotheses. A Bayesian analysis might give a posterior probability, but only after specifying a prior and likelihood; that is a different framework from a p-value."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, what phrase should you avoid in a conclusion?"
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Avoid saying the p-value is the probability that the null is true."
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 6 — MISCONCEPTION REPAIR. Lily, if someone says significant means important, how do we repair it?"
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Say significance is evidence against the null; importance needs effect size, interval, and context."
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "My warning note is: reject is not prove, and fail to reject is not prove no effect."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. Add `null model`, `sampling distribution`, `p-value`, `alpha`, `Type I error`, `effect size`, and `confidence interval` to your checklist. A good statistical conclusion has two parts: a formal decision and a cautious contextual interpretation. When writing this in a report, use disciplined wording: `Assuming the null model, the observed result would be unlikely at this threshold` and `the estimated effect is...`. Avoid `proved`, `chance the null is true`, and `no effect exists`. Those phrases are small, but they change the scientific claim."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 7 — FINAL REVIEW. Alice, first takeaway?"
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "A p-value is a tail probability computed under the null model, not the probability the null is true. The phrase `under the null model` should appear in your mental definition every time."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question two: Ben, second takeaway?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "A test decision compares p with alpha, while interpretation also needs effect size and uncertainty. Reporting only significant or not significant is usually too thin for university research writing."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question three: Chloe, third takeaway?"
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Failing to reject H0 is not evidence that the effect is exactly zero."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, one sentence: how will you write p-value conclusions?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I will state the null model first and describe evidence without claiming the p-value is the chance the null is true."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "What is our homework, sir?"
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Homework: interpret three statistical outputs. For each, state H0 and H1, define the p-value in context, make a decision at alpha 0.05 and alpha 0.01, identify Type I error risk, report effect size if given, and write one cautious real-world conclusion. For one output, also rewrite a bad conclusion into a statistically careful conclusion. Identify one assumption that would weaken each conclusion if violated."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Goodbye, sir."
+    }
+  ]
+}
