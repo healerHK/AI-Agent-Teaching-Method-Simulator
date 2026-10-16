@@ -1,0 +1,53 @@
+# Local credentials and environment configuration
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# Assistant state, private working notes and editor files
+.codex/
+.claude/
+.agents/
+.cursor/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+SKILL.md
+*codex*
+*chat_history*
+*conversation_log*
+.vscode/
+.idea/
+Plan_todo.docx
+
+# Dependencies and build products
+.venv/
+venv/
+node_modules/
+dist/
+.vite/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Runtime output, source media and private source documents
+research_outputs/
+backend/data/*.db
+backend/data/*.db-*
+backend/data/raw_outputs/
+backend/data/exports/
+backend/data/charts/
+backend/data/golden_benchmark_real_v0/source_documents/
+*.log
+*.mp3
+*.wav
+*.mp4
+*.mov
+.DS_Store
+Thumbs.db

@@ -1,0 +1,862 @@
+{
+  "transcript_id": "real_hs_algebra_tiles_simplifying_001_observed",
+  "scenario_id": "real_hs_algebra_tiles_simplifying_001",
+  "variant": "strong",
+  "domain": "Mathematics",
+  "education_level": "high_school",
+  "learning_objective": "Students use algebra tiles to connect area/side-length representations to x, y, x², y², xy, positive/negative units, and simplify like terms such as x² + y² + 3x².",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "All right, so let's go from here and actually kind of transfer over to how this relates to what we're doing today, okay? And the first part of it is that we're actually going to do kind of a review of how simplifying expressions. I know that Student A, you haven't done it before, and Student B, you haven't used algebra tiles a lot, either, have you? Okay. So, the good thing about it, I got everybody paired up with actually people that have done it before, so that way they can help you figure it out, okay?"
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "The first thing is somebody explain to me what you do with algebra tiles. Pull out algebra tiles and tell me what they are, what they represent. Somebody raise your hand, let me know."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "It's this one."
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Hold on. Good, good, good, good. Go ahead."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "So this is y, and this is y², and it just fits all around the edges so it makes y²."
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, so basically, she said that y on one side, and y on the other side. So you have this. This is y here, this is y here, okay? So basically, you know how we've been finding the area? How do you find the area?"
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "You times."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Huh?"
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Multiply the length times width."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Multiply the sides, right. Good. So length times width, right? So then basically on this, it's y times y. y times y is y squared."
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yep."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, so that's why this tile piece is y squared. Another piece, Student C, what do you have there?"
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "X."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "X? Hold it up, let me see what you got."
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Ones. Ones positive, ones negative."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, which one's positive, which one's negative?"
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Blue's positive, red's negative."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay. All right, good. Thank you. And we got another one over here, Student D, what do you have?"
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "A y squared."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "We already did the y squared."
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Uh-oh."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "You pigged back off, that's what, that's..."
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "xy."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Oh, I..."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Did you do y squared?"
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yes."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Oh, xy, then."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "There we go. All right, good, good. Flip it around, let's see the colors. Green, this y, I mean xy. Now, why is it xy? Why is it xy?"
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Um"
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "I'm just, I don't know, I forgot. It look like, um, like..."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Ooh"
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Why is it, why is this xy? What, why, how did we get y squared here?"
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Um, you multiplied the two ys."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Multiplied the two ys. What's the, the two what?"
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Um, uh, ys."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "The two sides."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yeah, two sides."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, all right. So then what do we do, what is this here, then? What's this telling you?"
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Same thing, um, as the, uh, one we, um, multiplied the sides."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Good."
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "X and y."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "x and y, good. So that would, that would mean that what? What would be the side length of this?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "x and y."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "x and y. x and y, good. So then, show me the x tile again, Student C."
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay. Wow, so what, what do you notice?"
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "One side, um, it fits, it fits on one side."
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Almost two sides."
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Does it fit on the top?"
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "No."
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "No, why?"
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Because this side's y and this one's shorter."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, that one's shorter. The shorter one is the x, the longer one is the, the y."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "This one, this one."
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Like, like what Student D has, exactly, okay? He, he did the y side. Okay, so we got this one figured out, we got this one. We got another piece, a couple more pieces that we haven't figured out. They haven't discovered."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, yes. What is that one?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "An x squared."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "How's that x squared?"
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Um, because you uh multiplied the two sides."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "The two sides. Student B, do you see what he's saying? Okay. Student H, you got it? Student A, do you understand that?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yes."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "I like that you're discovering your pieces, you're looking through them there. That's fine. Um, and then you have the, we already did x, xy, y, x squared, I mean y squared, excuse me, and what about these? The small ones."
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "1 unit."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "What, what do you think?"
+    },
+    {
+      "turn_id": "turn_065",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "5 units?"
+    },
+    {
+      "turn_id": "turn_066",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "5 units? Why is it 5 units?"
+    },
+    {
+      "turn_id": "turn_067",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Is there's 5 of these on 1 of this side."
+    },
+    {
+      "turn_id": "turn_068",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yes, and Student E is, is point, pointing out that normally we don't use the 5 units. Uh, we like, we know, well don't say never, but, you know, we..."
+    },
+    {
+      "turn_id": "turn_069",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Why?"
+    },
+    {
+      "turn_id": "turn_070",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "We might. But we haven't been using them, you're right. Um, but, and the reason why is that we like to use the, the single unit tiles instead of using those, okay? All right, yes, Student C, you got a question?"
+    },
+    {
+      "turn_id": "turn_071",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Is this why, like, we don't use these? 'Cause they don't fit on none of these. Like it doesn't go with any of these."
+    },
+    {
+      "turn_id": "turn_072",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "No, the reason why we don't use it because, you know how we, you'll see when we start simplifying and, and splitting, you just can't break those pieces apart. So if you had to subtract from that 5-unit tile..."
+    },
+    {
+      "turn_id": "turn_073",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "You have to take all of it away."
+    },
+    {
+      "turn_id": "turn_074",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "You'd have to take all of it away and then bring out, so you're going to have to bring out 5-unit tiles anyway, or bring out individual unit tiles anyway."
+    },
+    {
+      "turn_id": "turn_075",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Plus it doesn't fit on any of them."
+    },
+    {
+      "turn_id": "turn_076",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "It doesn't fit on any of them. That's a good observation. Excellent. So you're picking up on it quick, Student A. Good, good, good."
+    },
+    {
+      "turn_id": "turn_077",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "But, but it fit inside of them."
+    },
+    {
+      "turn_id": "turn_078",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Inside? What?"
+    },
+    {
+      "turn_id": "turn_079",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Like..."
+    },
+    {
+      "turn_id": "turn_080",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Elaborate on that a little bit."
+    },
+    {
+      "turn_id": "turn_081",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Like this."
+    },
+    {
+      "turn_id": "turn_082",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Oh wait, I know how."
+    },
+    {
+      "turn_id": "turn_083",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "He's saying, but he's saying that you could fit, fit the piece on the inside, but that, that's true, but we don't know what y squared is worth, right? So, but that's another good observation, that's good. All right, so let me move on to now how do we use, using the, the mats. These right here are equation mats. Okay? Go ahead, explain it. I'm sorry."
+    },
+    {
+      "turn_id": "turn_084",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "The equation mats, so like these are like the positives, like the plus signs, and these are negatives. And then this is like the divide line, right? And then this is the equal, like it's like right here, that's equal."
+    },
+    {
+      "turn_id": "turn_085",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "You're right. So, did you get that, Student A? You get that, Student B? What's, what's in the middle?"
+    },
+    {
+      "turn_id": "turn_086",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Equal."
+    },
+    {
+      "turn_id": "turn_087",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Equal, good, good. And then the positive, and we have the negative sides, right? All right, good, good. So, tell me, here, since you have the, the mat right there, if I put this equation down, okay? And I'll make it easy for you. First one. x² + y² + 3x². Remember, do I have an equal sign here?"
+    },
+    {
+      "turn_id": "turn_088",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "No."
+    },
+    {
+      "turn_id": "turn_089",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "So, am I asking you to solve?"
+    },
+    {
+      "turn_id": "turn_090",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Simplify, simplify."
+    },
+    {
+      "turn_id": "turn_091",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Just simplifying, good. So, all we're doing is simplifying. Everybody look, look at uh uh Student F here."
+    },
+    {
+      "turn_id": "turn_092",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Do like, do these go on this side? 'Cause I get that mixed up sometimes."
+    },
+    {
+      "turn_id": "turn_093",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Good question. She's asking this, do they, do she change sides? Now, tell me, you told me what that, what's that middle mean?"
+    },
+    {
+      "turn_id": "turn_094",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Equal."
+    },
+    {
+      "turn_id": "turn_095",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Equal. Oh, so..."
+    },
+    {
+      "turn_id": "turn_096",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay."
+    },
+    {
+      "turn_id": "turn_097",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "this all"
+    },
+    {
+      "turn_id": "turn_098",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "There you go."
+    },
+    {
+      "turn_id": "turn_099",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Yeah, is that..."
+    },
+    {
+      "turn_id": "turn_100",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "All right, so what, so..."
+    },
+    {
+      "turn_id": "turn_101",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "'Cause there's, 'cause you have 1 x², here's the 1, and that's all positive, so..."
+    },
+    {
+      "turn_id": "turn_102",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "So, everybody go ahead and do it at your table. Work out the same one. Do this one on the board. Oh, just time out just for a second. Give them a chance to catch up with you. Everybody get their tiles out, Student B? Let Student B have some of the tiles, too, so that way he can be an active participant. Come on. 'Cause everybody's, every, every group's going to have a chance to to explain."
+    },
+    {
+      "turn_id": "turn_103",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "All right, we good? All right, go ahead, Student F."
+    },
+    {
+      "turn_id": "turn_104",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "What? Oh. Um, so, this 1 x², so, here's one. Then plus y², so, here's this."
+    },
+    {
+      "turn_id": "turn_105",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay."
+    },
+    {
+      "turn_id": "turn_106",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "And then your 3x², so I have 3 right there. But none of them are negative, so, so I leave them on the color, and I leave them on the positive side."
+    },
+    {
+      "turn_id": "turn_107",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, so now I want you to, on your expression mat, excuse me, on your expression mat, I want you to write what the new expression is."
+    },
+    {
+      "turn_id": "turn_108",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "New expression."
+    },
+    {
+      "turn_id": "turn_109",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "On your expression mat, I want you to write what your new expression is."
+    },
+    {
+      "turn_id": "turn_110",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Write how, what do you mean?"
+    },
+    {
+      "turn_id": "turn_111",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "When you simplify it..."
+    },
+    {
+      "turn_id": "turn_112",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "In this box?"
+    },
+    {
+      "turn_id": "turn_113",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Just write, write down, you can use the written expression. You're going to write what this new expression, when you simplify it, you, you rewrite it. What do you write down here? Student E, help out your partner."
+    },
+    {
+      "turn_id": "turn_114",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "We got it."
+    },
+    {
+      "turn_id": "turn_115",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Can I say it? 'Cause I think I think I understand it now."
+    },
+    {
+      "turn_id": "turn_116",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay. Go ahead, Student A, you said you got it."
+    },
+    {
+      "turn_id": "turn_117",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay. So you have this one, and then..."
+    },
+    {
+      "turn_id": "turn_118",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Which one's positive and which one's negative?"
+    },
+    {
+      "turn_id": "turn_119",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Well, good question. Which one did you tell Student C was positive, negative? How do you, how do you figure it out?"
+    },
+    {
+      "turn_id": "turn_120",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Oh, these are positive."
+    },
+    {
+      "turn_id": "turn_121",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Why is it positive?"
+    },
+    {
+      "turn_id": "turn_122",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "'Cause it's purple?"
+    },
+    {
+      "turn_id": "turn_123",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "'Cause it's purple, and what's the, the negative?"
+    },
+    {
+      "turn_id": "turn_124",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Red."
+    },
+    {
+      "turn_id": "turn_125",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Red. Red, just think about as hot, negative, no, you know, bad, whatever, okay?"
+    },
+    {
+      "turn_id": "turn_126",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "And then you have 4..."
+    },
+    {
+      "turn_id": "turn_127",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Which one?"
+    },
+    {
+      "turn_id": "turn_128",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "So, 2x and another 2x, no, wait. No, 1x and 1x is 2x, no, what?"
+    },
+    {
+      "turn_id": "turn_129",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Okay. You can keep, keep talking."
+    },
+    {
+      "turn_id": "turn_130",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "And then 3x. I don't, I don't think that's right. That's how she explained it."
+    },
+    {
+      "turn_id": "turn_131",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, all right, somebody help her out. Uh, how about Student G?"
+    },
+    {
+      "turn_id": "turn_132",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "4 x, I mean, 4... How many 4s do you have? Squares. 4. So, 4x². y². y²."
+    },
+    {
+      "turn_id": "turn_133",
+      "speaker_role": "teacher",
+      "speaker_name": "Teacher",
+      "message": "Okay, so she said 4x² + y². Okay, so then, remember, we went back and we said this quick review, everybody look up, that if you want to go ahead and circle if you need to, or if you have the tiles, you bring the like terms together, right? Remember simplifying, we want to bring like terms together. So, we can circle the x², circle the 3x², and say, well, these two come together, right?"
+    },
+    {
+      "turn_id": "turn_134",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "Right?"
+    },
+    {
+      "turn_id": "turn_135",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "Yes, sir."
+    },
+    {
+      "turn_id": "turn_136",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "x² + 3x² is how much?"
+    },
+    {
+      "turn_id": "turn_137",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "4"
+    },
+    {
+      "turn_id": "turn_138",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "4, come on."
+    },
+    {
+      "turn_id": "turn_139",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "x²"
+    },
+    {
+      "turn_id": "turn_140",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "4x². There we go, 4x². Do we have anything else to go with the y²?"
+    },
+    {
+      "turn_id": "turn_141",
+      "speaker_role": "student",
+      "speaker_name": "Students",
+      "message": "No."
+    },
+    {
+      "turn_id": "turn_142",
+      "speaker_role": "student",
+      "speaker_name": "Student",
+      "message": "No. Plus y². All we did is simplify. That's simple, okay? All right, good thing about I gave you paper, I gave you some paper towels, you can wipe off your mat. Let's get started."
+    }
+  ]
+}

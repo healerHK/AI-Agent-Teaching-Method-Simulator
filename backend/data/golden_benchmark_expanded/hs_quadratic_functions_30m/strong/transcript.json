@@ -1,0 +1,394 @@
+{
+  "transcript_id": "hs_quadratic_functions_30m_strong_001",
+  "scenario_id": "hs_quadratic_functions_30m",
+  "variant": "strong",
+  "domain": "Mathematics",
+  "education_level": "college",
+  "learning_objective": "Equivalent quadratic forms reveal intercepts, vertex, axis of symmetry, discriminant information, and transformation behaviour.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good morning, everyone."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Good morning, sir."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 1 — INTRODUCTION. Before we practise, connect the explanation to this situation: modelling a small projectile experiment where height is a quadratic function of time after the coordinate system has been chosen. For `f(x)=x^2-4x+3`, which features are structural facts of the function before we draw the graph, and which features require solving or rewriting?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I can see the constant 3, but I am not sure whether it is an x-intercept or just the y-intercept."
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good attempt, Noah. Why do you think that?"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I remember intercept language, but I mix up evaluating at x equals zero with solving for y equals zero."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "That uncertainty is useful. Alice, can you make the idea more precise?"
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "The constant term gives `f(0)=3`, so it is the y-intercept. The x-intercepts require solving `x^2-4x+3=0`, which factors to `(x-1)(x-3)`."
+    },
+    {
+      "turn_id": "turn_009",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. PART 2 — CONCEPT EXPLANATION. A quadratic is not only a curve that looks like a U-shape. In college algebra, we read structure from equivalent forms. Standard form `ax^2+bx+c` gives the y-intercept quickly and the opening direction through the sign of `a`. Factored form `a(x-r1)(x-r2)` gives zeros when real factors exist. Vertex form `a(x-h)^2+k` gives the turning point and the axis of symmetry. Completing the square is the bridge between standard form and vertex form. For `x^2-4x+3`, completing the square gives `(x-2)^2-1`, so the axis of symmetry is `x=2` and the vertex is `(2,-1)`. The discriminant `b^2-4ac` then gives an independent check on the number of real x-intercepts. I am deliberately modelling several representations because university mathematics values translation between representations. A graph can suggest a feature, but algebra justifies it; a formula can produce a number, but interpretation explains what the number means. When you later study optimisation, regression, or numerical modelling, this same habit appears: identify the structure, choose the representation that exposes the structure, and check the conclusion against another representation."
+    },
+    {
+      "turn_id": "turn_010",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Sir, why does completing the square reveal the middle of the parabola?"
+    },
+    {
+      "turn_id": "turn_011",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Because the squared term measures distance from a centre. In `(x-2)^2-1`, values equally far from 2 give the same squared value, so the graph is symmetric about `x=2`. The vertex occurs when the squared term is as small as possible. Since a square is never negative, the minimum of `(x-2)^2-1` is `-1`, reached at `x=2`. That is why the vertex is not guessed from the graph; it is encoded algebraically in the completed-square form."
+    },
+    {
+      "turn_id": "turn_012",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "So the axis of symmetry is a consequence of equal squared distances from the centre, not just a line drawn through the picture."
+    },
+    {
+      "turn_id": "turn_013",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "And the discriminant is `(-4)^2 - 4(1)(3) = 4`, so two real roots match the intercepts 1 and 3."
+    },
+    {
+      "turn_id": "turn_014",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "So the graph features should agree across standard, factored, and vertex forms?"
+    },
+    {
+      "turn_id": "turn_015",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. That agreement is an accuracy check. If one method says the vertex is below the x-axis and another method says there are no real roots, something is inconsistent. In a teacher-led real class, I might do most of this modelling on the board, but I still want a few short student checks because they reveal whether the forms are being connected or memorised separately. I also want you to notice assessment quality. A weak answer says 'the graph goes up.' A stronger answer says 'because `a>0`, the parabola opens upward, so the vertex from completed-square form is a minimum.' That sentence ties vocabulary, algebra, and interpretation together."
+    },
+    {
+      "turn_id": "turn_016",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "I thought negative `b` means the parabola opens downward."
+    },
+    {
+      "turn_id": "turn_017",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "That is a common coefficient confusion. The sign of `a` controls concavity or opening direction. The coefficient `b` affects the location of the axis of symmetry through `-b/(2a)`, but it does not decide whether the parabola opens up or down. In modelling, that difference matters: opening direction describes whether the quadratic has a minimum or maximum, while the axis describes where that extremum occurs."
+    },
+    {
+      "turn_id": "turn_018",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 3 — QUICK CHECK. For `f(x)=x^2-4x+3`, what is the axis of symmetry, and which formula or form supports it?"
+    },
+    {
+      "turn_id": "turn_019",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "The axis of symmetry is `x=2`, from `-b/(2a)=4/2=2` or from vertex form `(x-2)^2-1`."
+    },
+    {
+      "turn_id": "turn_020",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "What does a positive discriminant tell us about the graph?"
+    },
+    {
+      "turn_id": "turn_021",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "It tells us there are two distinct real zeros, so the parabola crosses the x-axis twice."
+    },
+    {
+      "turn_id": "turn_022",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, which coefficient decides whether the vertex is a minimum or maximum?"
+    },
+    {
+      "turn_id": "turn_023",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "`a`. If `a` is positive the vertex is a minimum; if `a` is negative it is a maximum."
+    },
+    {
+      "turn_id": "turn_024",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 4 — WORKED EXAMPLE. I will model the complete solution as I would on a college algebra board. Start with `f(x)=x^2-4x+3`. Complete the square: take half of -4, which is -2, square it to get 4, then write `x^2-4x+4-4+3`. That becomes `(x-2)^2-1`. Now we can read the vertex `(2,-1)`, the axis of symmetry `x=2`, the minimum value `-1`, and the opening direction upward because `a=1`. Separately, factor the original form to `(x-1)(x-3)`, so the x-intercepts are 1 and 3. Finally, the y-intercept is `f(0)=3`. Notice the discipline: every claim is attached to a form or a calculation. I would also annotate units if this were a projectile problem. If `x` represented time and `f(x)` represented height, then the vertex would represent the time and height of maximum or minimum modelled position, not just an abstract ordered pair. In pure algebra the point is structure; in modelling the point is structure plus interpretation. That distinction is important for college-level answers."
+    },
+    {
+      "turn_id": "turn_025",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, what feature do we get most directly from vertex form?"
+    },
+    {
+      "turn_id": "turn_026",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Vertex form gives the vertex `(2,-1)`, the axis of symmetry `x=2`, and the minimum value because the squared term is nonnegative."
+    },
+    {
+      "turn_id": "turn_027",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, continue the worked example using the next calculation or procedure step."
+    },
+    {
+      "turn_id": "turn_028",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "Factored form gives the zeros 1 and 3, and the discriminant value 4 confirms two distinct real intercepts. This gives a second line of evidence, so the result is not dependent on one method."
+    },
+    {
+      "turn_id": "turn_029",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, why is the y-intercept not the same question as the x-intercepts?"
+    },
+    {
+      "turn_id": "turn_030",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "The y-intercept comes from setting x to zero, while x-intercepts come from setting the function value to zero."
+    },
+    {
+      "turn_id": "turn_031",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "If the whole function is multiplied by -1, I think the roots stay the same but the vertex changes from a minimum to a maximum."
+    },
+    {
+      "turn_id": "turn_032",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Correct. Multiplying by -1 reflects the graph across the x-axis. Zeros remain zeros because the equation `-f(x)=0` has the same solutions as `f(x)=0`, but the vertex `(2,-1)` becomes `(2,1)`, and the parabola opens downward. This is a good example of structural reasoning: a transformation changes some features and preserves others. A second transfer case is horizontal translation. If we replace `(x-2)^2-1` with `(x-5)^2-1`, the shape and minimum value stay the same, but the axis of symmetry moves to `x=5`. That is why vertex form is powerful: it separates shape, horizontal location, and vertical location into visible components."
+    },
+    {
+      "turn_id": "turn_033",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "That helps separate invariant features, like the roots under vertical reflection, from changed features, like maximum versus minimum."
+    },
+    {
+      "turn_id": "turn_034",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "If the graph has two x-intercepts, I guess the vertex must always be above the x-axis."
+    },
+    {
+      "turn_id": "turn_035",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Careful. For an upward-opening parabola with two real roots, the vertex is below the x-axis. For a downward-opening parabola with two real roots, the vertex is above. The discriminant tells you how many real intersections exist; the sign of `a` tells you which way the curve bends. You need both pieces to interpret the graph accurately."
+    },
+    {
+      "turn_id": "turn_036",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "I would use sign of `a`, discriminant, and vertex form together before plotting points. I would also state which features are invariant under the transformation and which are not, because that is how we avoid overgeneralising from a picture."
+    },
+    {
+      "turn_id": "turn_037",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Exactly. PART 5 — DIFFERENTIATED PRACTICE. I will keep the class teacher-led, but I need short evidence from each student: one intercept check, one coefficient check, one explanation of completing the square, one discriminant calculation, and one extension. These brief checks mirror a real tutorial: the instructor carries the conceptual load, but selected student turns make misunderstandings visible."
+    },
+    {
+      "turn_id": "turn_038",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Lily, simple check: what is the y-intercept of `x^2-4x+3`?"
+    },
+    {
+      "turn_id": "turn_039",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "It is 3, because `f(0)=3`."
+    },
+    {
+      "turn_id": "turn_040",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Daniel, coefficient check: what does positive `a` tell us?"
+    },
+    {
+      "turn_id": "turn_041",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "The parabola opens upward and the vertex is a minimum."
+    },
+    {
+      "turn_id": "turn_042",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Chloe, conceptual check: what does completing the square show?"
+    },
+    {
+      "turn_id": "turn_043",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "It rewrites the quadratic as `a(x-h)^2+k`, so we can read the vertex and axis of symmetry."
+    },
+    {
+      "turn_id": "turn_044",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Ben, calculation check: compute the discriminant again and interpret it."
+    },
+    {
+      "turn_id": "turn_045",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The discriminant is 4, so there are two distinct real roots."
+    },
+    {
+      "turn_id": "turn_046",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Alice, extension: if `a` becomes 2 while the roots stay 1 and 3, what changes?"
+    },
+    {
+      "turn_id": "turn_047",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "The graph is vertically stretched; the roots stay fixed, but values away from the roots change faster and the vertex becomes lower. If this were a data model, I would also check whether the quadratic is appropriate for the domain rather than assuming every curved pattern is parabolic."
+    },
+    {
+      "turn_id": "turn_048",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, when you feel lost, which three facts should you list first?"
+    },
+    {
+      "turn_id": "turn_049",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "Opening direction, y-intercept, and axis of symmetry."
+    },
+    {
+      "turn_id": "turn_050",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 6 — MISCONCEPTION REPAIR. Lily, if someone says the constant term is automatically an x-intercept, what correction should you make?"
+    },
+    {
+      "turn_id": "turn_051",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "Say the constant term gives the y-intercept; x-intercepts require solving `f(x)=0`."
+    },
+    {
+      "turn_id": "turn_052",
+      "speaker_role": "student",
+      "speaker_name": "Daniel",
+      "message": "My warning note is: do not let one coefficient do every job."
+    },
+    {
+      "turn_id": "turn_053",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Good. Write three repaired ideas: `c` gives `f(0)`, not necessarily a root; `a` controls opening direction; `-b/(2a)` or completing the square gives the axis of symmetry. Add `discriminant` as the check for how many real roots exist. That note turns scattered formulas into a decision process. When you revise this, do not memorise the formulas as isolated facts. Write a small table: standard form tells y-intercept and coefficient information; factored form tells roots; vertex form tells turning point; discriminant tells root count. That table is a reasoning tool, not decoration."
+    },
+    {
+      "turn_id": "turn_054",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "PART 7 — FINAL REVIEW. Alice, first takeaway?"
+    },
+    {
+      "turn_id": "turn_055",
+      "speaker_role": "student",
+      "speaker_name": "Alice",
+      "message": "Equivalent forms of a quadratic reveal different structural features: intercepts, vertex, axis of symmetry, and opening direction. That is the core habit of mathematical modelling, not only graphing."
+    },
+    {
+      "turn_id": "turn_056",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question two: Ben, second takeaway?"
+    },
+    {
+      "turn_id": "turn_057",
+      "speaker_role": "student",
+      "speaker_name": "Ben",
+      "message": "The discriminant checks the number of real zeros, while factored form gives their exact values when factoring is possible."
+    },
+    {
+      "turn_id": "turn_058",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Question three: Chloe, third takeaway?"
+    },
+    {
+      "turn_id": "turn_059",
+      "speaker_role": "student",
+      "speaker_name": "Chloe",
+      "message": "Completing the square explains the vertex and symmetry instead of relying on a guessed graph."
+    },
+    {
+      "turn_id": "turn_060",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Noah, one sentence: how will you analyse a quadratic now?"
+    },
+    {
+      "turn_id": "turn_061",
+      "speaker_role": "student",
+      "speaker_name": "Noah",
+      "message": "I will connect each graph feature to the form or calculation that justifies it."
+    },
+    {
+      "turn_id": "turn_062",
+      "speaker_role": "student",
+      "speaker_name": "Lily",
+      "message": "What is our homework, sir?"
+    },
+    {
+      "turn_id": "turn_063",
+      "speaker_role": "teacher",
+      "speaker_name": "Mr. Anderson",
+      "message": "Homework: analyse three quadratics. For each, give standard, factored if possible, and vertex form; identify intercepts, axis of symmetry, vertex, discriminant, and opening direction; then write two sentences explaining which features are preserved under vertical reflection. Include one reflection paragraph explaining why vertex form is more informative than a rough sketch when the graph is used for modelling. Use complete sentences, not only calculations, so the evaluator can see the reasoning chain."
+    },
+    {
+      "turn_id": "turn_064",
+      "speaker_role": "controller",
+      "speaker_name": "Class",
+      "message": "Goodbye, sir."
+    }
+  ]
+}

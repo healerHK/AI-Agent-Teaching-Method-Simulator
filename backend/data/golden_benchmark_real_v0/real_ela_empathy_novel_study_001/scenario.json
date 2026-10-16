@@ -1,0 +1,25 @@
+{
+  "scenario_id": "real_ela_empathy_novel_study_001",
+  "title": "Real classroom language arts: empathy and novel-study launch",
+  "domain": "English Language Arts",
+  "education_level": "secondary_language_arts",
+  "learning_objective": "Students reflect on empathy and multiple forms of intelligence, connect empathy to social commentary in literature, identify author techniques that create reader empathy, and plan novel-study reading/discussion routines.",
+  "common_misconceptions": [
+    "Assuming intelligence is only measured by traditional school skills.",
+    "Defining empathy as simple sympathy rather than imagining and feeling with another person.",
+    "Treating social commentary as plot summary rather than an authorial message about the real world.",
+    "Making literary claims without evidence from the text."
+  ],
+  "target_concepts": [
+    "empathy",
+    "multiple_intelligences",
+    "social_commentary",
+    "author_techniques",
+    "novel_study",
+    "literary_evidence",
+    "discussion_routines",
+    "summative_rubric",
+    "reading_schedule",
+    "real_classroom_transcript"
+  ]
+}

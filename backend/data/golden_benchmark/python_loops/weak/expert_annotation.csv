@@ -1,0 +1,6 @@
+transcript_id,reviewer_id,criterion,human_score,issue_id,evidence_turn_ids,accepted_ground_truth,comment,timestamp
+python_loops_weak_001,researcher_phase1,pck_conceptual_accuracy,2,misconception_not_addressed,turn_002;turn_003,true,"Teacher avoids directly correcting the core misconception.",2026-07-13T00:00:00Z
+python_loops_weak_001,researcher_phase1,scaffolding,1,low_scaffolding,turn_004;turn_005;turn_008;turn_009,true,"Teacher does not provide stepwise tracing despite student need.",2026-07-13T00:00:00Z
+python_loops_weak_001,researcher_phase1,formative_assessment,1,weak_formative_assessment,turn_006;turn_007,true,"Teacher accepts the final answer without checking reasoning.",2026-07-13T00:00:00Z
+python_loops_weak_001,researcher_phase1,cognitive_questioning,1,no_reasoning_questions,turn_001;turn_009,true,"Teacher asks no prediction or reasoning questions.",2026-07-13T00:00:00Z
+python_loops_weak_001,researcher_phase1,missed_pedagogical_opportunity,1,missed_trace_request,turn_002;turn_004;turn_008;turn_009,true,"Multiple teachable moments are missed.",2026-07-13T00:00:00Z

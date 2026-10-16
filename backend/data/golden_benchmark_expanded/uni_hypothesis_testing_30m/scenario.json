@@ -1,0 +1,21 @@
+{
+  "scenario_id": "uni_hypothesis_testing_30m",
+  "title": "Hypothesis testing: p-values, significance, and interpretation",
+  "domain": "Statistics",
+  "education_level": "university",
+  "learning_objective": "A p-value measures compatibility with the null model; it is not the probability that the null is true.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "p = 0.03 means a 3% chance the null hypothesis is true.",
+    "Statistical significance automatically means practical importance.",
+    "Failing to reject the null proves there is no effect."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "test output table",
+    "null/alternative hypothesis examples"
+  ]
+}

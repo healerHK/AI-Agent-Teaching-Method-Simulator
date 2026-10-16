@@ -1,0 +1,23 @@
+{
+  "scenario_id": "real_hs_algebra_tiles_simplifying_001",
+  "title": "Real classroom algebra tiles: simplifying expressions",
+  "domain": "Mathematics",
+  "education_level": "high_school",
+  "learning_objective": "Students use algebra tiles to connect area/side-length representations to x, y, x², y², xy, positive/negative units, and simplify like terms such as x² + y² + 3x².",
+  "common_misconceptions": [
+    "Confusing solving an equation with simplifying an expression.",
+    "Treating tile colour/position as the reason a quantity is positive or negative rather than using the expression/mat convention.",
+    "Combining unlike terms such as x and x² or failing to group like terms.",
+    "Interpreting physical tile fit without connecting it to variable side lengths and area."
+  ],
+  "target_concepts": [
+    "algebra_tiles",
+    "area_model",
+    "like_terms",
+    "expression_simplification",
+    "positive_negative_tiles",
+    "equation_or_expression_mat",
+    "real_classroom_transcript",
+    "ecological_validity"
+  ]
+}

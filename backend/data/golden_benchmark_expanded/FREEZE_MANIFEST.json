@@ -1,0 +1,548 @@
+{
+  "dataset_version": "golden_benchmark_expanded_v1.1_transcript_scenarios",
+  "created_at": "2026-08-30T15:08:36.811161+00:00",
+  "source_root": "D:\\Code\\til-classroom-sim\\backend\\data\\transcript_scenarios",
+  "output_root": "D:\\Code\\til-classroom-sim\\backend\\data\\golden_benchmark_expanded",
+  "scenario_count": 8,
+  "transcript_count": 16,
+  "rubric_criteria": [
+    "cognitive_questioning",
+    "formative_assessment",
+    "missed_pedagogical_opportunity",
+    "pck_conceptual_accuracy",
+    "scaffolding"
+  ],
+  "exported_scenarios": [
+    {
+      "scenario_id": "college_cellular_respiration_30m",
+      "title": "Cellular respiration: ATP production and energy transfer",
+      "subject": "Biology",
+      "education_level": "college",
+      "strong_transcript_id": "college_cellular_respiration_30m_strong_001",
+      "weak_transcript_id": "college_cellular_respiration_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "college_stoichiometry_30m",
+      "title": "Stoichiometry: mole ratios and limiting reactants",
+      "subject": "Chemistry",
+      "education_level": "college",
+      "strong_transcript_id": "college_stoichiometry_30m_strong_001",
+      "weak_transcript_id": "college_stoichiometry_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "hs_newton_laws_30m",
+      "title": "Newtonian mechanics: free-body diagrams, net force, and system boundaries",
+      "subject": "Physics",
+      "education_level": "college",
+      "strong_transcript_id": "hs_newton_laws_30m_strong_001",
+      "weak_transcript_id": "hs_newton_laws_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "hs_python_loops_30m",
+      "title": "Python for-loops: iterator protocol, tracing, and correctness reasoning",
+      "subject": "Computer Science",
+      "education_level": "college",
+      "strong_transcript_id": "hs_python_loops_30m_strong_001",
+      "weak_transcript_id": "hs_python_loops_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "hs_quadratic_functions_30m",
+      "title": "Quadratic functions: structural forms, discriminant, and modelling interpretation",
+      "subject": "Mathematics",
+      "education_level": "college",
+      "strong_transcript_id": "hs_quadratic_functions_30m_strong_001",
+      "weak_transcript_id": "hs_quadratic_functions_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "uni_hypothesis_testing_30m",
+      "title": "Hypothesis testing: p-values, significance, and interpretation",
+      "subject": "Statistics",
+      "education_level": "university",
+      "strong_transcript_id": "uni_hypothesis_testing_30m_strong_001",
+      "weak_transcript_id": "uni_hypothesis_testing_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "uni_microeconomics_elasticity_30m",
+      "title": "Microeconomics: price elasticity and revenue reasoning",
+      "subject": "Economics",
+      "education_level": "university",
+      "strong_transcript_id": "uni_microeconomics_elasticity_30m_strong_001",
+      "weak_transcript_id": "uni_microeconomics_elasticity_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    },
+    {
+      "scenario_id": "uni_primary_source_analysis_30m",
+      "title": "Primary source analysis: evidence, context, and historical claims",
+      "subject": "History / Humanities",
+      "education_level": "university",
+      "strong_transcript_id": "uni_primary_source_analysis_30m_strong_001",
+      "weak_transcript_id": "uni_primary_source_analysis_30m_weak_001",
+      "turn_count": 64,
+      "readiness_passed": true
+    }
+  ],
+  "readiness_records": [
+    {
+      "scenario_id": "college_cellular_respiration_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "college_stoichiometry_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "hs_newton_laws_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "hs_python_loops_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "hs_quadratic_functions_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "uni_hypothesis_testing_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "uni_microeconomics_elasticity_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    },
+    {
+      "scenario_id": "uni_primary_source_analysis_30m",
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "duration_30_minutes",
+          "status": "pass",
+          "message": "Estimated duration is 30 minutes; target is exactly 30 minutes."
+        },
+        {
+          "check_id": "phase_count",
+          "status": "pass",
+          "message": "Scenario has 5 lesson phases; target is at least 5."
+        },
+        {
+          "check_id": "phase_coverage",
+          "status": "pass",
+          "message": "Lesson phases cover 0-30 minutes without gaps."
+        },
+        {
+          "check_id": "student_profiles",
+          "status": "pass",
+          "message": "Scenario has 6 student prompt profiles; target is at least 4."
+        },
+        {
+          "check_id": "student_prompt_parameters",
+          "status": "pass",
+          "message": "Every student has editable prompt instructions and behaviour parameters."
+        },
+        {
+          "check_id": "transcript_turn_count",
+          "status": "pass",
+          "message": "Scenario has 64 draft transcript turns; target is exactly 64 for a 30-minute lesson."
+        },
+        {
+          "check_id": "balanced_dialogue_structure",
+          "status": "pass",
+          "message": "Transcript uses a balanced 30-minute classroom-dialogue structure with short opening, Class voice, and PART 1-7 flow."
+        },
+        {
+          "check_id": "misconception_event",
+          "status": "pass",
+          "message": "Transcript includes at least one misconception event."
+        },
+        {
+          "check_id": "formative_assessment",
+          "status": "pass",
+          "message": "Transcript includes a formative assessment checkpoint."
+        },
+        {
+          "check_id": "editable_notes",
+          "status": "pass",
+          "message": "Editable notes are present for researcher revisions."
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Researcher-authored synthetic benchmark transcripts; suitable for controlled evaluator comparison, not evidence of real classroom learning gains."
+}

@@ -1,0 +1,18 @@
+{
+  "transcript_id": "real_hs_algebra_tiles_simplifying_001_observed",
+  "scores": {
+    "pck_conceptual_accuracy": 4,
+    "scaffolding": 4,
+    "formative_assessment": 4,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 3
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher connects y²/x²/xy to side lengths and area and later simplifies x² + y² + 3x², but some explanations remain informal and depend on unseen tile gestures.",
+    "scaffolding": "Lesson moves from identifying tiles to equation/expression mats and then simplifying like terms, with peer support for less experienced students.",
+    "formative_assessment": "The draft 3/5 rating understates the formative assessment evident in the transcript. The teacher repeatedly elicits student thinking, identifies confusion, responds through probing, peer explanation, or clarification, and in several cases re-checks understanding. These cycles are meaningful enough to support 4/5, although re-checking and documentation of individual understanding are not sufficiently systematic for 5/5.",
+    "cognitive_questioning": "Teacher repeatedly asks why/how questions about tile meanings, side lengths, positive/negative tiles, and whether the task is solving or simplifying.",
+    "missed_pedagogical_opportunity": "The 3/5 rating remains appropriate because the lesson contains several meaningful missed opportunities to formalize mathematical representations and terminology. However, the original rationale should be revised because the solve-versus-simplify distinction is explicitly addressed in the transcript. The stronger remaining missed opportunities concern formalizing xy/area reasoning, clarifying colour as a sign convention, and reinforcing the rule for combining like terms after student confusion."
+  }
+}

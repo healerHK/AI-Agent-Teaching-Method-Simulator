@@ -1,0 +1,25 @@
+{
+  "scenario_id": "real_ela_all_summer_venus_close_read_001",
+  "title": "Real classroom language arts: All Summer in a Day and Venus close reading",
+  "domain": "English Language Arts",
+  "education_level": "secondary_language_arts",
+  "learning_objective": "Students recall and discuss All Summer in a Day, infer character motivations and author choices, then close-read an informational text about Venus using annotation and text-dependent questions.",
+  "common_misconceptions": [
+    "Stopping at plot recall instead of explaining motivation or authorial purpose.",
+    "Confusing central idea/theme with isolated factual details.",
+    "Answering text-dependent questions from opinion rather than evidence in the text.",
+    "Treating nonfiction identification as only topic-based rather than using textual features and source/date evidence."
+  ],
+  "target_concepts": [
+    "short_story_discussion",
+    "inference",
+    "cliffhanger",
+    "central_idea",
+    "close_reading",
+    "annotation",
+    "informational_text",
+    "text_dependent_questions",
+    "Venus_transit",
+    "real_classroom_transcript"
+  ]
+}

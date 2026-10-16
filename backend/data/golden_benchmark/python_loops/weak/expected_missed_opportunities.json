@@ -1,0 +1,26 @@
+{
+  "transcript_id": "python_loops_weak_001",
+  "missed_opportunities": [
+    {
+      "id": "mo_001",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher did not directly address Mia's misconception that one written print line means one execution.",
+      "evidence_turn_ids": ["turn_002", "turn_003"],
+      "expected_action": "Ask Mia to predict the output for each list item and explain that the loop reuses the same print statement once per item."
+    },
+    {
+      "id": "mo_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher missed Sam's confusion about the loop variable value after the first line.",
+      "evidence_turn_ids": ["turn_004", "turn_005"],
+      "expected_action": "Use a two-column trace table showing iteration number and the current value of number."
+    },
+    {
+      "id": "mo_003",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher rejected Lina's request to trace the loop step by step and moved on too quickly.",
+      "evidence_turn_ids": ["turn_008", "turn_009"],
+      "expected_action": "Pause the topic shift and model one trace, then ask a student to complete the remaining iterations."
+    }
+  ]
+}

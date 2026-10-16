@@ -1,0 +1,9 @@
+row_type,transcript_id,label_id,final_score,human_decision,evidence_verified,domain_check_required,domain_check_result,confidence,evidence_turn_ids,adjudication_note
+score,real_ela_archetypal_fool_character_001_observed,pck_conceptual_accuracy,4,accept,yes,yes,pass,medium,turn_019;turn_023;turn_046;turn_076;turn_077;turn_078;turn_084;turn_090;turn_091;turn_095,
+score,real_ela_archetypal_fool_character_001_observed,scaffolding,4,accept,yes,no,not_required,high,turn_001;turn_004;turn_008;turn_073;turn_156;turn_292;turn_336;turn_344;turn_348;turn_383,
+score,real_ela_archetypal_fool_character_001_observed,formative_assessment,4,accept,yes,no,not_required,high,turn_063;turn_070;turn_077;turn_082;turn_100;turn_118;turn_145;turn_148;turn_164;turn_171,
+score,real_ela_archetypal_fool_character_001_observed,cognitive_questioning,4,accept,yes,no,not_required,high,turn_077;turn_096;turn_099;turn_100;turn_112;turn_113;turn_123;turn_152;turn_173;turn_185,
+score,real_ela_archetypal_fool_character_001_observed,missed_pedagogical_opportunity,4,revise,yes,no,not_required,medium,turn_019;turn_023;turn_041;turn_132;turn_134;turn_232;turn_234;turn_421;turn_093;turn_339,
+missed_opportunity,real_ela_archetypal_fool_character_001_observed,real_ela_fool_missed_001,,revise,yes,no,not_required,medium,turn_019;turn_023;turn_041;turn_132;turn_134;turn_232;turn_234;turn_421,"Repeated boundary questions support a minor opportunity for a more persistent comparison aid, although the teacher already distinguishes the related archetypes verbally during discussion."
+missed_opportunity,real_ela_archetypal_fool_character_001_observed,real_ela_fool_missed_002,,accept,yes,no,not_required,high,turn_093;turn_339;turn_403,
+missed_opportunity,real_ela_archetypal_fool_character_001_observed,real_ela_fool_missed_003,,accept,yes,no,not_required,medium,turn_409;turn_530,

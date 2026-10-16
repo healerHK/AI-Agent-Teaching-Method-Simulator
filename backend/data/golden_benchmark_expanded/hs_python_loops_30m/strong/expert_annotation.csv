@@ -1,0 +1,6 @@
+transcript_id,reviewer_id,criterion,human_score,issue_id,evidence_turn_ids,accepted_ground_truth,comment,timestamp
+hs_python_loops_30m_strong_001,researcher_freeze_v1,pck_conceptual_accuracy,5,strong_reference,turn_010;turn_011;turn_016;turn_017,true,Researcher annotation: strong/reference teaching pattern for benchmark comparison.,2026-08-30T15:08:36.795162+00:00
+hs_python_loops_30m_strong_001,researcher_freeze_v1,scaffolding,5,strong_reference,turn_010;turn_011;turn_016;turn_017,true,Researcher annotation: strong/reference teaching pattern for benchmark comparison.,2026-08-30T15:08:36.795162+00:00
+hs_python_loops_30m_strong_001,researcher_freeze_v1,formative_assessment,4,strong_reference,turn_010;turn_011;turn_016;turn_017,true,Researcher annotation: strong/reference teaching pattern for benchmark comparison.,2026-08-30T15:08:36.795162+00:00
+hs_python_loops_30m_strong_001,researcher_freeze_v1,cognitive_questioning,4,strong_reference,turn_010;turn_011;turn_016;turn_017,true,Researcher annotation: strong/reference teaching pattern for benchmark comparison.,2026-08-30T15:08:36.795162+00:00
+hs_python_loops_30m_strong_001,researcher_freeze_v1,missed_pedagogical_opportunity,5,strong_reference,turn_010;turn_011;turn_016;turn_017,true,Researcher annotation: strong/reference teaching pattern for benchmark comparison.,2026-08-30T15:08:36.795162+00:00

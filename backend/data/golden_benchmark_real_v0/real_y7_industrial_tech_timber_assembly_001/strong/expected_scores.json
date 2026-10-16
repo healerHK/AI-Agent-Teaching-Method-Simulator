@@ -1,0 +1,18 @@
+{
+  "transcript_id": "real_y7_industrial_tech_timber_assembly_001_observed",
+  "scores": {
+    "pck_conceptual_accuracy": 5,
+    "scaffolding": 5,
+    "formative_assessment": 5,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 5
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher accurately explains sanding purposes, grit selection, pre-sanding, tool choice, bench hook/vice/chisel/saw use, and assembly problem diagnosis.",
+    "scaffolding": "The 5/5 rating is supported by a coherent progression from learning goals and review, through explicit demonstration and guided practice, to independent workshop practice, followed by responsive whole-class problem solving and a return to independent work. The evidence list should be expanded to include the later share-out and assembly-problem diagnosis sequence",
+    "formative_assessment": "The 5/5 rating is supported by repeated diagnostic formative-assessment cycles. The teacher elicits student thinking, identifies misconceptions through whole-class checks and workshop monitoring, responds with clarification or modelling, and re-checks understanding. Student work observed during practice is also used to trigger whole-class diagnosis and responsive instruction. The evidence list should be expanded to capture these later monitoring and problem-solving cycles.",
+    "cognitive_questioning": "Teacher asks why/how/tool-choice questions and uses student reasoning about grit, sanding blocks, inaccessible faces, and fixing material-fit problems.",
+    "missed_pedagogical_opportunity": "The draft 4/5 rating overstates the significance of the proposed missed opportunities. The sanding-block misunderstanding is addressed shortly afterward through whole-class explanation and confirmation, and the teacher explicitly monitors PPE and safe tool use. The remaining uncertainty about the “P” marking on sandpaper is a minor clarification gap rather than a consequential missed pedagogical opportunity. Overall, the teacher consistently notices and responds to important workshop learning and safety opportunities, supporting 5/5."
+  }
+}

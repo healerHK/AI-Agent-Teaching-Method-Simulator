@@ -1,0 +1,22 @@
+{
+  "scenario_id": "hs_newton_laws_30m",
+  "title": "Newtonian mechanics: free-body diagrams, net force, and system boundaries",
+  "domain": "Physics",
+  "education_level": "college",
+  "learning_objective": "Net external force determines acceleration after system boundary, force directions, and reference frame are specified.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "An object moving forward must have a forward net force.",
+    "Heavier objects always fall faster in normal classroom examples.",
+    "Action-reaction forces cancel because they are equal and opposite."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "free-body diagram worksheet",
+    "force sensor/dynamics-cart demonstration",
+    "Newton's laws misconception checklist"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "python_loops_weak_001",
+  "rubric_version": "rubric_v1.0",
+  "created_by": "researcher_annotation_phase1",
+  "review_status": "researcher_annotated",
+  "summary": "Weak transcript: the teacher does not directly address the one-print-line misconception, gives generic explanations, avoids tracing, and misses a student request for step-by-step reasoning.",
+  "known_issues": [
+    "misconception_not_addressed",
+    "low_scaffolding",
+    "weak_formative_assessment",
+    "missed_trace_request",
+    "premature_topic_shift"
+  ]
+}

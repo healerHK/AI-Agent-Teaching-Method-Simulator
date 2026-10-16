@@ -1,0 +1,25 @@
+{
+  "transcript_id": "real_y7_industrial_tech_timber_assembly_001_observed",
+  "missed_opportunities": [
+    {
+      "id": "real_itd_missed_002",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "Before workshop tool use, safety routines are visible but could include a more explicit whole-class PPE/tool-position check.",
+      "evidence_turn_ids": [
+        "turn_043",
+        "turn_086",
+        "turn_088"
+      ],
+      "expected_action": "Pause for a complete PPE and tool-safety check before releasing students to saw, sand, or chisel."
+    },
+    {
+      "id": "real_itd_missed_003",
+      "criterion": "missed_pedagogical_opportunity",
+      "description": "The teacher notes uncertainty about the “P” marking on sandpaper, which could be turned into a quick modelling moment about checking tool/material labels.",
+      "evidence_turn_ids": [
+        "turn_079"
+      ],
+      "expected_action": "Model how to verify unfamiliar material labels safely using packaging, teacher notes, or reliable workshop references."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "transcript_id": "uni_primary_source_analysis_30m_weak_001",
+  "scores": {
+    "pck_conceptual_accuracy": 2,
+    "scaffolding": 1,
+    "formative_assessment": 1,
+    "cognitive_questioning": 1,
+    "missed_pedagogical_opportunity": 1
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher rushes past the target History / Humanities misconception instead of explicitly repairing it.",
+    "scaffolding": "Teacher avoids step-by-step scaffolding and asks struggling students to keep up.",
+    "formative_assessment": "Teacher relies on superficial whole-class checks without checking reasoning.",
+    "cognitive_questioning": "Teacher gives answers rather than eliciting prediction, evidence, or explanation.",
+    "missed_pedagogical_opportunity": "Multiple learner signals are intentionally missed to create a weak comparison variant."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scenario_id": "real_ela_nonfiction_theme_uncertainty_001",
+  "title": "Real classroom language arts: nonfiction context, theme, and rhetorical strategy analysis",
+  "domain": "English Language Arts",
+  "education_level": "secondary_advanced_language_arts",
+  "learning_objective": "Students review guided annotations for a nonfiction/AP-style text, infer context and audience, identify important words and themes, connect textual evidence to rhetorical strategies, and prepare independent analysis of overall purpose.",
+  "common_misconceptions": [
+    "Treating context as only setting rather than situation, occasion, audience pressure, and purpose.",
+    "Listing important words without moving from subject to theme or purpose.",
+    "Identifying a rhetorical strategy without explaining how it supports a theme.",
+    "Assuming a text has only one theme instead of interacting surface and underlying themes."
+  ],
+  "target_concepts": [
+    "nonfiction_close_reading",
+    "context",
+    "audience",
+    "theme",
+    "purpose",
+    "textual_evidence",
+    "rhetorical_strategy",
+    "extended_metaphor",
+    "parallelism",
+    "uncertainty",
+    "real_classroom_transcript"
+  ]
+}

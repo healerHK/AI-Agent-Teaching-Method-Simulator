@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Frozen benchmark bytes must match the published SHA-256 manifest on every OS.
+backend/data/** -text
+dataset/catalogue.csv -text

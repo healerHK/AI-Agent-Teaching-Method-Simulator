@@ -1,0 +1,18 @@
+{
+  "transcript_id": "python_loops_weak_001",
+  "scores": {
+    "pck_conceptual_accuracy": 2,
+    "scaffolding": 1,
+    "formative_assessment": 1,
+    "cognitive_questioning": 1,
+    "missed_pedagogical_opportunity": 1
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher does not clearly explain why the print statement executes three times.",
+    "scaffolding": "Teacher avoids trace-table support even when students ask for it.",
+    "formative_assessment": "Teacher accepts Alex's answer without checking underlying understanding.",
+    "cognitive_questioning": "Teacher asks no substantive prediction, tracing, or reasoning questions.",
+    "missed_pedagogical_opportunity": "Multiple student signals are missed, especially Mia's misconception and Lina's trace request."
+  }
+}

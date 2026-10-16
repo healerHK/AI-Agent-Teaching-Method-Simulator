@@ -1,0 +1,8 @@
+{
+  "dataset_version": "real_classroom_benchmark_v0.4_six_pilot_transcripts",
+  "created_at": "2026-09-06T09:48:04.010315+00:00",
+  "description": "Pilot real-classroom benchmark layer built from six anonymised classroom transcripts: algebra tiles, industrial technology timber assembly, empathy/novel study, All Summer in a Day/Venus close reading, archetypal fool discussion, and nonfiction theme/rhetorical-strategy analysis. Intended to improve ecological validity beside the synthetic expanded benchmark. Final labels are human-validated with evidence and domain-check flags, not independent multi-expert ground truth.",
+  "scenario_count": 6,
+  "transcript_count": 6,
+  "rubric_version": "rubric_v1.0"
+}

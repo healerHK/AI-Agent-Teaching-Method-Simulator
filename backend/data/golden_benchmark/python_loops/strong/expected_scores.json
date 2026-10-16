@@ -1,0 +1,18 @@
+{
+  "transcript_id": "python_loops_strong_001",
+  "scores": {
+    "pck_conceptual_accuracy": 5,
+    "scaffolding": 5,
+    "formative_assessment": 4,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 5
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher directly corrects the misconception that one print line means one execution.",
+    "scaffolding": "Teacher uses stepwise tracing across list items.",
+    "formative_assessment": "Teacher checks Alex's and Mia's understanding after explanation.",
+    "cognitive_questioning": "Questions ask students to predict and trace, not only recall.",
+    "missed_pedagogical_opportunity": "No major missed opportunity in this short transcript."
+  }
+}

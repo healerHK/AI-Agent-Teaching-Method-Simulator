@@ -1,0 +1,21 @@
+{
+  "scenario_id": "college_cellular_respiration_30m",
+  "title": "Cellular respiration: ATP production and energy transfer",
+  "domain": "Biology",
+  "education_level": "college",
+  "learning_objective": "Cellular respiration transfers energy from glucose to ATP through linked stages.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "Energy is created from nothing during respiration.",
+    "Respiration and breathing are the same biological process.",
+    "Most ATP is made directly in glycolysis."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "respiration pathway diagram",
+    "ATP yield summary"
+  ]
+}

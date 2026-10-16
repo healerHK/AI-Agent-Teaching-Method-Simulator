@@ -1,0 +1,22 @@
+{
+  "scenario_id": "hs_python_loops_30m",
+  "title": "Python for-loops: iterator protocol, tracing, and correctness reasoning",
+  "domain": "Computer Science",
+  "education_level": "college",
+  "learning_objective": "Python for-loops consume iterables through the iterator protocol, bind target names each iteration, and require state tracing plus invariants for correctness reasoning.; Students explain their reasoning using evidence from the worked example.; Students identify and repair at least one common misconception during guided practice.",
+  "common_misconceptions": [
+    "One written loop-body line means only one execution.",
+    "range stop values are included, so range(3) yields 1, 2, 3.",
+    "A loop that works on one representative input is proven correct."
+  ],
+  "target_concepts": [
+    "conceptual_accuracy",
+    "misconception_response",
+    "scaffolding",
+    "formative_assessment",
+    "evidence_grounding",
+    "Python iterator-protocol snippet",
+    "state trace and loop-invariant worksheet",
+    "edge-case test checklist"
+  ]
+}

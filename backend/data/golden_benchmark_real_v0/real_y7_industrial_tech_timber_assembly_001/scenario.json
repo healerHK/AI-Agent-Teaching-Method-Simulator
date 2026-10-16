@@ -1,0 +1,29 @@
+{
+  "scenario_id": "real_y7_industrial_tech_timber_assembly_001",
+  "title": "Real classroom industrial technology: timber assembly and sanding techniques",
+  "domain": "Industrial Technology and Design",
+  "education_level": "year_7_secondary",
+  "learning_objective": "Students practise assembly techniques for joining timber, prepare pieces for assembly, use sanding blocks and grit selection appropriately, and move between guided demonstration and independent workshop practice.",
+  "common_misconceptions": [
+    "Assuming a higher grit number is rougher than a lower grit number.",
+    "Not understanding why a sanding block provides more even pressure than sanding by hand.",
+    "Trying to sand inaccessible inside faces after assembly rather than pre-sanding.",
+    "Selecting or using workshop tools without linking the tool to the material-removal problem and safety routine."
+  ],
+  "target_concepts": [
+    "learning_objectives",
+    "success_criteria",
+    "rules_and_routines",
+    "revisit_and_review",
+    "monitor_progress",
+    "respectful_interactions",
+    "explicit_teaching",
+    "guided_practice",
+    "independent_practice",
+    "sanding_grit",
+    "woodwork_safety",
+    "assembly_techniques",
+    "real_classroom_transcript",
+    "australian_secondary_context"
+  ]
+}

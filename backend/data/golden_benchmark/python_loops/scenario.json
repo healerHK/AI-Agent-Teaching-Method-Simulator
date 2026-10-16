@@ -1,0 +1,18 @@
+{
+  "scenario_id": "python_loops_001",
+  "title": "Python for-loops and iteration tracing",
+  "domain": "computer_science",
+  "education_level": "introductory_undergraduate_or_senior_secondary",
+  "learning_objective": "Students will explain that a for-loop repeats a block once for each item in a sequence and can trace the loop variable across iterations.",
+  "common_misconceptions": [
+    "A for-loop runs only once because the code block appears once.",
+    "The loop variable keeps the same value for the whole loop.",
+    "The loop stops when it reaches the printed statement rather than after the sequence is exhausted."
+  ],
+  "target_concepts": [
+    "iteration",
+    "sequence traversal",
+    "loop variable update",
+    "trace table"
+  ]
+}

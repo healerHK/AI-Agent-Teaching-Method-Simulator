@@ -1,0 +1,18 @@
+{
+  "transcript_id": "real_ela_all_summer_venus_close_read_001_observed",
+  "scores": {
+    "pck_conceptual_accuracy": 4,
+    "scaffolding": 5,
+    "formative_assessment": 4,
+    "cognitive_questioning": 4,
+    "missed_pedagogical_opportunity": 4
+  },
+  "score_scale": "1-5",
+  "notes": {
+    "pck_conceptual_accuracy": "Teacher accurately supports story recall, inference, cliffhanger, close reading, nonfiction features, annotation, vocabulary, and text-dependent questions.",
+    "scaffolding": "Additional human review of the classroom recording confirmed subsequent group-work application not represented in the extracted transcript turns",
+    "formative_assessment": "Teacher elicits many student responses and checks understanding, although several recall questions require repeated prompting before the target idea is surfaced.",
+    "cognitive_questioning": "Teacher uses why/how/deeper prompts around character motivation, author ending, nonfiction identification, vocabulary, and text-dependent evidence.",
+    "missed_pedagogical_opportunity": "Good text-evidence lesson, with minor opportunities to give more think time and formalise central idea/theme distinction before group work."
+  }
+}
