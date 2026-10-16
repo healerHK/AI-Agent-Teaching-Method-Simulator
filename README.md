@@ -1,4 +1,5 @@
-# AI Agent Teaching Method Simulator
+#Teacher-in-the-Loop Agentic AI for
+Evidence-Grounded Pedagogical Feedback
 
 This repository contains the PixelClass TIL implementation and the frozen
 transcript benchmark used in Thanh Y Nguyen's Bachelor of Computer Science
