@@ -1,4 +1,4 @@
-#Teacher-in-the-Loop Agentic AI for
+## Teacher-in-the-Loop Agentic AI for
 Evidence-Grounded Pedagogical Feedback
 
 This repository contains the PixelClass TIL implementation and the frozen
